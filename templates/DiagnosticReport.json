@@ -1,0 +1,33 @@
+{
+  // JSON template for a FHIR R4 `DiagnosticReport` resource.
+  // Pasted from: <https://www.hl7.org/fhir/diagnosticreport.html#resource>.
+  "resourceType" : "DiagnosticReport",
+  // from Resource: id, meta, implicitRules, and language
+  // from DomainResource: text, contained, extension, and modifierExtension
+  "identifier" : [{ Identifier }], // Business identifier for report
+  "basedOn" : [{ Reference(CarePlan|ImmunizationRecommendation|
+   MedicationRequest|NutritionOrder|ServiceRequest) }], // What was requested
+  "status" : "<code>", // R!  registered | partial | preliminary | final +
+  "category" : [{ CodeableConcept }], // Service category
+  "code" : { CodeableConcept }, // R!  Name/Code for this diagnostic report
+  "subject" : { Reference(Patient|Group|Device|Location) }, // The subject of the report - usually, but not always, the patient
+  "encounter" : { Reference(Encounter) }, // Health care event when test ordered
+  // effective[x]: Clinically relevant time/time-period for report. One of these 2:
+  "effectiveDateTime" : "<dateTime>",
+  "effectivePeriod" : { Period },
+  "issued" : "<instant>", // DateTime this version was made
+  "performer" : [{ Reference(Practitioner|PractitionerRole|Organization|
+   CareTeam) }], // Responsible Diagnostic Service
+  "resultsInterpreter" : [{ Reference(Practitioner|PractitionerRole|
+   Organization|CareTeam) }], // Primary result interpreter
+  "specimen" : [{ Reference(Specimen) }], // Specimens this report is based on
+  "result" : [{ Reference(Observation) }], // Observations
+  "imagingStudy" : [{ Reference(ImagingStudy) }], // Reference to full details of imaging associated with the diagnostic report
+  "media" : [{ // Key images associated with this report
+    "comment" : "<string>", // Comment about the image (e.g. explanation)
+    "link" : { Reference(Media) } // R!  Reference to the image source
+  }],
+  "conclusion" : "<string>", // Clinical conclusion (interpretation) of test results
+  "conclusionCode" : [{ CodeableConcept }], // Codes for the clinical conclusion of test results
+  "presentedForm" : [{ Attachment }] // Entire report as issued
+}

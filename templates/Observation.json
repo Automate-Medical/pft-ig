@@ -1,0 +1,75 @@
+{
+  // JSON template for a FHIR R4 `Observation` resource.
+  // Copied from: <https://www.hl7.org/fhir/observation.html#resource>.
+  "resourceType" : "Observation",
+  // from Resource: id, meta, implicitRules, and language
+  // from DomainResource: text, contained, extension, and modifierExtension
+  "identifier" : [{ Identifier }], // Business Identifier for observation
+  "basedOn" : [{ Reference(CarePlan|DeviceRequest|ImmunizationRecommendation|
+   MedicationRequest|NutritionOrder|ServiceRequest) }], // Fulfills plan, proposal or order
+  "partOf" : [{ Reference(MedicationAdministration|MedicationDispense|
+   MedicationStatement|Procedure|Immunization|ImagingStudy) }], // Part of referenced event
+  "status" : "<code>", // R!  registered | preliminary | final | amended +
+  "category" : [{ CodeableConcept }], // Classification of  type of observation
+  "code" : { CodeableConcept }, // R!  Type of observation (code / type)
+  "subject" : { Reference(Patient|Group|Device|Location) }, // Who and/or what the observation is about
+  "focus" : [{ Reference(Any) }], // What the observation is about, when it is not about the subject of record
+  "encounter" : { Reference(Encounter) }, // Healthcare event during which this observation is made
+  // effective[x]: Clinically relevant time/time-period for observation. One of these 4:
+  "effectiveDateTime" : "<dateTime>",
+  "effectivePeriod" : { Period },
+  "effectiveTiming" : { Timing },
+  "effectiveInstant" : "<instant>",
+  "issued" : "<instant>", // Date/Time this version was made available
+  "performer" : [{ Reference(Practitioner|PractitionerRole|Organization|
+   CareTeam|Patient|RelatedPerson) }], // Who is responsible for the observation
+  // value[x]: Actual result. One of these 11:
+  "valueQuantity" : { Quantity },
+  "valueCodeableConcept" : { CodeableConcept },
+  "valueString" : "<string>",
+  "valueBoolean" : <boolean>,
+  "valueInteger" : <integer>,
+  "valueRange" : { Range },
+  "valueRatio" : { Ratio },
+  "valueSampledData" : { SampledData },
+  "valueTime" : "<time>",
+  "valueDateTime" : "<dateTime>",
+  "valuePeriod" : { Period },
+  "dataAbsentReason" : { CodeableConcept }, // C? Why the result is missing
+  "interpretation" : [{ CodeableConcept }], // High, low, normal, etc.
+  "note" : [{ Annotation }], // Comments about the observation
+  "bodySite" : { CodeableConcept }, // Observed body part
+  "method" : { CodeableConcept }, // How it was done
+  "specimen" : { Reference(Specimen) }, // Specimen used for this observation
+  "device" : { Reference(Device|DeviceMetric) }, // (Measurement) Device
+  "referenceRange" : [{ // Provides guide for interpretation
+    "low" : { Quantity(SimpleQuantity) }, // C? Low Range, if relevant
+    "high" : { Quantity(SimpleQuantity) }, // C? High Range, if relevant
+    "type" : { CodeableConcept }, // Reference range qualifier
+    "appliesTo" : [{ CodeableConcept }], // Reference range population
+    "age" : { Range }, // Applicable age range, if relevant
+    "text" : "<string>" // Text based reference range in an observation
+  }],
+  "hasMember" : [{ Reference(Observation|QuestionnaireResponse|
+   MolecularSequence) }], // Related resource that belongs to the Observation group
+  "derivedFrom" : [{ Reference(DocumentReference|ImagingStudy|Media|
+   QuestionnaireResponse|Observation|MolecularSequence) }], // Related measurements the observation is made from
+  "component" : [{ // Component results
+    "code" : { CodeableConcept }, // R!  Type of component observation (code / type)
+    // value[x]: Actual component result. One of these 11:
+    "valueQuantity" : { Quantity },
+    "valueCodeableConcept" : { CodeableConcept },
+    "valueString" : "<string>",
+    "valueBoolean" : <boolean>,
+    "valueInteger" : <integer>,
+    "valueRange" : { Range },
+    "valueRatio" : { Ratio },
+    "valueSampledData" : { SampledData },
+    "valueTime" : "<time>",
+    "valueDateTime" : "<dateTime>",
+    "valuePeriod" : { Period },
+    "dataAbsentReason" : { CodeableConcept }, // C? Why the component result is missing
+    "interpretation" : [{ CodeableConcept }], // High, low, normal, etc.
+    "referenceRange" : [{ Content as for Observation.referenceRange }] // Provides guide for interpretation of component result
+  }]
+}

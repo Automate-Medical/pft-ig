@@ -1,0 +1,47 @@
+2021-05-27
+
+
+`referanceRange`
+  For pre vs post bronchodilation, we may be able to use "Observation Reference Range Meaning Codes" to better specify which measurement each reference range corresponds to.
+
+  https://www.hl7.org/fhir/codesystem-referencerange-meaning.html#4.3.14.186.2
+
+  >This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.
+  >Lvl | Code | Display                        | Definition
+  >3   | pre  | Pre Therapeutic Desired Level  | The optimal range for best therapeutic outcomes for a specimen taken immediately before administration.
+  >3   | post | Post Therapeutic Desired Level | The optimal range for best therapeutic outcomes for a specimen taken immediately after administration.
+
+
+LLN/ULN
+  I actually think I erred in defining LLN.
+
+  Regarding how to display LLN/ULN, I think maybe we could give a reference range for normal like this:
+
+  ```JSON
+  "referenceRange": [
+    {
+    "low": {
+      "value": 3.70,
+      "unit": "L",
+      "system": "http://unitsofmeasure.org",
+      "code": "L"
+      },
+    },
+    "high": {
+      "value": 5, // TODO: Placeholder value, not real.
+      "unit": "L",
+      "system": "http://unitsofmeasure.org",
+      "code": "L"
+      },
+    },
+    "type": {
+      "text": "normal"
+    }
+  ]
+  ```
+
+  where "low"/"high" are our LLN/ULN, respectively.
+
+
+Miscellaneous notes:
+  In the example PFT, the pulmonologist provided their interpretation of results 4 days after the date of the testing. I think the correct `effectiveDatetime` is the datetime of the pulmonologist's interpretation. And that the datetime of the actual testing will be recorded in the referenced `Encounter`.
