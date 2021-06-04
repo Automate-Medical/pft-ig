@@ -6,7 +6,7 @@ import FHIR from '@automate-medical/fhir-schema-types';
 /** FVC pre (L) measurement. */
 export const FVC_PRE_L: FHIR.Observation = {
   resourceType: "Observation",
-  id: "ob-01",
+  id: "FVC-PRE-L",
   status: "final",
   code: {
     coding: [
@@ -64,7 +64,7 @@ export const FVC_PRE_L: FHIR.Observation = {
 /** FVC pre z-score, derived from FVC pre (L) measurement. */
 export const FVC_PRE_zscore: FHIR.Observation = {
   resourceType: "Observation",
-  id: "ob-01-zscore",
+  id: "FVC-PRE-zscore",
   status: "final",
   code: {
     coding: [
@@ -104,7 +104,7 @@ export const FVC_PRE_zscore: FHIR.Observation = {
   },
   derivedFrom: [
     {
-      id: "ob-01",
+      id: "FVC-PRE-L",
       type: "Observation",
       display: "FVC pre (L)",
     },
@@ -114,7 +114,7 @@ export const FVC_PRE_zscore: FHIR.Observation = {
 /** FVC pre % predicted, derived from FVC pre (L) measurement. */
 export const FVC_PRE_pred: FHIR.Observation = {
   resourceType: "Observation",
-  id: "ob-01-pred",
+  id: "FVC-PRE-pred",
   status: "final",
   code: {
     coding: [
@@ -156,7 +156,7 @@ export const FVC_PRE_pred: FHIR.Observation = {
   },
   derivedFrom: [
     {
-      id: "ob-01",
+      id: "FVC-PRE-L",
       type: "Observation",
       display: "FVC pre (L)",
     },

@@ -46,17 +46,17 @@ export const PFT_DiagnosticReport: FHIR.DiagnosticReport = {
   ],
   result: [
     {
-      id: "ob-01",
+      id: "FVC-PRE-L",
       type: "Observation",
       display: "FVC pre (L)",
     },
     {
-      id: "ob-01-zscore",
+      id: "FVC-PRE-zscore",
       type: "Observation",
       display: "FVC pre (z-score)",
     },
     {
-      id: "ob-01-pred",
+      id: "FVC-PRE-pred",
       type: "Observation",
       display: "FVC pre (% pred)",
     },
