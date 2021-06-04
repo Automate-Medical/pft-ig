@@ -149,10 +149,10 @@ export const FVC_POST_pred: FHIR.Observation = {
     },
   ],
   valueQuantity: {
-    value: 0.99,
-    unit: "decimal", // TODO: is this correct?
-    system: "",      // TODO:
-    code: "",        // TODO:
+    value: 99,
+    unit: "%",
+    system: "http://unitsofmeasure.org",
+    code: "%"
   },
   derivedFrom: [
     {
@@ -233,7 +233,7 @@ export const FVC_POST_change_percent: FHIR.Observation = {
         display: "FVC percent change Respiratory system",
       }
     ],
-    text: "FVC post, change (%)",
+    text: "FVC post change (%)",
   },
   subject: {
     id: "patient-01",
@@ -258,10 +258,10 @@ export const FVC_POST_change_percent: FHIR.Observation = {
     },
   ],
   valueQuantity: {
-    value: 0.20,
-    unit: "decimal", // TODO
-    system: "",      // TODO
-    code: "",        // TODO
+    value: 20,
+    unit: "%",
+    system: "http://unitsofmeasure.org",
+    code: "%"
   },
   derivedFrom: [
     {

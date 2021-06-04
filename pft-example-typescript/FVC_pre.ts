@@ -149,10 +149,10 @@ export const FVC_PRE_pred: FHIR.Observation = {
     },
   ],
   valueQuantity: {
-    value: 0.82, // Using float for percentage
-    unit: "decimal", // TODO: is this correct?
-    system: "",      // TODO
-    code: "",        // TODO
+    value: 82,
+    unit: "%",
+    system: "http://unitsofmeasure.org",
+    code: "%"
   },
   derivedFrom: [
     {
