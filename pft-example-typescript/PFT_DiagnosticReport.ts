@@ -60,6 +60,31 @@ export const PFT_DiagnosticReport: FHIR.DiagnosticReport = {
       type: "Observation",
       display: "FVC pre (% pred)",
     },
+    {
+      id: "FVC-POST-L",
+      type: "Observation",
+      display: "FVC post (L)",
+    },
+    {
+      id: "FVC-POST-zscore",
+      type: "Observation",
+      display: "FVC post (z-score)",
+    },
+    {
+      id: "FVC-POST-pred",
+      type: "Observation",
+      display: "FVC post (% pred)",
+    },
+    {
+      id: "FVC-POST-change-ml",
+      type: "Observation",
+      display: "FVC post change (mL)",
+    },
+    {
+      id: "FVC-POST-change-percent",
+      type: "Observation",
+      display: "FVC post change (%)",
+    },
   ],
   conclusion: "Moderately severe, partially reversible airflow obstruction.",
   conclusionCode: [
