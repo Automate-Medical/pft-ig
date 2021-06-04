@@ -1,0 +1,7 @@
+{
+  "name": "coding",
+  "dependencies": {
+    "@automate-medical/fhir-schema-types": "^0.0.4",
+    "typescript": "^4.3.2"
+  }
+}
