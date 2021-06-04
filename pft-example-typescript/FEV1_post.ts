@@ -30,9 +30,9 @@ export const FEV1_POST_L: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",
@@ -86,9 +86,9 @@ export const FEV1_POST_zscore: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",
@@ -139,9 +139,9 @@ export const FEV1_POST_pred: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",
@@ -191,9 +191,9 @@ export const FEV1_POST_change_ml: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",
@@ -248,9 +248,9 @@ export const FEV1_POST_change_percent: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",

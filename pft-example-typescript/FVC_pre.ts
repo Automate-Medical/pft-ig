@@ -30,9 +30,9 @@ export const FVC_PRE_L: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",
@@ -86,9 +86,9 @@ export const FVC_PRE_zscore: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",
@@ -138,9 +138,9 @@ export const FVC_PRE_pred: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",

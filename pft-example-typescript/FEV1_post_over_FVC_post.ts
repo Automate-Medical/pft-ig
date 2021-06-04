@@ -30,9 +30,9 @@ export const FEV1_POST_over_FVC_POST: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",
@@ -85,9 +85,9 @@ export const FEV1_POST_over_FVC_POST_zscore: FHIR.Observation = {
   effectiveDateTime: "2017-02-20 14:30",
   performer: [
     {
-      id: "practitioner-01",
+      id: "practitioner-02",
       type: "Practitioner",
-      display: "Dr. P. Pulmonologist",
+      display: "Technician (Respiratory Therapist)",
     },
     {
       id: "org-01",
