@@ -52,5 +52,7 @@ const PFT_Bundle: FHIR.Bundle = {
     FET_PRE_S,
 
     FET_POST_S,
+
+    // TODO: Add diffusing-capacity Observations
   ],
 };

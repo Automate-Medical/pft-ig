@@ -1,7 +1,8 @@
 import FHIR from '@automate-medical/fhir-schema-types';
 
-/** PFT implemented as Diagnostic Report with multiple Observations in result. */
-export const PFT_DiagnosticReport: FHIR.DiagnosticReport = {
+
+/** Finalized PFT implemented as DiagnosticReport with multiple Observations in result. */
+export const PFT_DiagnosticReport_final: FHIR.DiagnosticReport = {
   resourceType: "DiagnosticReport",
   id: "report-01",
   status: "final",
@@ -155,6 +156,7 @@ export const PFT_DiagnosticReport: FHIR.DiagnosticReport = {
       type: "Observation",
       display: "FET post (s)",
     },
+    // TODO: Add diffusing-capacity Observations
   ],
   conclusion: "Moderately severe, partially reversible airflow obstruction.",
   conclusionCode: [
