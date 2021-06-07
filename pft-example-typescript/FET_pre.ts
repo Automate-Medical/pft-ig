@@ -12,8 +12,8 @@ export const FET_PRE_S: FHIR.Observation = {
     coding: [
       {
         system: "http://loinc.org",
-        code: "Forced expiratory time",
-        display: "65819-5", // TODO: Is there a code to specify pre?
+        code: "65819-5",
+        display: "Forced expiratory time", // TODO: Is there a code to specify pre?
       },
     ],
     text: "FET pre (s)",
