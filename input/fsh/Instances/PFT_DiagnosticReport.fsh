@@ -1,7 +1,7 @@
 /*
  * PFT DiagnosticReport
  */
-Instance: PFT_DiagnosticReport
+AInstance: PFT_DiagnosticReport
 InstanceOf: DiagnosticReport
 Title: "PFT DiagnosticReport"
 Usage: #example
