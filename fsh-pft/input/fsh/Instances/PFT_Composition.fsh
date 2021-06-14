@@ -8,20 +8,25 @@ Usage: #example
 * id = "pft-composition"
 * status = #preliminary
 * type = $LNC#81458-2 "Pulmonary function test panel" // TODO: Incorrect code for full document
-* subject = Reference(patient)
-* encounter = Reference(encounter)
+* category = $LNC#27896-0 "Pulmonary studies (set)"
+* subject = Reference(PFT_Patient)
+* encounter = Reference(PFT_Encounter)
 * date = "2017-02-20"
 * author = Reference(TODO_PLACEHOLDER)
 * title = "PFT: test panel Observations and DiagnosticReport"
-* custodian = Reference(organization)
+* custodian = Reference(PFT_Organization)
+
+/* PFT results */
 * section[+]
   * title = "PFT Observations and Technician Comment"
   * code = $LNC#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
-  * section[+]
-    * title = "Technician Comment"
-    * text
-      * status = #additional
-      * div = "<div>TECHNICIAN COMMMENTS: No medications in past 24 hr. 400 mcg albuterol given for reversibility testing.</div>"
+  * text
+    * status = #additional
+    * div = "<div>TECHNICIAN COMMMENTS: No medications in past 24 hr. 400 mcg albuterol given for reversibility testing.</div>"
+
+  * entry[+] = Reference(SpO2_RESTING) // TODO: Don't know where else to put this.
+
+  /* PFT panel: Spirometry */
   * section[+]
     * title = "Spirometry"
     * code
@@ -38,26 +43,34 @@ Usage: #example
     * entry[+] = Reference(FVC_POST_percentPredicted)
     * entry[+] = Reference(FVC_POST_mLChange)
     * entry[+] = Reference(FVC_POST_percentChange)
+
   // TODO: The following panels don't have specific LOINC codes, but some have SNOMED codes
   // TODO: The following panels don't have Instances of Observations (probably only Diffusing Capacity will)
+  /* PFT panel: Slow Vital Capacity */
   * section[+]
     * title = "Slow Vital Capacity (Pre-Bronchodilator)"
     * code = $LNC#81458-2 "Pulmonary function test panel"
     * text
       * status = #additional
       * div = "<div>Reference values: VC - Gutierrez 2004; FEV 1 /VC – GLI 2012</div>"
+
+  /* PFT panel: Nitrogen Washout */
   * section[+]
     * title = "Multi-Breath Nitrogen Washout (Post-Bronchodilator)"
     * code = $LNC#81458-2 "Pulmonary function test panel"
     * text
       * status = #additional
       * div = "<div>Reference values: Gutierrez 2004; Test quality: QA met</div>"
+
+  /* PFT panel: Plethysmography */
   * section[+]
     * title = "Plethysmography (Post-Bronchodilator)"
     * code = $SCT#20552003 "Plethysmography (procedure)"
     * text
       * status = #additional
       * div = "<div>Reference values: Gutierrez 2004; Test quality: QA met</div>"
+
+  /* PFT panel: Diffusing Capacity */
   * section[+]
     * title = "Diffusing Capacity (Post-Bronchodilator)"
     * code = $LNC#81458-2 "Pulmonary function test panel"
@@ -65,6 +78,8 @@ Usage: #example
       * status = #additional
       * div = "<div>Reference values: GLI 2017; Test quality: one grade A test; P B : 721 mmHg</div>"
     // * entry[+] = Reference(PLACEHOLDER_gasConcentrationChart)
+
+/* DiagnosticReport */
 * section[+]
   * title = "Pulmonologist interpretation of PFT and diagnosis"
   * code = $LNC#59769-0 "Postprocedure diagnosis Narrative"

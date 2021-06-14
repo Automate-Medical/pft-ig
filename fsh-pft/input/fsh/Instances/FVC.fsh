@@ -4,6 +4,12 @@
 //       effectiveDateTime, etc.
 //       Focus of example is on parts which differ from Instance to Instance.
 
+// TODO: Getting errors trying to add hh:mm:ss to effectDateTime.
+
+// TODO: Can we flag valueQuantity to not lose precision (trailing zeros) when compiled to JSON?
+
+// TODO: Am I using LOINC Part codes properly when adding to z-score?
+
 /*
  * FVC_PRE
  */
@@ -11,15 +17,19 @@ Instance: FVC_PRE
 InstanceOf: Observation
 Title: "FVC (L) pre-bronchodilator"
 Usage: #example
+* text // `text` element inherited from `Observation` ancestor `DomainResource`
+  * status = #additional
+  * div = "<div>Test quality: A</div>" // TODO: This is given in the Composition Narrative but could go here?
 * id = "FVC-PRE"
 * status = #final
+* category = $FHIR_ObservationCategory#procedure "Procedure"
 * code = $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
-* subject = Reference(patient)
-* encounter = Reference(encounter)
-* performer[+] = Reference(technician)
-* performer[+] = Reference(organization)
-* effectiveDateTime = "2017-02-20" // TODO: Getting errors trying to add hh:mm:ss
-* valueQuantity = 3.90 'L' "L" // TODO: How do we flag this to not lose precision when compiled to JSON?
+* subject = Reference(PFT_Patient)
+* encounter = Reference(PFT_Encounter)
+* performer[+] = Reference(PFT_Technician)
+* performer[+] = Reference(PFT_Organization)
+* effectiveDateTime = "2017-02-20"
+* valueQuantity = 3.90 'L' "L"
 * referenceRange
   * low = 3.70 'L' "L"
   * type
@@ -35,8 +45,10 @@ Usage: #example
 * id = "FVC-PRE-Zscore"
 * status = #final
 * code
-  * text = "FVC_PRE z-score"
-* valueQuantity = -1.34 '{Number}' "Number"
+  * coding[+] = $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
+  * coding[+] = $LNC#LP164005-3 "Z-score"
+  * text = "FVC_PRE Z-score"
+* valueQuantity = -1.34 '{Zscore}' "Z-score"
 * derivedFrom[+] = Reference(FVC_PRE)
 * derivedFrom[+] = Reference(FVC_PREREF_predicted)
 * derivedFrom[+] = Reference(FVC_PREREF_stdDev)
@@ -84,8 +96,10 @@ Usage: #inline
 * id = "FVC-POST-Zscore"
 * status = #final
 * code
+  * coding[+] = $LNC#19874-7 "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
+  * coding[+] = $LNC#LP164005-3 "Z-score"
   * text = "FVC_POST z-score"
-* valueQuantity = -0.09 '{Number}' "Number"
+* valueQuantity = -0.09 '{Zscore}' "Z-score"
 * derivedFrom[+] = Reference(FVC_POST)
 // TODO: Do FVC_POST measurements use the same reference values as FVC_PRE?
 // * derivedFrom[+] = Reference(FVC_PREREF_predicted)
@@ -164,6 +178,7 @@ Usage: #inline
 * code
   // * coding = $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
   * text = "Reference value: standard deviation for FVC PRE "
+// * valueQuantity = {StandardDeviation} "Standard Deviation" // TODO: Add value before {StandardDeviation}
 * note = FVC_referenceValueAnnotation
 
 /*

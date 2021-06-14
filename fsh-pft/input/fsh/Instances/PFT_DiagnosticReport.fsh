@@ -7,12 +7,13 @@ Title: "PFT DiagnosticReport"
 Usage: #example
 * id = "diagnostic-report"
 * status = #final
+* category = http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.0.1#PF "Pulmonary Function"
 * code = $LNC#81458-2 "Pulmonary function test panel"
-* subject = Reference(patient)
-* encounter = Reference(encounter)
-* performer[+] = Reference(technician)
-* performer[+] = Reference(organization)
-* resultsInterpreter = Reference(pulmonologist)
+* subject = Reference(PFT_Patient)
+* encounter = Reference(PFT_Encounter)
+* performer[+] = Reference(PFT_Technician)
+* performer[+] = Reference(PFT_Organization)
+* resultsInterpreter = Reference(PFT_Pulmonologist)
 * effectiveDateTime = "2017-02-24"
 * result[+] = Reference(FVC_PRE)
 * result[+] = Reference(FVC_PRE_zScore)
