@@ -1,6 +1,6 @@
 # PFT DiagnosticReport
 
-Rough JSON mpodel of what a PFT might look like using FHIR R4+ resources, implemented as a 1:N collection of `DiagnosticReport`:`Observation`.
+Rough JSON model of what a PFT might look like using FHIR R4+ resources, implemented as a 1:N collection of `DiagnosticReport`:`Observation`.
 
 ## Project Structure
 

@@ -1,0 +1,24 @@
+{
+  "name": "fhir-pft-profile",
+  "version": "0.0.0",
+  "description": "FHIR Profile for Pulmonary Function Tests",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "fsh-sushi": "^2.0.0-beta.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sushi ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automate-Medical/fhir-pft-profile.git"
+  },
+  "author": "Automate Medical Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Automate-Medical/fhir-pft-profile/issues"
+  },
+  "homepage": "https://github.com/Automate-Medical/fhir-pft-profile#readme"
+}
