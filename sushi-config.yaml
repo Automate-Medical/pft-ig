@@ -2,12 +2,11 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.example
-canonical: http://example.org
-name: fsh-pft
-description: "Defining PFTs using FSH (FHIR Shorthand)."
+id: pft
+canonical: https://automatemedical.com/PulmonaryFunctionTestIG
+name: PulmonaryFunctionTestIG
 status: draft
-version: 0.1.0
+version: 0.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
