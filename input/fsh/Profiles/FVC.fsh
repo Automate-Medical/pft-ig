@@ -1,3 +1,5 @@
+/* Profiles for FVC PRE and POST Observations. */
+
 Profile: ForcedVitalCapacity
 Parent: Observation
 Id: ForcedVitalCapacity
@@ -19,7 +21,7 @@ Description: "Forced vital capacity (liters)"
 /*
  * Pre-bronchodilator
  */
-Profile: FVC_PRE
+Profile: ForcedVitalCapacity_PreBronchodilator
 Parent: Observation
 Id: FVC-PRE
 Title: "FVC_PRE"
@@ -31,7 +33,7 @@ Description: "Forced vital capacity (liters) pre-bronchodilator."
   * system = $UCUM
   * code = #L
 
-Profile: FVC_PRE_Zscore
+Profile: ForcedVitalCapacity_PreBronchodilator_Zscore
 Parent: Observation
 Id: FVC-PRE-Zscore
 Title: "FVC_PRE_Zscore"
@@ -40,11 +42,11 @@ Description: "Forced vital capacity (z-score) pre-bronchodilator."
   * text = "Forced vital capacity (z-score) pre-bronchodilator"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "Z-score"
+  * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: FVC_PRE_percentPredicted
+Profile: ForcedVitalCapacity_PreBronchodilator_PercentPredicted
 Parent: Observation
 Id: FVC-PRE-percentPredicted
 Title: "FVC_PRE_percentPredicted"
@@ -59,7 +61,7 @@ Description: "Forced vital capacity (% pred) pre-bronchodilator."
 /*
  * Post-bronchodilator
  */
-Profile: FVC_POST
+Profile: ForcedVitalCapacity_PostBronchodilator
 Parent: Observation
 Id: FVC-POST
 Title: "FVC_POST"
@@ -71,7 +73,7 @@ Description: "Forced vital capacity (liters) post-bronchodilator"
   * system = $UCUM
   * code = #L
 
-Profile: FVC_POST_Zscore
+Profile: ForcedVitalCapacity_PostBronchodilator_Zscore
 Parent: Observation
 Id: FVC-POST-Zscore
 Title: "FVC_POST_Zscore"
@@ -80,11 +82,11 @@ Description: "Forced vital capacity (z-score) post-bronchodilator."
   * text = "Forced vital capacity (z-score) post-bronchodilator"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "Z-score"
+  * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: FVC_POST_percentPredicted
+Profile: ForcedVitalCapacity_PostBronchodilator_percentPredicted
 Parent: Observation
 Id: FVC-POST-percentPredicted
 Title: "FVC_POST_percentPredicted"
@@ -96,7 +98,7 @@ Description: "Forced vital capacity (% pred) post-bronchodilator."
   * system = $UCUM
   * code = #%
 
-Profile: FVC_POST_mLChange
+Profile: ForcedVitalCapacity_PostBronchodilator_mLChange
 Parent: Observation
 Id: FVC-POST-mLChange
 Title: "FVC_POST_mLChange"
@@ -109,7 +111,7 @@ Description: "Forced vital capacity, post-bronchodilator change from pre-broncho
   * system = $UCUM
   * code = #mL
 
-Profile: FVC_POST_percentChange
+Profile: ForcedVitalCapacity_PostBronchodilator_percentChange
 Parent: Observation
 Id: FVC-POST-percentChange
 Title: "FVC_POST_percentChange"
