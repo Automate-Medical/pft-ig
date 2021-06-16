@@ -1,22 +1,45 @@
-/* Profiles for FVC PRE and POST Observations. */
+/* Profiles for FVC PRE and POST Observations, as well as pre/post unspecified. */
 
+
+/*
+ * Pre- or post-bronchodilator not specified
+ */
 Profile: ForcedVitalCapacity
 Parent: Observation
 Id: ForcedVitalCapacity
-Title: "ForcedVitalCapacity"
+Title: "FVC"
 Description: "Forced vital capacity (liters)"
-// * code: $LNC#19870-5 "Forced vital capacity [Volume] Respiratory system" or $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation" or $LNC#19875-4 "Forced vital capacity [Volume] Respiratory system --post bronchodilation"
+* code = $LNC#19870-5 "Forced vital capacity [Volume] Respiratory system"
 * value[x] only Quantity
 * valueQuantity
   * unit = "L"
   * system = $UCUM
   * code = #L
 
-// ValueSet:    FVC_Codes_ValueSet
-// Title:       "FVC LOINC Codes Value Set"
-// Id:          FVC-Codes-ValueSet
-// Description: "LOINC Codes for FVC Observations"
-// *
+Profile: ForcedVitalCapacity_Zscore
+Parent: Observation
+Id: FVC-Zscore
+Title: "FVC_Zscore"
+Description: "Forced vital capacity (z-score)."
+* code
+  * text = "Forced vital capacity (z-score)"
+* value[x] only Quantity
+* valueQuantity
+  * unit = "Zscore"
+  * system = $UCUM
+  * code = #{Zscore}
+
+Profile: ForcedVitalCapacity_percentPredicted
+Parent: Observation
+Id: FVC-percentPredicted
+Title: "FVC_percentPredicted"
+Description: "Forced vital capacity (% pred)."
+* code = $LNC#19872-1 "FVC measured/predicted"
+* value[x] only Quantity
+  * unit = "%"
+  * system = $UCUM
+  * code = #%
+
 
 /*
  * Pre-bronchodilator

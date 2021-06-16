@@ -12,6 +12,9 @@ Description: "Diagnostic report for a pulmonary function test."
 * result ^slicing.rules = #open
 * result contains
   SPO2_RESTING 0..1 and
+  ForcedVitalCapacity 0..1 and
+  ForcedVitalCapacity_Zscore 0..1 and
+  ForcedVitalCapacity_percentPredicted 0..1 and
   ForcedVitalCapacity_PreBronchodilator 0..1 and
   ForcedVitalCapacity_PreBronchodilator_Zscore 0..1 and
   ForcedVitalCapacity_PreBronchodilator_percentPredicted 0..1 and
@@ -21,6 +24,9 @@ Description: "Diagnostic report for a pulmonary function test."
   ForcedVitalCapacity_PostBronchodilator_mLChange 0..1 and
   ForcedVitalCapacity_PostBronchodilator_percentChange 0..1
 * result[SPO2_RESTING] only Reference(SPO2_RESTING)
+* result[ForcedVitalCapacity] only Reference(ForcedVitalCapacity)
+* result[ForcedVitalCapacity_Zscore] only Reference(ForcedVitalCapacity_Zscore)
+* result[ForcedVitalCapacity_percentPredicted] only Reference(ForcedVitalCapacity_percentPredicted)
 * result[ForcedVitalCapacity_PreBronchodilator] only Reference(ForcedVitalCapacity_PreBronchodilator)
 * result[ForcedVitalCapacity_PreBronchodilator] only Reference(ForcedVitalCapacity_PreBronchodilator)
 * result[ForcedVitalCapacity_PreBronchodilator_Zscore] only Reference(ForcedVitalCapacity_PreBronchodilator_Zscore)
