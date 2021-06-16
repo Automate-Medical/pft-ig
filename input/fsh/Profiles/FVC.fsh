@@ -46,7 +46,7 @@ Description: "Forced vital capacity (z-score) pre-bronchodilator."
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: ForcedVitalCapacity_PreBronchodilator_PercentPredicted
+Profile: ForcedVitalCapacity_PreBronchodilator_percentPredicted
 Parent: Observation
 Id: FVC-PRE-percentPredicted
 Title: "FVC_PRE_percentPredicted"
