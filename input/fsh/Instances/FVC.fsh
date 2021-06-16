@@ -1,14 +1,7 @@
 /* FVC Observation Instances associated with the PFT DiagnosticReport */
 
-// TODO: For now, we omit repeated data like subject, encounter, performer,
-//       effectiveDateTime, etc.
+// TODO: For now, we omit repeated data like subject, encounter, performer.
 //       Focus of example is on parts which differ from Instance to Instance.
-
-// TODO: Getting errors trying to add hh:mm:ss to effectDateTime.
-
-// TODO: Can we flag valueQuantity to not lose precision (trailing zeros) when compiled to JSON?
-
-// TODO: Am I using LOINC Part codes properly when adding to z-score?
 
 /*
  * FVC_PRE
@@ -28,7 +21,7 @@ Usage: #example
 * encounter = Reference(PFT_Encounter)
 * performer[+] = Reference(PFT_Technician)
 * performer[+] = Reference(PFT_Organization)
-* effectiveDateTime = "2017-02-20"
+* effectiveDateTime = "2015-02-07T13:28:17-05:00"
 * valueQuantity = 3.90 'L' "L"
 * referenceRange
   * low = 3.70 'L' "L"
@@ -45,8 +38,6 @@ Usage: #example
 * id = "FVC-PRE-Zscore"
 * status = #final
 * code
-  * coding[+] = $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
-  * coding[+] = $LNC#LP164005-3 "Z-score"
   * text = "FVC_PRE Z-score"
 * valueQuantity = -1.34 '{Zscore}' "Z-score"
 * derivedFrom[+] = Reference(FVC_PRE)
@@ -96,8 +87,6 @@ Usage: #inline
 * id = "FVC-POST-Zscore"
 * status = #final
 * code
-  * coding[+] = $LNC#19874-7 "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
-  * coding[+] = $LNC#LP164005-3 "Z-score"
   * text = "FVC_POST z-score"
 * valueQuantity = -0.09 '{Zscore}' "Z-score"
 * derivedFrom[+] = Reference(FVC_POST)
