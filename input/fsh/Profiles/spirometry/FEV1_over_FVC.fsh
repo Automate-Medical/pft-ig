@@ -78,7 +78,7 @@ Description: "FEV1/FVC post-bronchodilator"
   * system = $UCUM
   * code = #{Number}
 
-Profile: FEV1_over_FVC_PpostBronchodilator_Zscore
+Profile: FEV1_over_FVC_PostBronchodilator_Zscore
 Parent: Observation
 Id: FEV1-over-FVC-POST-Zscore
 Title: "FEV1_over_FVC_POST_Zscore"
