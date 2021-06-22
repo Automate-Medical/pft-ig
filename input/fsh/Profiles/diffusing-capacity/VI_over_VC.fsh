@@ -1,7 +1,7 @@
 /* Profile for VI/VC Observation. */
 Profile: VI_over_VC
 Parent: Observation
-Id: VI_over_VC
+Id: VI-over-VC
 Title: "VI_over_VC"
 Description: "VI/VC (inspired volume/vital capacity)"
 * code
