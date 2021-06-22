@@ -6,8 +6,7 @@ Parent: Observation
 Id: AlveolarVolume
 Title: "AlveolarVolume"
 Description: "Alveolar volume (liters)"
-* code
-  * text = "Alveolar volume (liters)"
+* code = $SCT#251953007 "Alveolar volume (observable entity)"
 * value[x] only Quantity
 * valueQuantity
   * unit = "L"
