@@ -31,7 +31,7 @@ Description: "Carbon monoxide transfer coefficient z-score. Note: also known as 
 
 Profile: CarbonMonoxideTransferCoefficient_percentPredicted
 Parent: Observation
-Id: KCO
+Id: KCO-percentPredicted
 Title: "KCO"
 Description: "Carbon monoxide transfer coefficient. Note: also known as KCO or DLCO/VA."
 * code
