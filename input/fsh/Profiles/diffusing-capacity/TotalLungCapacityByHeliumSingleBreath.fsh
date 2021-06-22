@@ -1,6 +1,6 @@
 /* Profile for TLC_sb Observation. */
 Profile: TotalLungCapacityByHeliumSingleBreath
-Parent:
+Parent: Observation
 Id: TotalLungCapacityByHeliumSingleBreath
 Title: "TotalLungCapacityByHeliumSingleBreath"
 Description: "Total lung capacity by helium, single breath."
