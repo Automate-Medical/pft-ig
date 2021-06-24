@@ -67,7 +67,7 @@ Usage: #example
 Instance: FVC_POST
 InstanceOf: Observation
 Title: "FVC (L) post-bronchodilator"
-Usage: #inline
+Usage: #example
 * id = "FVC-POST"
 * status = #final
 * code = $LNC#19874-7 "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
@@ -83,7 +83,7 @@ Usage: #inline
 Instance: FVC_POST_zScore
 InstanceOf: Observation
 Title: "FVC z-score post-bronchodilator"
-Usage: #inline
+Usage: #example
 * id = "FVC-POST-Zscore"
 * status = #final
 * code
@@ -100,7 +100,7 @@ Usage: #inline
 Instance: FVC_POST_percentPredicted
 InstanceOf: Observation
 Title: "FVC post-bronchodilator, % of predicted value"
-Usage: #inline
+Usage: #example
 * id = "FVC-POST-percentPredicted"
 * status = #final
 * code = $LNC#19873-9 "FVC post bronchodilation measured/predicted"
@@ -111,7 +111,7 @@ Usage: #inline
 Instance: FVC_POST_mLChange
 InstanceOf: Observation
 Title: "FVC post-bronchodilator, change from pre-bronchodilator (mL)"
-Usage: #inline
+Usage: #example
 * id = "FVC-POST-mLChange"
 * status = #final
 * code
@@ -123,7 +123,7 @@ Usage: #inline
 Instance: FVC_POST_percentChange
 InstanceOf: Observation
 Title: "FVC post-bronchodilator, change from pre-bronchodilator (%)"
-Usage: #inline
+Usage: #example
 * id = "FVC-post-percentChange"
 * status = #final
 * code = $LNC#69982-7 "FVC percent change Respiratory system"
