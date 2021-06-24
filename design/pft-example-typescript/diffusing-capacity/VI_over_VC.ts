@@ -1,4 +1,4 @@
-/** @fileoverview V_I / V_C Observation.
+/** @fileoverview V_I / V_C (inspired volume/vital capacity) Observation.
  * 
  * Abbreviations:
  *  - V_I: Inspired volume
@@ -20,8 +20,8 @@ export const VI_over_VC: FHIR.Observation = {
     coding: [
       {
         system: "http://loinc.org",
-        code: "19858-0",
-        display: "Total lung capacity by Helium single breath", // TODO: This is masurement is by helium, right
+        code: "",
+        display: "",
       },
     ],
     text: "V_I / V_L (%)",
