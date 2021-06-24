@@ -12,9 +12,9 @@ export const VA_L: FHIR.Observation = {
   code: {
     coding: [
       {
-        system: "http://loinc.org",
-        code: "",
-        display: "",
+        system: "http://snomed.info/sct",
+        code: "251953007",
+        display: "Alveolar volume (observable entity)",
       },
     ],
     text: "V_A (L)",

@@ -1,4 +1,4 @@
-/** @fileoverview TLC_sb (Total Lung Volume, single breath) Observation: Liters */
+/** @fileoverview TLC_sb (Total Lung Capacity, single breath) Observation: Liters */
 
 import FHIR from '@automate-medical/fhir-schema-types';
 
