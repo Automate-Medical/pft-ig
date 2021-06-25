@@ -12,8 +12,8 @@ export const KCO: FHIR.Observation = {
     coding: [
       {
         system: "http://loinc.org",
-        code: "", // TODO
-        display: "",
+        code: "82620-6",
+        display: "Diffusion capacity/Alveolar volume --post bronchodilation",
       },
     ],
     text: "KCO (mL/min/mmHg/L)",
