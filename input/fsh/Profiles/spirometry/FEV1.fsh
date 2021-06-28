@@ -123,3 +123,29 @@ Description: "Forced expiratory volume in 1 second (% pred) post-bronchodilator"
   * unit = "%"
   * system = $UCUM
   * code = #%
+
+Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_mLChange
+Parent: Observation
+Id: FEV1-POST-mLChange
+Title: "ForcedExpiratoryVolume_1s_PostBronchodilator_mLChange"
+Description: "Forced expiratory volume in one second, mL change from pre-bronchodilator to post-bronchodilator"
+* code
+  * text = "FEV1 volume change"
+* value[x] only Quantity
+* valueQuantity
+  * unit = "mL"
+  * system = $UCUM
+  * code = #mL
+
+Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_percentChange
+Parent: Observation
+Id: FEV1-POST-percentChange
+Title: "ForcedExpiratoryVolume_1s_PostBronchodilator_percentChange"
+Description: "Forced expiratory volume in one second, percent change from pre-bronchodilator to post-bronchodilator"
+* code
+  * text = "FEV1 percent change"
+* value[x] only Quantity
+* valueQuantity
+  * unit = "%"
+  * system = $UCUM
+  * code = #%
