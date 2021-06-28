@@ -5,7 +5,7 @@ Parent:      DiagnosticReport
 Id:          PFT-DiagnosticReport
 Title:       "PFT DiagnosticReport"
 Description: "Diagnostic report for a pulmonary function test."
-* category = http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.0.1#PF "Pulmonary Function"
+* category = http://terminology.hl7.org/CodeSystem/v2-0074#PF "Pulmonary Function"
 * code = $LNC#81458-2 "Pulmonary function test panel"
 * result ^slicing.discriminator.type = #profile
 * result ^slicing.discriminator.path = "reference"
