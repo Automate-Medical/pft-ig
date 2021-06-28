@@ -4,7 +4,7 @@
 Profile: AlveolarVolume
 Parent: Observation
 Id: AlveolarVolume
-Title: "AlveolarVolume"
+Title: "Alveolar Volume (VA)"
 Description: "A measurement of alveolar volume, in liters."
 * code = $SCT#251953007 "Alveolar volume (observable entity)"
 * value[x] only Quantity
@@ -16,7 +16,7 @@ Description: "A measurement of alveolar volume, in liters."
 Profile: AlveolarVolume_Zscore
 Parent: Observation
 Id: AlveolarVolume-Zscore
-Title: "AlveolarVolume_Zscore"
+Title: "Alveolar Volume (VA) Zscore"
 Description: "The z-score of an alveolar volume measurement, calculated from some reference distribution."
 * code
   * text = "Alveolar volume (z-score)"
@@ -28,8 +28,8 @@ Description: "The z-score of an alveolar volume measurement, calculated from som
 
 Profile: AlveolarVolume_percentPredicted
 Parent: Observation
-Id: AlveolarVolume-percentPredcted
-Title: "AlveolarVolume_percentPredicted"
+Id: AlveolarVolume-PercentOfPredicted
+Title: "Alveolar Volume (VA) Percent Of Predicted"
 Description: "An alveolar volume measurement as the percentage of some predicted reference value."
 * code
   * text = "Alveolar volume measured/predicted"

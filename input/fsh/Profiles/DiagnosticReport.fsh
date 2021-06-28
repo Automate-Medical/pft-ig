@@ -2,8 +2,8 @@
 
 Profile:     PFT_DiagnosticReport
 Parent:      DiagnosticReport
-Id:          PFT-DiagnosticReport
-Title:       "PFT DiagnosticReport"
+Id:          PulmonaryFunctionTestDiagnosticReport
+Title:       "Pulmonary Function Test (PFT) Diagnostic Report"
 Description: "Diagnostic report for a pulmonary function test."
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#PF "Pulmonary Function"
 * code = $LNC#81458-2 "Pulmonary function test panel"
