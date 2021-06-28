@@ -12,13 +12,24 @@ This implementation guide defines FHIR profiles for pulmonary function tests and
 
 ## Scope
 
+TODO: I think this section should explain what a PFT does, what this implementation guide has to do with PFTs, and explain the terminology used - audience is programmers not doctors
+
 A [pulmonary function test](https://en.wikipedia.org/wiki/Pulmonary_function_testing) (also referred to as PFT) measures the function of the respiratory system with respect to several parameters.
 
 This implementation guide provides profiles for spirometry (pre and post bronchodilation) and diffusing capacity Observations.
 
-[Spirometry](https://en.wikipedia.org/wiki/Spirometry) measure the volume and flow of air that the lungs can inhale or exhale.
+### Spirometry
 
+[Spirometry](https://en.wikipedia.org/wiki/Spirometry) measure the volume and flow of air that the lungs can inhale or exhale. This includes:
+- Forced vital capacity (FVC) - the total volume of air which can be exhaled after taking as deep a breath as possible
+- Forced expiratory volume (FEV) - the volume of air which can be forcibly exhaled over some number of seconds
+- FEV1/FVC - the ratio of forced expiratory volume over 1 second to forced vital capacity
+- Forced expiratory time (FET) - the amount of time it takes to fully exhale after taking as deep a breath as possible
+
+### Diffusing Capacity
 [Diffusing capacity](https://en.wikipedia.org/wiki/Diffusing_capacity) measures the ability of the lungs to transfer gas from air to the blood vessels in the lungs.
+This includes:
+- TODO
 
 Spirometry is by far the most common test panel included in pulmonary function tests, followed by diffusing capacity.
 
@@ -30,9 +41,10 @@ TODO
 
 TODO
 
+(Maybe this can be combined with background.)
+
 The objective of this implementation guide is to enable interoperability of pulmonary function test data, allowing health care providers to
 
-Maybe this can be combined with background.
 
 Motivations/problems solved discussed here are good to include: https://docs.automatemedical.com/docs/pft-extractor-features
 
