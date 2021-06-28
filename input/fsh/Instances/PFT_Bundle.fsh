@@ -7,6 +7,7 @@
 Instance: PFT_Bundle
 InstanceOf: Bundle
 Title: "PFT Bundle"
+Description: "An example resource demonstrating how all the PFT resources are included in a Bundle."
 Usage: #example
 * id = "pft-bundle"
 * type = #collection

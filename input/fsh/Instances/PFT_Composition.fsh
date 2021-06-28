@@ -4,6 +4,7 @@
 Instance: PFT_Composition
 InstanceOf: Composition
 Title: "PFT Composition"
+Description: "An example of how a Composition may be used to create a coherent human-readable document for a PFT, including Observations, the technician's comments, and the pulmonologist's interpretation."
 Usage: #example
 * id = "pft-composition"
 * status = #preliminary
@@ -22,7 +23,7 @@ Usage: #example
   * code = $LNC#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
   * text
     * status = #additional
-    * div = "<div>TECHNICIAN COMMMENTS: No medications in past 24 hr. 400 mcg albuterol given for reversibility testing.</div>"
+    * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">TECHNICIAN COMMMENTS: No medications in past 24 hr. 400 mcg albuterol given for reversibility testing.</div>"
 
   * entry[+] = Reference(SpO2_RESTING) // TODO: Don't know where else to put this.
 
@@ -34,7 +35,7 @@ Usage: #example
       * coding[+] = $LNC#81458-2 "Pulmonary function test panel" // TODO: Maybe we omit this since spirometry code is a child of it
     * text
       * status = #additional
-      * div = "<div>Reference values: GLI 2012 Test quality: Pre: FEV 1 - A, FVC - A; Post: FEV 1 - A, FVC - B</div>"
+      * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: GLI 2012 Test quality: Pre: FEV1 - A, FVC - A; Post: FEV1 - A, FVC - B</div>"
     * entry[+] = Reference(FVC_PRE)
     * entry[+] = Reference(FVC_PRE_zScore)
     * entry[+] = Reference(FVC_PRE_percentPredicted)
@@ -52,7 +53,7 @@ Usage: #example
     * code = $LNC#81458-2 "Pulmonary function test panel"
     * text
       * status = #additional
-      * div = "<div>Reference values: VC - Gutierrez 2004; FEV 1 /VC – GLI 2012</div>"
+      * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: VC - Gutierrez 2004; FEV1/VC - GLI 2012</div>"
 
   /* PFT panel: Nitrogen Washout */
   * section[+]
@@ -60,7 +61,7 @@ Usage: #example
     * code = $LNC#81458-2 "Pulmonary function test panel"
     * text
       * status = #additional
-      * div = "<div>Reference values: Gutierrez 2004; Test quality: QA met</div>"
+      * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: Gutierrez 2004; Test quality: QA met</div>"
 
   /* PFT panel: Plethysmography */
   * section[+]
@@ -68,7 +69,7 @@ Usage: #example
     * code = $SCT#20552003 "Plethysmography (procedure)"
     * text
       * status = #additional
-      * div = "<div>Reference values: Gutierrez 2004; Test quality: QA met</div>"
+      * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: Gutierrez 2004; Test quality: QA met</div>"
 
   /* PFT panel: Diffusing Capacity */
   * section[+]
@@ -76,7 +77,7 @@ Usage: #example
     * code = $LNC#81458-2 "Pulmonary function test panel"
     * text
       * status = #additional
-      * div = "<div>Reference values: GLI 2017; Test quality: one grade A test; P B : 721 mmHg</div>"
+      * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: GLI 2017; Test quality: one grade A test; P_B: 721 mmHg</div>"
     // * entry[+] = Reference(PLACEHOLDER_gasConcentrationChart)
 
 /* DiagnosticReport */

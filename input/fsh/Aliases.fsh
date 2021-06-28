@@ -8,6 +8,8 @@
  */
 
 Alias: $LNC = http://loinc.org
-Alias: $SCT = http://snomed.info/sct
+// $SCT was previously aliased to http://snomed.info/sct but that
+// redirects to https://www.snomed.org/snomed-ct/five-step-briefing
+Alias: $SCT = http://snomed.info/id
 Alias: $FHIR_ObservationCategory = http://terminology.hl7.org/CodeSystem/observation-category|4.0.1
 Alias: $UCUM =  http://unitsofmeasure.org

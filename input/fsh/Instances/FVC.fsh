@@ -9,10 +9,11 @@
 Instance: FVC_PRE
 InstanceOf: Observation
 Title: "FVC (L) pre-bronchodilator"
+Description: "An example Observation resource for forced vital capacity volume, pre-bronchodilator."
 Usage: #example
 * text // `text` element inherited from `Observation` ancestor `DomainResource`
   * status = #additional
-  * div = "<div>Test quality: A</div>" // TODO: This is given in the Composition Narrative but could go here?
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test quality: A</div>" // TODO: This is given in the Composition Narrative but could go here?
 * id = "FVC-PRE"
 * status = #final
 * category = $FHIR_ObservationCategory#procedure "Procedure"
@@ -34,6 +35,7 @@ Usage: #example
 Instance: FVC_PRE_zScore
 InstanceOf: Observation
 Title: "FVC z-score pre-bronchodilator"
+Description: "An example Observation resource for forced vital capacity z-score, pre-bronchodilator."
 Usage: #example
 * id = "FVC-PRE-Zscore"
 * status = #final
@@ -42,7 +44,6 @@ Usage: #example
 * valueQuantity = -1.34 '{Zscore}' "Z-score"
 * derivedFrom[+] = Reference(FVC_PRE)
 * derivedFrom[+] = Reference(FVC_PREREF_predicted)
-* derivedFrom[+] = Reference(FVC_PREREF_stdDev)
 
 /*
  * FVC PRE measured/predicted
@@ -50,6 +51,7 @@ Usage: #example
 Instance: FVC_PRE_percentPredicted
 InstanceOf: Observation
 Title: "FVC pre-bronchodilator, % of predicted value"
+Description: "An example Observation resource for forced vital capacity measured/predicted, pre-bronchodilator."
 Usage: #example
 * id = "FVC-PRE-percentPredicted"
 * status = #final
@@ -67,6 +69,7 @@ Usage: #example
 Instance: FVC_POST
 InstanceOf: Observation
 Title: "FVC (L) post-bronchodilator"
+Description: "An example Observation resource for forced vital capacity volume, post-bronchodilator."
 Usage: #example
 * id = "FVC-POST"
 * status = #final
@@ -83,6 +86,7 @@ Usage: #example
 Instance: FVC_POST_zScore
 InstanceOf: Observation
 Title: "FVC z-score post-bronchodilator"
+Description: "An example Observation resource for forced vital capacity z-score, post-bronchodilator."
 Usage: #example
 * id = "FVC-POST-Zscore"
 * status = #final
@@ -92,7 +96,6 @@ Usage: #example
 * derivedFrom[+] = Reference(FVC_POST)
 // TODO: Do FVC_POST measurements use the same reference values as FVC_PRE?
 // * derivedFrom[+] = Reference(FVC_PREREF_predicted)
-// * derivedFrom[+] = Reference(FVC_PREREF_stdDev)
 
 /*
  * FVC POST measured/predicted
@@ -100,6 +103,7 @@ Usage: #example
 Instance: FVC_POST_percentPredicted
 InstanceOf: Observation
 Title: "FVC post-bronchodilator, % of predicted value"
+Description: "An example Observation resource for forced vital capacity measured/predicted, post-bronchodilator."
 Usage: #example
 * id = "FVC-POST-percentPredicted"
 * status = #final
@@ -111,6 +115,7 @@ Usage: #example
 Instance: FVC_POST_mLChange
 InstanceOf: Observation
 Title: "FVC post-bronchodilator, change from pre-bronchodilator (mL)"
+Description: "An example Observation resource for the volume change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."
 Usage: #example
 * id = "FVC-POST-mLChange"
 * status = #final
@@ -123,6 +128,7 @@ Usage: #example
 Instance: FVC_POST_percentChange
 InstanceOf: Observation
 Title: "FVC post-bronchodilator, change from pre-bronchodilator (%)"
+Description: "An example Observation resource for the percent change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."
 Usage: #example
 * id = "FVC-post-percentChange"
 * status = #final
@@ -141,33 +147,15 @@ Usage: #example
  * Reference value for FVC_PRE_percentPredicted. This should be a number of liters.
  *
  * TODO: I think this is the mean of the distribution?
- *       Then this plus standard deviation can give the z-score.
  */
 Instance: FVC_PREREF_predicted
 InstanceOf: Observation
 Title: "FVC (L) pre-bronchodilator reference value"
-Usage: #inline
+Description: "An example of using Observation to include a forced vital capacity reference value."
+Usage: #example
 * id = "FVC-PREREF-predicted"
 * status = #final
 * code = $LNC#19869-7 "Forced vital capacity [Volume] Respiratory system Predicted"
-* note = FVC_referenceValueAnnotation
-
-/*
- * Reference value for FVC_PRE_zScore.
- *
- * TODO: This is stdDev because we can derive z-score from mean + std dev, but
- *       I'm unclear on how the z-score is determined for PFTs in practice.
- */
-Instance: FVC_PREREF_stdDev
-InstanceOf: Observation
-Title: "FVC (L) pre-bronchodilator reference value"
-Usage: #inline
-* id = "FVC-PREREF-stdDev"
-* status = #final
-* code
-  // * coding = $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
-  * text = "Reference value: standard deviation for FVC PRE "
-// * valueQuantity = {StandardDeviation} "Standard Deviation" // TODO: Add value before {StandardDeviation}
 * note = FVC_referenceValueAnnotation
 
 /*
@@ -176,6 +164,7 @@ Usage: #inline
 Instance: FVC_referenceValueAnnotation
 InstanceOf: Annotation
 Title: "Reference values for FVC pre-bronchodilator"
+Description: "An example annotation for using Observation to include a forced vital capacity reference value."
 Usage: #inline
 * id = "FVC-referenceValueAnnotation"
 * authorString = "Created for PFT example"
