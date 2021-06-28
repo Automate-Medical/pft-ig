@@ -8,7 +8,9 @@ Profile: CarbonMonoxideTransferCoefficient
 Parent: Observation
 Id: KCO
 Title: "KCO"
-Description: "Carbon monoxide transfer coefficient. Note: also known as KCO or DLCO/VA."
+Description: """A measurement of a carbon monoxide transfer coefficient, in mL/min/mmHg.
+
+Also referred to as KCO or DLCO/VA."""
 * code = $LNC#19916-6	"Diffusion capacity/Alveolar volume	"
 * value[x] only Quantity
 * valueQuantity
@@ -20,7 +22,7 @@ Profile: CarbonMonoxideTransferCoefficient_Zscore
 Parent: Observation
 Id: KCO-Zscore
 Title: "KCO_Zscore"
-Description: "Carbon monoxide transfer coefficient z-score. Note: also known as KCO or DLCO/VA."
+Description: "The z-score of a carbon monoxide transfer coefficient measurement, calculated from some reference distribution."
 * code
   * text = "Diffusion capacity/Alveolar volume (z-score)"
 * value[x] only Quantity
@@ -33,7 +35,7 @@ Profile: CarbonMonoxideTransferCoefficient_percentPredicted
 Parent: Observation
 Id: KCO-percentPredicted
 Title: "KCO"
-Description: "Carbon monoxide transfer coefficient. Note: also known as KCO or DLCO/VA."
+Description: "A measurement of carbon monoxide transfer coefficient as the percentage of some predicted reference value."
 * code
   * text = "Diffusion capacity/Alveolar volume (measured/predicted)"
 * value[x] only Quantity
@@ -50,7 +52,9 @@ Profile: CarbonMonoxideTransferCoefficient_PreBronchodilator
 Parent: Observation
 Id: KCO-PRE
 Title: "KCO_PRE"
-Description: "Carbon monoxide transfer coefficient, pre-bronchodilation. Note: also known as KCO or DLCO/VA."
+Description: """A measurement of carbon monoxide transfer coefficient pre-bronchodilation, in mL/min/mmHg.
+
+Also referred to as KCO or DLCO/VA."""
 * code = $LNC#82619-8	"Diffusion capacity/Alveolar volume --pre bronchodilation"
 * value[x] only Quantity
 * valueQuantity
