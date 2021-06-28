@@ -7,8 +7,8 @@
 Profile: ForcedExpiratoryVolume_1s
 Parent: Observation
 Id: FEV1
-Title: "ForcedExpiratoryVolume_1s"
-Description: "Forced expiratory volume in one second"
+Title: "Forced expiratory volume in 1 second"
+Description: "Forced expiratory volume in 1 second"
 * code = $LNC#20150-9 "FEV1"
 * value[x] only Quantity
 * valueQuantity
@@ -19,8 +19,8 @@ Description: "Forced expiratory volume in one second"
 Profile: ForcedExpiratoryVolume_1s_Zscore
 Parent: Observation
 Id: FEV1-Zscore
-Title: "ForcedExpiratoryVolume_1s_Zscore"
-Description: "Forced expiratory volume in one second (z-score)"
+Title: "Forced expiratory volume in 1 second (z-score)"
+Description: "Forced expiratory volume in 1 second (z-score)"
 * code
   * text = "FEV1 (z-score)"
 * value[x] only Quantity
@@ -32,8 +32,8 @@ Description: "Forced expiratory volume in one second (z-score)"
 Profile: ForcedExpiratoryVolume_1s_percentPredicted
 Parent: Observation
 Id: FEV1-percentPredicted
-Title: "ForcedExpiratoryVolume_1s_percentPredicted"
-Description: "Forced expiratory volume in one second (% pred)"
+Title: "Forced expiratory volume in 1 second (measured/predicted)"
+Description: "Forced expiratory volume in 1 second (% pred)"
 * code = $LNC#20152-5 "FEV1 measured/predicted"
 * value[x] only Quantity
   * unit = "%"
@@ -47,8 +47,8 @@ Description: "Forced expiratory volume in one second (% pred)"
 Profile: ForcedExpiratoryVolume_1s_PreBronchodilator
 Parent: Observation
 Id: FEV1-PRE
-Title: "ForcedExpiratoryVolume_1s_PreBronchodilator"
-Description: "Forced expiratory volume in one second (liters) pre-bronchodilator"
+Title: "Forced expiratory volume in 1 second pre-bronchodilator"
+Description: "Forced expiratory volume in 1 second pre-bronchodilator"
 * code = $LNC#20157-4 "FEV1 --pre bronchodilation"
 * value[x] only Quantity
 * valueQuantity
@@ -59,8 +59,8 @@ Description: "Forced expiratory volume in one second (liters) pre-bronchodilator
 Profile: ForcedExpiratoryVolume_1s_PreBronchodilator_Zscore
 Parent: Observation
 Id: FEV1-PRE-Zscore
-Title: "ForcedExpiratoryVolume_1s_PreBronchodilator_Zscore"
-Description: "Forced expiratory volume in one second (z-score) pre-bronchodilator"
+Title: "Forced expiratory volume in 1 second pre-bronchodilator (z-score) "
+Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
 * code
   * text = "FEV1 (z-score) pre-bronchodilator"
 * value[x] only Quantity
@@ -72,8 +72,8 @@ Description: "Forced expiratory volume in one second (z-score) pre-bronchodilato
 Profile: ForcedExpiratoryVolume_1s_PreBronchodilator_percentPredicted
 Parent: Observation
 Id: FEV1-PRE-percentPredicted
-Title: "ForcedExpiratoryVolume_1s_PreBronchodilator_percentPredicted"
-Description: "Forced expiratory volume in one second (% pred) pre-bronchodilator"
+Title: "Forced expiratory volume in 1 second pre-bronchodilator (measured/predicted)"
+Description: "Forced expiratory volume in 1 second (% pred) pre-bronchodilator"
 * code
   * coding = $LNC#20152-5 "FEV1 measured/predicted"
   * text = "FEV1 measured/predicted pre-bronchodilator"
@@ -89,8 +89,8 @@ Description: "Forced expiratory volume in one second (% pred) pre-bronchodilator
 Profile: ForcedExpiratoryVolume_1s_PostBronchodilator
 Parent: Observation
 Id: FEV1-POST
-Title: "ForcedExpiratoryVolume_1s_Post-Bronchodilator"
-Description: "Forced expiratory volume in one second (liters) post-bronchodilator"
+Title: "Forced expiratory volume in 1 second post-bronchodilator"
+Description: "Forced expiratory volume in 1 second (liters) post-bronchodilator"
 * code = $LNC#20155-8 "FEV1 --post bronchodilation"
 * value[x] only Quantity
 * valueQuantity
@@ -101,8 +101,8 @@ Description: "Forced expiratory volume in one second (liters) post-bronchodilato
 Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_Zscore
 Parent: Observation
 Id: FEV1-POST-Zscore
-Title: "ForcedExpiratoryVolume_1s_PostBronchodilator_Zscore"
-Description: "Forced expiratory volume in one second (z-score) pre-bronchodilator"
+Title: "Forced expiratory volume in 1 second pre-bronchodilator (z-score)"
+Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
 * code
   * text = "FEV1 (z-score) post-bronchodilator"
 * value[x] only Quantity
@@ -114,8 +114,8 @@ Description: "Forced expiratory volume in one second (z-score) pre-bronchodilato
 Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_percentPredicted
 Parent: Observation
 Id: FEV1-POST-percentPredicted
-Title: "ForcedExpiratoryVolume_1s_PostBronchodilator_percentPredicted"
-Description: "Forced expiratory volume in one second (% pred) post-bronchodilator"
+Title: "Forced expiratory volume in 1 second pre-bronchodilator (measured/predicted)"
+Description: "Forced expiratory volume in 1 second (% pred) post-bronchodilator"
 * code
   * coding = $LNC#20152-5 "FEV1 measured/predicted"
   * text = "FEV1 measured/predicted post-bronchodilator"
