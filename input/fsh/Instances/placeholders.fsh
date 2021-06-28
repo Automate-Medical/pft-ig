@@ -9,6 +9,9 @@ Instance: PFT_Patient
 InstanceOf: Patient
 Title: "The PFT Patient"
 Usage: #inline
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
 * id = "patient-01"
 
 /* Practitioner responsible for interpretation of results and diagnosis. */
@@ -16,6 +19,9 @@ Instance: PFT_Pulmonologist
 InstanceOf: Practitioner
 Title: "Dr. P. Pulmonologist"
 Usage: #inline
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
 * id = "practitioner-01"
 * name
   * text = "Dr. P. Pulmonologist"
@@ -28,6 +34,9 @@ Instance: PFT_Technician
 InstanceOf: Practitioner
 Title: "The technician (respiratory therapist) who performed the PFT"
 Usage: #inline
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
 * id = "practitioner-02"
 
 /* Organization responsible for performing the PFT Observations.
@@ -40,6 +49,9 @@ Instance: PFT_Organization
 InstanceOf: Organization
 Title: "Sample Pulmonary Function Laboratory"
 Usage: #inline
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
 * id = "organization-01"
 * type = http://hl7.org/fhir/ValueSet/organization-type|4.0.1#prov "Healthcare Provider"
 * name = "Sample Pulmonary Function Laboratory"
@@ -66,6 +78,9 @@ Instance: PFT_Encounter
 InstanceOf: Encounter
 Title: "PLACEHOLDER: Encounter"
 Usage: #inline
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
 * id = "encounter-01"
 * status = #finished
 * class = #outpatient
@@ -78,6 +93,9 @@ Instance: PFT_ServiceRequest
 InstanceOf: ServiceRequest
 Title: "Reason for the encounter"
 Usage: #inline
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
 * id = "serviceRequest-01"
 * status = #completed // This assumes the test panels (and maybe the diagnostic interpretation?) have been completed
 * intent = #order // See: https://www.hl7.org/fhir/valueset-request-intent.html
@@ -91,6 +109,9 @@ Instance: PFT_RequesterPractitioner
 InstanceOf: Practitioner
 Title: "Practitioner who requested the PFT"
 Usage: #inline
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
 * id = "practitioner-03"
 * name
   * text = "Dr. G. Practitioner"
