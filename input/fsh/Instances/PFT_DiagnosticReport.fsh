@@ -4,10 +4,11 @@
 Instance: PFT_DiagnosticReport
 InstanceOf: DiagnosticReport
 Title: "PFT DiagnosticReport"
+Description: "An example of how a DiagnosticReport for a PFT may be constructed."
 Usage: #example
 * id = "diagnostic-report"
 * status = #final
-* category = http://hl7.org/fhir/ValueSet/diagnostic-service-sections|4.0.1#PF "Pulmonary Function"
+* category = http://terminology.hl7.org/CodeSystem/v2-0074#PF "Pulmonary Function"
 * code = $LNC#81458-2 "Pulmonary function test panel"
 * subject = Reference(PFT_Patient)
 * encounter = Reference(PFT_Encounter)

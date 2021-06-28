@@ -37,7 +37,7 @@ Profile: DLCO_atStandardPb_Zscore
 Parent: Observation
 Id: DLCO-atStandardPb-Zscore
 Title: "DLCO_atStandardPb_Zscore"
-Description: "Diffusion capacity of lung for carbon monoxide at standard barometric pressure."
+Description: "Diffusion capacity of lung for carbon monoxide at standard barometric pressure (z-score)."
 * code
   * text = "Diffusion capacity of lung for carbon monoxide at standard barometric pressure (z-score)"
 * value[x] only Quantity

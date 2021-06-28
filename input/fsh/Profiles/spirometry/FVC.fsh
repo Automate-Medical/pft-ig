@@ -7,7 +7,7 @@
 Profile: ForcedVitalCapacity
 Parent: Observation
 Id: ForcedVitalCapacity
-Title: "FVC"
+Title: "Forced vital capacity"
 Description: "Forced vital capacity (liters)"
 * code = $LNC#19870-5 "Forced vital capacity [Volume] Respiratory system"
 * value[x] only Quantity
@@ -19,7 +19,7 @@ Description: "Forced vital capacity (liters)"
 Profile: ForcedVitalCapacity_Zscore
 Parent: Observation
 Id: FVC-Zscore
-Title: "FVC_Zscore"
+Title: "Forced vital capacity z-score"
 Description: "Forced vital capacity (z-score)."
 * code
   * text = "Forced vital capacity (z-score)"
@@ -32,7 +32,7 @@ Description: "Forced vital capacity (z-score)."
 Profile: ForcedVitalCapacity_percentPredicted
 Parent: Observation
 Id: FVC-percentPredicted
-Title: "FVC_percentPredicted"
+Title: "Forced vital capacity measured/predicted"
 Description: "Forced vital capacity (% pred)."
 * code = $LNC#19872-1 "FVC measured/predicted"
 * value[x] only Quantity
@@ -47,7 +47,7 @@ Description: "Forced vital capacity (% pred)."
 Profile: ForcedVitalCapacity_PreBronchodilator
 Parent: Observation
 Id: FVC-PRE
-Title: "FVC_PRE"
+Title: "Forced vital capacity pre-bronchodilator"
 Description: "Forced vital capacity (liters) pre-bronchodilator."
 * code = $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
 * value[x] only Quantity
@@ -59,7 +59,7 @@ Description: "Forced vital capacity (liters) pre-bronchodilator."
 Profile: ForcedVitalCapacity_PreBronchodilator_Zscore
 Parent: Observation
 Id: FVC-PRE-Zscore
-Title: "FVC_PRE_Zscore"
+Title: "Forced vital capacity pre-bronchodilator z-score"
 Description: "Forced vital capacity (z-score) pre-bronchodilator."
 * code
   * text = "Forced vital capacity (z-score) pre-bronchodilator"
@@ -72,7 +72,7 @@ Description: "Forced vital capacity (z-score) pre-bronchodilator."
 Profile: ForcedVitalCapacity_PreBronchodilator_percentPredicted
 Parent: Observation
 Id: FVC-PRE-percentPredicted
-Title: "FVC_PRE_percentPredicted"
+Title: "Forced vital capacity pre-bronchodilator measured/predicted"
 Description: "Forced vital capacity (% pred) pre-bronchodilator."
 * code = $LNC#19871-3 "FVC pre bronchodilation measured/predicted"
 * value[x] only Quantity
@@ -87,7 +87,7 @@ Description: "Forced vital capacity (% pred) pre-bronchodilator."
 Profile: ForcedVitalCapacity_PostBronchodilator
 Parent: Observation
 Id: FVC-POST
-Title: "FVC_POST"
+Title: "Forced vital capacity post-bronchodilator"
 Description: "Forced vital capacity (liters) post-bronchodilator"
 * code =  $LNC#19874-7 "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
 * value[x] only Quantity
@@ -99,7 +99,7 @@ Description: "Forced vital capacity (liters) post-bronchodilator"
 Profile: ForcedVitalCapacity_PostBronchodilator_Zscore
 Parent: Observation
 Id: FVC-POST-Zscore
-Title: "FVC_POST_Zscore"
+Title: "Forced vital capacity post-bronchodilator z-score"
 Description: "Forced vital capacity (z-score) post-bronchodilator."
 * code
   * text = "Forced vital capacity (z-score) post-bronchodilator"
@@ -112,7 +112,7 @@ Description: "Forced vital capacity (z-score) post-bronchodilator."
 Profile: ForcedVitalCapacity_PostBronchodilator_percentPredicted
 Parent: Observation
 Id: FVC-POST-percentPredicted
-Title: "FVC_POST_percentPredicted"
+Title: "Forced vital capacity post-bronchodilator measured/predicted"
 Description: "Forced vital capacity (% pred) post-bronchodilator."
 * code = $LNC#19873-9 "FVC post bronchodilation measured/predicted"
 * value[x] only Quantity
@@ -124,7 +124,7 @@ Description: "Forced vital capacity (% pred) post-bronchodilator."
 Profile: ForcedVitalCapacity_PostBronchodilator_mLChange
 Parent: Observation
 Id: FVC-POST-mLChange
-Title: "FVC_POST_mLChange"
+Title: "Forced vital capacity post-bronchodilator mL change"
 Description: "Forced vital capacity, post-bronchodilator change from pre-bronchodilator (mL)"
 * code
   * text = "Forced vital capacity, post-bronchodilator change from pre-bronchodilator (mL)"
@@ -137,7 +137,7 @@ Description: "Forced vital capacity, post-bronchodilator change from pre-broncho
 Profile: ForcedVitalCapacity_PostBronchodilator_percentChange
 Parent: Observation
 Id: FVC-POST-percentChange
-Title: "FVC_POST_percentChange"
+Title: "Forced vital capacity post-bronchodilator percent change"
 Description: "Forced vital capacity, post-bronchodilator change from pre-bronchodilator (%)"
 * code = $LNC#69982-7 "FVC percent change Respiratory system"
 * value[x] only Quantity
