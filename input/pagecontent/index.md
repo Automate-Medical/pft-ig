@@ -66,7 +66,7 @@ Practical use cases include:
 
 For Observations where an appropriate LOINC or SNOMED code can not be found, we specify a human readable name for the Observation in `code.text`. Missing, ambiguous, or inconsistent LOINC codes/names were encountered during modeling. This problem is known in the existing clinical literature. Successfully progressing this Implementation Guide from its draft state will require co-ordination on recommendations to LOINC or SNOMED to guide resolving gaps in codeable concepts.
 
-A non-exhaustive list of our documentation for these gaps is available in [Coding Gaps](./coding-gaps.html).
+A list of our documentation for these gaps is available in [Coding Gaps](./coding-gaps.html).
 
 #### Non-exhaustive
 
