@@ -3,17 +3,16 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: pft
-canonical: https://automatemedical.com/PulmonaryFunctionTestIG
+canonical: https://automatemedical.com/fhir/pulmonary-function-test
 name: PulmonaryFunctionTestIG
+title: "Pulmonary Function Testing: An Interoperability on FHIR Implementation Guide"
 status: draft
-version: 0.0.0
+version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
-
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
+license: Apache-2.0
+publisher:
+  name: Automate Medical
+  url: https://www.automatemedical.com/
+  email: josh@automatemedical.com

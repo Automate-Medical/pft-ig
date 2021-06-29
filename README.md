@@ -1,15 +1,36 @@
-# PFT DiagnosticReport
+# Pulmonary Function Testing: An Interoperability on FHIR Implementation Guide [DRAFT]
 
-Rough JSON model of what a PFT might look like using FHIR R4+ resources, implemented as a 1:N collection of `DiagnosticReport`:`Observation`.
+CI build of this IG available at http://pft-ig.automatemedical.com/.
 
-## Project Structure
+## Development
 
-`PFT-example.js` - Working draft of the PFT resource.
+You must have NodeJS and the JDK installed.
 
-`FVC-observation-component-example.js` - Example of an Observation resource for FVC with multiple Components.
+Preq:
 
-`/examples` - Examples provided by HL7 for `DiagnosticReport` and `Observation` (with `Observation.component`).
+```
+npm install
+sh ./_updatePublisher.sh
+```
 
-`/templates` - HL7 templates for FHIR resources.
+You can run a SUSHI build with:
 
-`notes.txt` - Stuff I want to remember or haven't developed enough to include in the files or Github issue.
+```
+npm run build
+```
+
+You can do an IG build after running the SUSHI build with:
+
+```
+sh ./_genonce.sh
+```
+
+## License
+
+Copyright 2021 Automate Medical Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.

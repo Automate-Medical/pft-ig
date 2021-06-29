@@ -1,0 +1,13 @@
+﻿{
+  "name": "automatemedical.pft-ig-template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Automate Medical PFT FHIR IG Template",
+  "author": "http://automatemedical.com/",
+  "canonical": "http://automatemedical.com/pft-ig-template",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current"
+  },
+  "version": "0.1.0"
+}
