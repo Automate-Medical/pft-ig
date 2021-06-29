@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="FVC-PREREF-predicted"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 19869-7}">Forced vital capacity [Volume] Respiratory system Predicted</span></p><p><b>note</b>: Reference value, taken from GLI 2012. Depends on the patient's demographic info. (By Created for PFT example @2021-06-10)</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="19869-7"/>
+      <display value="Forced vital capacity [Volume] Respiratory system Predicted"/>
+    </coding>
+  </code>
+  <note id="FVC-referenceValueAnnotation">
+    <authorString value="Created for PFT example"/>
+    <time value="2021-06-10"/>
+    <text value="Reference value, taken from GLI 2012. Depends on the patient&#39;s demographic info."/>
+  </note>
+</Observation>

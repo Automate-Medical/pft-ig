@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="pft"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>PulmonaryFunctionTestIG</h2><p>The official URL for this implementation guide is: </p><pre>https://automatemedical.com/fhir/pulmonary-function-test/ImplementationGuide/pft</pre></div>
+  </text>
+  <url value="https://automatemedical.com/fhir/pulmonary-function-test/ImplementationGuide/pft"/>
+  <version value="0.1.0"/>
+  <name value="PulmonaryFunctionTestIG"/>
+  <title value="Pulmonary Function Testing: An Interoperability on FHIR Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2021-06-29T19:39:08-04:00"/>
+  <publisher value="Automate Medical"/>
+  <contact>
+    <name value="Automate Medical"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.automatemedical.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="josh@automatemedical.com"/>
+    </telecom>
+  </contact>
+  <packageId value="pft"/>
+  <license value="Apache-2.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://automatemedical.com/fhir/pulmonary-function-test/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AlveolarVolume"/>
+      </reference>
+      <name value="Alveolar Volume (VA)"/>
+      <description value="A measurement of alveolar volume, in liters."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AlveolarVolume-PercentOfPredicted"/>
+      </reference>
+      <name value="Alveolar Volume (VA) Percent Of Predicted"/>
+      <description value="An alveolar volume measurement as the percentage of some predicted reference value."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AlveolarVolume-Zscore"/>
+      </reference>
+      <name value="Alveolar Volume (VA) Zscore"/>
+      <description value="The z-score of an alveolar volume measurement, calculated from some reference distribution."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DLCO"/>
+      </reference>
+      <name value="Diffusion Capacity Of Lung For Carbon Monoxide (DLCO)"/>
+      <description value="Diffusion capacity of lung for carbon monoxide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DLCOAdjustedForHemoglobin"/>
+      </reference>
+      <name value="Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) Adjusted For Hemoglobin (Hb)"/>
+      <description value="Diffusion capacity of lung for carbon monoxide, adjusted for hemoglobin."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DLCOAdjustedForHemoglobin-PercentOfPredicted"/>
+      </reference>
+      <name value="Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) Adjusted For Hemoglobin (Hb) Percent Of Predicted"/>
+      <description value="Diffusion capacity of lung for carbon monoxide, adjusted for hemoglobin (% of predicted)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DLCOAtStandardBarometricPressure"/>
+      </reference>
+      <name value="Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB)"/>
+      <description value="Diffusion capacity of lung for carbon monoxide at standard barometric pressure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DLCOAtStandardBarometricPressure-PercentOfPredicted"/>
+      </reference>
+      <name value="Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB) Percent Of Predicted"/>
+      <description value="Diffusion capacity of lung for carbon monoxide at standard barometric pressure (% of predicted)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DLCOAtStandardBarometricPressure-Zscore"/>
+      </reference>
+      <name value="Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB) Zscore"/>
+      <description value="Diffusion capacity of lung for carbon monoxide at standard barometric pressure (z-score)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FEV1-over-FVC"/>
+      </reference>
+      <name value="FEV1/FVC"/>
+      <description value="FEV1/FVC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FEV1-over-FVC-PostBronchodilator"/>
+      </reference>
+      <name value="FEV1/FVC Post-bronchodilator"/>
+      <description value="FEV1/FVC post-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FEV1-over-FVC-PostBronchodilator-Zscore"/>
+      </reference>
+      <name value="FEV1/FVC Post-bronchodilator Zscore"/>
+      <description value="FEV1/FVC (z-score) post-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FEV1-over-FVC-PreBronchodilator"/>
+      </reference>
+      <name value="FEV1/FVC Pre-bronchodilator"/>
+      <description value="FEV1/FVC pre-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FEV1-over-FVC-PreBronchodilator-Zscore"/>
+      </reference>
+      <name value="FEV1/FVC Pre-bronchodilator Zscore"/>
+      <description value="FEV1/FVC (z-score) pre-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FEV1-over-FVC-Zscore"/>
+      </reference>
+      <name value="FEV1/FVC Zscore"/>
+      <description value="FEV1/FVC (z-score)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryTime"/>
+      </reference>
+      <name value="Forced Expiratory Time (FET)"/>
+      <description value="Forced expiratory time (seconds)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryTime-PostBronchodilator"/>
+      </reference>
+      <name value="Forced Expiratory Time (FET) Post-bronchodilator"/>
+      <description value="Forced expiratory time (seconds) post-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryTime-PreBronchodilator"/>
+      </reference>
+      <name value="Forced Expiratory Time (FET) Pre-bronchodilator"/>
+      <description value="Forced expiratory time (seconds) pre-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1Sec"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1)"/>
+      <description value="Forced expiratory volume in 1 second"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator"/>
+      <description value="Forced expiratory volume in 1 second (liters) post-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Change"/>
+      <description value="Forced expiratory volume in one second, percent change from pre-bronchodilator to post-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Of Predicted"/>
+      <description value="Forced expiratory volume in 1 second (% pred) post-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-Zscore"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Zscore"/>
+      <description value="Forced expiratory volume in 1 second (z-score) pre-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-mLChange"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator mL Change"/>
+      <description value="Forced expiratory volume in one second, mL change from pre-bronchodilator to post-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator"/>
+      <description value="Forced expiratory volume in 1 second pre-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Percent Of Predicted"/>
+      <description value="Forced expiratory volume in 1 second (% pred) pre-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-Zscore"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Zscore"/>
+      <description value="Forced expiratory volume in 1 second (z-score) pre-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1Sec-PercentOfPredicted"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Percent Of Predicted"/>
+      <description value="Forced expiratory volume in 1 second (% pred)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedExpiratoryVolume1Sec-Zscore"/>
+      </reference>
+      <name value="Forced Expiratory Volume In 1 Second (FEV1) Zscore"/>
+      <description value="Forced expiratory volume in 1 second (z-score)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacity"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC)"/>
+      <description value="Forced vital capacity (liters)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacityPostBronchodilator"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Post-bronchodilator"/>
+      <description value="Forced vital capacity post-bronchodilator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentChange"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Post-bronchodilator Percent Change"/>
+      <description value="Forced vital capacity, post-bronchodilator change from pre-bronchodilator (%)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentOfPredicted"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Post-bronchodilator Percent Of Predicted"/>
+      <description value="Forced vital capacity (% pred) post-bronchodilator."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacityPostBronchodilator-Zscore"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Post-bronchodilator Zscore"/>
+      <description value="Forced vital capacity (z-score) post-bronchodilator."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacityPostBronchodilator-mLChange"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Post-bronchodilator mL Change"/>
+      <description value="Forced vital capacity, post-bronchodilator change from pre-bronchodilator (mL)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacityPreBronchodilator"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Pre-bronchodilator"/>
+      <description value="Forced vital capacity (liters) pre-bronchodilator."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacityPreBronchodilator-PercentOfPredicted"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Pre-bronchodilator Percent Of Predicted"/>
+      <description value="Forced vital capacity (% pred) pre-bronchodilator."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacityPreBronchodilator-Zscore"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Pre-bronchodilator Zscore"/>
+      <description value="Forced vital capacity (z-score) pre-bronchodilator."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacity-PercentOfPredicted"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Percent Of Predicted"/>
+      <description value="Forced vital capacity (% pred)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ForcedVitalCapacity-Zscore"/>
+      </reference>
+      <name value="Forced Vital Capacity (FVC) Zscore"/>
+      <description value="Forced vital capacity (z-score)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCO"/>
+      </reference>
+      <name value="KCO"/>
+      <description value="A measurement of a carbon monoxide transfer coefficient, in mL/min/mmHg.&#xA;&#xA;Also referred to as KCO or DLCO/VA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCOPostBronchodilator"/>
+      </reference>
+      <name value="KCO Post-bronchodilator"/>
+      <description value="Carbon monoxide transfer coefficient, post-bronchodilator. Note: also known as KCO or DLCO/VA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCOPostBronchodilator-PercentOfPredicted"/>
+      </reference>
+      <name value="KCO Post-bronchodilator Percent Of Predicted"/>
+      <description value="Carbon monoxide transfer coefficient (% predicted), post-bronchodilator. Note: also known as KCO or DLCO/VA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCOPostBronchodilator-Zscore"/>
+      </reference>
+      <name value="KCO Post-bronchodilator Zscore"/>
+      <description value="Carbon monoxide transfer coefficient post-bronchodilator z-score. Note: also known as KCO or DLCO/VA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCOPreBronchodilator"/>
+      </reference>
+      <name value="KCO Pre-bronchodilator"/>
+      <description value="A measurement of carbon monoxide transfer coefficient pre-bronchodilation, in mL/min/mmHg.&#xA;&#xA;Also referred to as KCO or DLCO/VA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCOPreBronchodilator-PercentOfPredicted"/>
+      </reference>
+      <name value="KCO Pre-bronchodilator Percent Of Predicted"/>
+      <description value="Carbon monoxide transfer coefficient (% predicted), pre-bronchodilator. Note: also known as KCO or DLCO/VA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCOPreBronchodilator-Zscore"/>
+      </reference>
+      <name value="KCO Pre-bronchodilator Zscore"/>
+      <description value="Carbon monoxide transfer coefficient pre-bronchodilator z-score. Note: also known as KCO or DLCO/VA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCO-PercentOfPredicted"/>
+      </reference>
+      <name value="KCO Percent Of Predicted"/>
+      <description value="A measurement of carbon monoxide transfer coefficient as the percentage of some predicted reference value."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KCO-Zscore"/>
+      </reference>
+      <name value="KCO Zscore"/>
+      <description value="The z-score of a carbon monoxide transfer coefficient measurement, calculated from some reference distribution."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PulmonaryFunctionTestDiagnosticReport"/>
+      </reference>
+      <name value="Pulmonary Function Test (PFT) Diagnostic Report"/>
+      <description value="Diagnostic report for a pulmonary function test."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SPO2AtRest"/>
+      </reference>
+      <name value="SpO2 at rest"/>
+      <description value="A measurement of oxygen saturation in arterial blood taken by pulse oximetry, with the patient at rest."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/TotalLungCapacityByHeliumSingleBreath"/>
+      </reference>
+      <name value="Total Lung Capacity By Helium Single Breath (TLC_sb)"/>
+      <description value="A measurement of total lung capacity by helium, single breath, in liters."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VI-over-VC"/>
+      </reference>
+      <name value="VI/VC"/>
+      <description value="Inspired volume (V_I) as a percentage of vital capacity (V_C)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-POST"/>
+      </reference>
+      <name value="FVC (L) post-bronchodilator"/>
+      <description value="An example Observation resource for forced vital capacity volume, post-bronchodilator."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-POST-Zscore"/>
+      </reference>
+      <name value="FVC z-score post-bronchodilator"/>
+      <description value="An example Observation resource for forced vital capacity z-score, post-bronchodilator."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-POST-mLChange"/>
+      </reference>
+      <name value="FVC post-bronchodilator, change from pre-bronchodilator (mL)"/>
+      <description value="An example Observation resource for the volume change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-POST-percentPredicted"/>
+      </reference>
+      <name value="FVC post-bronchodilator, % of predicted value"/>
+      <description value="An example Observation resource for forced vital capacity measured/predicted, post-bronchodilator."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-PRE"/>
+      </reference>
+      <name value="FVC (L) pre-bronchodilator"/>
+      <description value="An example Observation resource for forced vital capacity volume, pre-bronchodilator."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-PRE-Zscore"/>
+      </reference>
+      <name value="FVC z-score pre-bronchodilator"/>
+      <description value="An example Observation resource for forced vital capacity z-score, pre-bronchodilator."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-PRE-percentPredicted"/>
+      </reference>
+      <name value="FVC pre-bronchodilator, % of predicted value"/>
+      <description value="An example Observation resource for forced vital capacity measured/predicted, pre-bronchodilator."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-PREREF-predicted"/>
+      </reference>
+      <name value="FVC (L) pre-bronchodilator reference value"/>
+      <description value="An example of using Observation to include a forced vital capacity reference value."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FVC-post-percentChange"/>
+      </reference>
+      <name value="FVC post-bronchodilator, change from pre-bronchodilator (%)"/>
+      <description value="An example Observation resource for the percent change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnostic-report"/>
+      </reference>
+      <name value="PFT DiagnosticReport"/>
+      <description value="An example of how a DiagnosticReport for a PFT may be constructed."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/pft-bundle"/>
+      </reference>
+      <name value="PFT Bundle"/>
+      <description value="An example resource demonstrating how all the PFT resources are included in a Bundle."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/pft-composition"/>
+      </reference>
+      <name value="PFT Composition"/>
+      <description value="An example of how a Composition may be used to create a coherent human-readable document for a PFT, including Observations, the technician&#39;s comments, and the pulmonologist&#39;s interpretation."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="coding-gaps.html"/>
+        <title value="Coding Gaps"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

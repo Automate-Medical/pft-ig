@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "FVC-POST-Zscore",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">FVC_POST z-score</span></p><p><b>value</b>: -0.09 Z-score</p><p><b>derivedFrom</b>: <a href=\"Observation-FVC-POST.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 19874-7}\">Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation</span>; 4.7 L</a></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "text": "FVC_POST z-score"
+  },
+  "valueQuantity": {
+    "value": -0.09,
+    "unit": "Z-score",
+    "system": "http://unitsofmeasure.org",
+    "code": "{Zscore}"
+  },
+  "derivedFrom": [
+    {
+      "reference": "Observation/FVC-POST"
+    }
+  ]
+}

@@ -1,0 +1,1267 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/ImplementationGuide/pft> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pft"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PulmonaryFunctionTestIG</h2><p>The official URL for this implementation guide is: </p><pre>https://automatemedical.com/fhir/pulmonary-function-test/ImplementationGuide/pft</pre></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "https://automatemedical.com/fhir/pulmonary-function-test/ImplementationGuide/pft"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "PulmonaryFunctionTestIG"];
+  fhir:ImplementationGuide.title [ fhir:value "Pulmonary Function Testing: An Interoperability on FHIR Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-29T19:39:08-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Automate Medical"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Automate Medical" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.automatemedical.com/" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "josh@automatemedical.com" ]
+     ]
+  ];
+  fhir:ImplementationGuide.packageId [ fhir:value "pft"];
+  fhir:ImplementationGuide.license [ fhir:value "Apache-2.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://automatemedical.com/fhir/pulmonary-function-test/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/AlveolarVolume" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alveolar Volume (VA)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A measurement of alveolar volume, in liters." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/AlveolarVolume-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alveolar Volume (VA) Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An alveolar volume measurement as the percentage of some predicted reference value." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/AlveolarVolume-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alveolar Volume (VA) Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The z-score of an alveolar volume measurement, calculated from some reference distribution." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCO>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DLCO" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diffusion capacity of lung for carbon monoxide." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAdjustedForHemoglobin>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DLCOAdjustedForHemoglobin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) Adjusted For Hemoglobin (Hb)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diffusion capacity of lung for carbon monoxide, adjusted for hemoglobin." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAdjustedForHemoglobin-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DLCOAdjustedForHemoglobin-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) Adjusted For Hemoglobin (Hb) Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diffusion capacity of lung for carbon monoxide, adjusted for hemoglobin (% of predicted)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DLCOAtStandardBarometricPressure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diffusion capacity of lung for carbon monoxide at standard barometric pressure." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DLCOAtStandardBarometricPressure-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB) Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diffusion capacity of lung for carbon monoxide at standard barometric pressure (% of predicted)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DLCOAtStandardBarometricPressure-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB) Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diffusion capacity of lung for carbon monoxide at standard barometric pressure (z-score)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FEV1-over-FVC" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FEV1/FVC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FEV1/FVC" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PostBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FEV1-over-FVC-PostBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FEV1/FVC Post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FEV1/FVC post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PostBronchodilator-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FEV1-over-FVC-PostBronchodilator-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FEV1/FVC Post-bronchodilator Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FEV1/FVC (z-score) post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PreBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FEV1-over-FVC-PreBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FEV1/FVC Pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FEV1/FVC pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PreBronchodilator-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FEV1-over-FVC-PreBronchodilator-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FEV1/FVC Pre-bronchodilator Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FEV1/FVC (z-score) pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FEV1-over-FVC-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FEV1/FVC Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FEV1/FVC (z-score)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryTime" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Time (FET)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory time (seconds)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime-PostBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryTime-PostBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Time (FET) Post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory time (seconds) post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime-PreBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryTime-PreBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Time (FET) Pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory time (seconds) pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1Sec" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second (liters) post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Change" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in one second, percent change from pre-bronchodilator to post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second (% pred) post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second (z-score) pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-mLChange>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-mLChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator mL Change" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in one second, mL change from pre-bronchodilator to post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second (% pred) pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second (z-score) pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1Sec-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second (% pred)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedExpiratoryVolume1Sec-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Expiratory Volume In 1 Second (FEV1) Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced expiratory volume in 1 second (z-score)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity (liters)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacityPostBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentChange>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Post-bronchodilator Percent Change" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity, post-bronchodilator change from pre-bronchodilator (%)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Post-bronchodilator Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity (% pred) post-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacityPostBronchodilator-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Post-bronchodilator Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity (z-score) post-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-mLChange>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacityPostBronchodilator-mLChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Post-bronchodilator mL Change" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity, post-bronchodilator change from pre-bronchodilator (mL)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacityPreBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity (liters) pre-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacityPreBronchodilator-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Pre-bronchodilator Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity (% pred) pre-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacityPreBronchodilator-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Pre-bronchodilator Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity (z-score) pre-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacity-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity (% pred)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ForcedVitalCapacity-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forced Vital Capacity (FVC) Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Forced vital capacity (z-score)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCO" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A measurement of a carbon monoxide transfer coefficient, in mL/min/mmHg.\n\nAlso referred to as KCO or DLCO/VA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCOPostBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO Post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Carbon monoxide transfer coefficient, post-bronchodilator. Note: also known as KCO or DLCO/VA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCOPostBronchodilator-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO Post-bronchodilator Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Carbon monoxide transfer coefficient (% predicted), post-bronchodilator. Note: also known as KCO or DLCO/VA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCOPostBronchodilator-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO Post-bronchodilator Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Carbon monoxide transfer coefficient post-bronchodilator z-score. Note: also known as KCO or DLCO/VA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCOPreBronchodilator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO Pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A measurement of carbon monoxide transfer coefficient pre-bronchodilation, in mL/min/mmHg.\n\nAlso referred to as KCO or DLCO/VA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCOPreBronchodilator-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO Pre-bronchodilator Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Carbon monoxide transfer coefficient (% predicted), pre-bronchodilator. Note: also known as KCO or DLCO/VA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCOPreBronchodilator-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO Pre-bronchodilator Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Carbon monoxide transfer coefficient pre-bronchodilator z-score. Note: also known as KCO or DLCO/VA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO-PercentOfPredicted>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCO-PercentOfPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO Percent Of Predicted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A measurement of carbon monoxide transfer coefficient as the percentage of some predicted reference value." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO-Zscore>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KCO-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KCO Zscore" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The z-score of a carbon monoxide transfer coefficient measurement, calculated from some reference distribution." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/PulmonaryFunctionTestDiagnosticReport>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PulmonaryFunctionTestDiagnosticReport" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pulmonary Function Test (PFT) Diagnostic Report" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnostic report for a pulmonary function test." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/SPO2AtRest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SPO2AtRest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SpO2 at rest" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A measurement of oxygen saturation in arterial blood taken by pulse oximetry, with the patient at rest." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/TotalLungCapacityByHeliumSingleBreath>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TotalLungCapacityByHeliumSingleBreath" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Total Lung Capacity By Helium Single Breath (TLC_sb)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A measurement of total lung capacity by helium, single breath, in liters." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/VI-over-VC>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/VI-over-VC" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VI/VC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Inspired volume (V_I) as a percentage of vital capacity (V_C)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-POST" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC (L) post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation resource for forced vital capacity volume, post-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-Zscore>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-POST-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC z-score post-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation resource for forced vital capacity z-score, post-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-mLChange>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-POST-mLChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC post-bronchodilator, change from pre-bronchodilator (mL)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation resource for the volume change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-percentPredicted>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-POST-percentPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC post-bronchodilator, % of predicted value" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation resource for forced vital capacity measured/predicted, post-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-PRE" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC (L) pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation resource for forced vital capacity volume, pre-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE-Zscore>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-PRE-Zscore" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC z-score pre-bronchodilator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation resource for forced vital capacity z-score, pre-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE-percentPredicted>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-PRE-percentPredicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC pre-bronchodilator, % of predicted value" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation resource for forced vital capacity measured/predicted, pre-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PREREF-predicted>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-PREREF-predicted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC (L) pre-bronchodilator reference value" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of using Observation to include a forced vital capacity reference value." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-post-percentChange>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-post-percentChange" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FVC post-bronchodilator, change from pre-bronchodilator (%)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Observation resource for the percent change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/DiagnosticReport/diagnostic-report>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/diagnostic-report" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PFT DiagnosticReport" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of how a DiagnosticReport for a PFT may be constructed." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Bundle/pft-bundle>;
+         fhir:Reference.reference [ fhir:value "Bundle/pft-bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PFT Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example resource demonstrating how all the PFT resources are included in a Bundle." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Composition/pft-composition>;
+         fhir:Reference.reference [ fhir:value "Composition/pft-composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PFT Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of how a Composition may be used to create a coherent human-readable document for a PFT, including Observations, the technician's comments, and the pulmonologist's interpretation." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "coding-gaps.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Coding Gaps" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/ImplementationGuide/pft.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

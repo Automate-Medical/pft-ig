@@ -1,0 +1,12 @@
+{
+  "url": "https://automatemedical.com/fhir/pulmonary-function-test/ImplementationGuide/pft",
+  "name": "PulmonaryFunctionTestIG",
+  "package-id": "pft",
+  "ig-ver": "0.1.0",
+  "date": "Tue, 29 Jun, 2021 19:39:08 -0400",
+  "errs": 89,
+  "warnings": 56,
+  "hints": 8,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

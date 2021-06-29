@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE-percentPredicted> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "FVC-PRE-percentPredicted"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 19871-3}\">FVC pre bronchodilation measured/predicted</span></p><p><b>value</b>: 82 %</p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-FVC-PRE.html\">Test quality: AGenerated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span>; <span title=\"Codes: {http://loinc.org 19876-2}\">Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation</span>; effective: Feb. 7, 2015, 1:28:17 p.m.; 3.9 L</a></li><li><a href=\"Observation-FVC-PREREF-predicted.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 19869-7}\">Forced vital capacity [Volume] Respiratory system Predicted</span>; Reference value, taken from GLI 2012. Depends on the patient's demographic info. (By Created for PFT example @2021-06-10)</a></li></ul></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:19871-3;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "19871-3" ];
+       fhir:Coding.display [ fhir:value "FVC pre bronchodilation measured/predicted" ]
+     ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "82"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "%" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "%" ]
+  ];
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE>;
+     fhir:Reference.reference [ fhir:value "Observation/FVC-PRE" ]
+  ], [
+     fhir:index 1;
+     fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PREREF-predicted>;
+     fhir:Reference.reference [ fhir:value "Observation/FVC-PREREF-predicted" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE-percentPredicted.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "pft",
+    "type": "ImplementationGuide",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/ImplementationGuide/pft",
+    "version": "0.1.0",
+    "name": "PulmonaryFunctionTestIG"
+  },
+  {
+    "id": "AlveolarVolume",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume",
+    "version": "0.1.0",
+    "name": "AlveolarVolume"
+  },
+  {
+    "id": "AlveolarVolume-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "AlveolarVolume_PercentOfPredicted"
+  },
+  {
+    "id": "AlveolarVolume-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume-Zscore",
+    "version": "0.1.0",
+    "name": "AlveolarVolume_Zscore"
+  },
+  {
+    "id": "DLCO",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCO",
+    "version": "0.1.0",
+    "name": "DLCO"
+  },
+  {
+    "id": "DLCOAdjustedForHemoglobin",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAdjustedForHemoglobin",
+    "version": "0.1.0",
+    "name": "DLCOAdjustedForHemoglobin"
+  },
+  {
+    "id": "DLCOAdjustedForHemoglobin-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAdjustedForHemoglobin-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "DLCOAdjustedForHemoglobin_PercentOfPredicted"
+  },
+  {
+    "id": "DLCOAtStandardBarometricPressure",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure",
+    "version": "0.1.0",
+    "name": "DLCOAtStandardBarometricPressure"
+  },
+  {
+    "id": "DLCOAtStandardBarometricPressure-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "DLCOAtStandardBarometricPressure_PercentOfPredicted"
+  },
+  {
+    "id": "DLCOAtStandardBarometricPressure-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure-Zscore",
+    "version": "0.1.0",
+    "name": "DLCOAtStandardBarometricPressure_Zscore"
+  },
+  {
+    "id": "FEV1-over-FVC",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC",
+    "version": "0.1.0",
+    "name": "FEV1_over_FVC"
+  },
+  {
+    "id": "FEV1-over-FVC-PostBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PostBronchodilator",
+    "version": "0.1.0",
+    "name": "FEV1_over_FVC_PostBronchodilator"
+  },
+  {
+    "id": "FEV1-over-FVC-PostBronchodilator-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PostBronchodilator-Zscore",
+    "version": "0.1.0",
+    "name": "FEV1_over_FVC_PostBronchodilator_Zscore"
+  },
+  {
+    "id": "FEV1-over-FVC-PreBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PreBronchodilator",
+    "version": "0.1.0",
+    "name": "FEV1_over_FVC_PreBronchodilator"
+  },
+  {
+    "id": "FEV1-over-FVC-PreBronchodilator-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PreBronchodilator-Zscore",
+    "version": "0.1.0",
+    "name": "FEV1_over_FVC_PreBronchodilator_Zscore"
+  },
+  {
+    "id": "FEV1-over-FVC-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-Zscore",
+    "version": "0.1.0",
+    "name": "FEV1_over_FVC_Zscore"
+  },
+  {
+    "id": "ForcedExpiratoryTime",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryTime"
+  },
+  {
+    "id": "ForcedExpiratoryTime-PostBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime-PostBronchodilator",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryTimePostBronchodilator"
+  },
+  {
+    "id": "ForcedExpiratoryTime-PreBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime-PreBronchodilator",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryTimePreBronchodilator"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1Sec",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1Sec"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1Sec-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1Sec_PercentOfPredicted"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1Sec-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec-Zscore",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1Sec_Zscore"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1SecPostbronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1SecPostbronchodilator"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredicted"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1SecPostbronchodilator-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-Zscore",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1SecPostbronchodilator_Zscore"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1SecPostbronchodilator-mLChange",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-mLChange",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1SecPostbronchodilator_mLChange"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1SecPreBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1SecPreBronchodilator"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1SecPreBronchodilator_PercentOfPredicted"
+  },
+  {
+    "id": "ForcedExpiratoryVolume1SecPreBronchodilator-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-Zscore",
+    "version": "0.1.0",
+    "name": "ForcedExpiratoryVolume1SecPreBronchodilator_Zscore"
+  },
+  {
+    "id": "ForcedVitalCapacity",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacity"
+  },
+  {
+    "id": "ForcedVitalCapacity-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacity_PercentOfPredicted"
+  },
+  {
+    "id": "ForcedVitalCapacity-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity-Zscore",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacity_Zscore"
+  },
+  {
+    "id": "ForcedVitalCapacityPostBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacityPostBronchodilator"
+  },
+  {
+    "id": "ForcedVitalCapacityPostBronchodilator-PercentChange",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentChange",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacityPostBronchodilator_PercentChange"
+  },
+  {
+    "id": "ForcedVitalCapacityPostBronchodilator-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacityPostBronchodilator_PercentOfPredicted"
+  },
+  {
+    "id": "ForcedVitalCapacityPostBronchodilator-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-Zscore",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacityPostBronchodilator_Zscore"
+  },
+  {
+    "id": "ForcedVitalCapacityPostBronchodilator-mLChange",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-mLChange",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacityPostBronchodilator_mLChange"
+  },
+  {
+    "id": "ForcedVitalCapacityPreBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacityPreBronchodilator"
+  },
+  {
+    "id": "ForcedVitalCapacityPreBronchodilator-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacityPreBronchodilator_PercentOfPredicted"
+  },
+  {
+    "id": "ForcedVitalCapacityPreBronchodilator-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator-Zscore",
+    "version": "0.1.0",
+    "name": "ForcedVitalCapacityPreBronchodilator_Zscore"
+  },
+  {
+    "id": "KCO",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO",
+    "version": "0.1.0",
+    "name": "KCO"
+  },
+  {
+    "id": "KCO-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "KCO_PercentOfPredicted"
+  },
+  {
+    "id": "KCO-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO-Zscore",
+    "version": "0.1.0",
+    "name": "KCO_Zscore"
+  },
+  {
+    "id": "KCOPostBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator",
+    "version": "0.1.0",
+    "name": "KCOPostBronchodilator"
+  },
+  {
+    "id": "KCOPostBronchodilator-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "KCOPostBronchodilator_PercentOfPredicted"
+  },
+  {
+    "id": "KCOPostBronchodilator-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator-Zscore",
+    "version": "0.1.0",
+    "name": "KCOPostBronchodilator_Zscore"
+  },
+  {
+    "id": "KCOPreBronchodilator",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator",
+    "version": "0.1.0",
+    "name": "KCOPreBronchodilator"
+  },
+  {
+    "id": "KCOPreBronchodilator-PercentOfPredicted",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator-PercentOfPredicted",
+    "version": "0.1.0",
+    "name": "KCOPreBronchodilator_PercentOfPredicted"
+  },
+  {
+    "id": "KCOPreBronchodilator-Zscore",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator-Zscore",
+    "version": "0.1.0",
+    "name": "KCOPreBronchodilator_Zscore"
+  },
+  {
+    "id": "PulmonaryFunctionTestDiagnosticReport",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/PulmonaryFunctionTestDiagnosticReport",
+    "version": "0.1.0",
+    "name": "PFT_DiagnosticReport"
+  },
+  {
+    "id": "SPO2AtRest",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/SPO2AtRest",
+    "version": "0.1.0",
+    "name": "SPO2AtRest"
+  },
+  {
+    "id": "TotalLungCapacityByHeliumSingleBreath",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/TotalLungCapacityByHeliumSingleBreath",
+    "version": "0.1.0",
+    "name": "TotalLungCapacityByHeliumSingleBreath"
+  },
+  {
+    "id": "VI-over-VC",
+    "type": "StructureDefinition",
+    "url": "https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/VI-over-VC",
+    "version": "0.1.0",
+    "name": "VI_over_VC"
+  }
+]

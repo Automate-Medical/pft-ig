@@ -1,0 +1,218 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/Composition/pft-composition> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "pft-composition"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: preliminary</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 81458-2}\">Pulmonary function test panel</span></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 27896-0}\">Pulmonary studies (set)</span></p><p><b>encounter</b>: <a href=\"Bundle-pft-bundle.html#Encounter_encounter-01\">Generated Summary: type: collection</a></p><p><b>date</b>: 2017-02-20</p><p><b>author</b>: <a href=\"TODO_PLACEHOLDER\">TODO_PLACEHOLDER</a></p><p><b>title</b>: PFT: test panel Observations and DiagnosticReport</p><p><b>custodian</b>: <a href=\"Bundle-pft-bundle.html#Organization_organization-01\">Generated Summary: type: collection</a></p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "preliminary"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:81458-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "81458-2" ];
+       fhir:Coding.display [ fhir:value "Pulmonary function test panel" ]
+     ]
+  ];
+  fhir:Composition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:27896-0;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "27896-0" ];
+       fhir:Coding.display [ fhir:value "Pulmonary studies (set)" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Patient/patient-01>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-01" ]
+  ];
+  fhir:Composition.encounter [
+     fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Encounter/encounter-01>;
+     fhir:Reference.reference [ fhir:value "Encounter/encounter-01" ]
+  ];
+  fhir:Composition.date [ fhir:value "2017-02-20"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "TODO_PLACEHOLDER" ]
+  ];
+  fhir:Composition.title [ fhir:value "PFT: test panel Observations and DiagnosticReport"];
+  fhir:Composition.custodian [
+     fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Organization/organization-01>;
+     fhir:Reference.reference [ fhir:value "Organization/organization-01" ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "PFT Observations and Technician Comment" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:30954-2;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "30954-2" ];
+         fhir:Coding.display [ fhir:value "Relevant diagnostic tests/laboratory data Narrative" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">TECHNICIAN COMMMENTS: No medications in past 24 hr. 400 mcg albuterol given for reversibility testing.</div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "SpO2_RESTING" ]
+     ];
+     fhir:Composition.section.section [
+       fhir:index 0;
+       fhir:Composition.section.title [ fhir:value "Spirometry" ];
+       fhir:Composition.section.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:81459-0;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "81459-0" ];
+           fhir:Coding.display [ fhir:value "Spirometry panel" ]
+         ], [
+           fhir:index 1;
+           a loinc:81458-2;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "81458-2" ];
+           fhir:Coding.display [ fhir:value "Pulmonary function test panel" ]
+         ]
+       ];
+       fhir:Composition.section.text [
+         fhir:Narrative.status [ fhir:value "additional" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: GLI 2012 Test quality: Pre: FEV1 - A, FVC - A; Post: FEV1 - A, FVC - B</div>"
+       ];
+       fhir:Composition.section.entry [
+         fhir:index 0;
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-PRE" ]
+       ], [
+         fhir:index 1;
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE-Zscore>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-PRE-Zscore" ]
+       ], [
+         fhir:index 2;
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE-percentPredicted>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-PRE-percentPredicted" ]
+       ], [
+         fhir:index 3;
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-POST" ]
+       ], [
+         fhir:index 4;
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-Zscore>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-POST-Zscore" ]
+       ], [
+         fhir:index 5;
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-percentPredicted>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-POST-percentPredicted" ]
+       ], [
+         fhir:index 6;
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-mLChange>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-POST-mLChange" ]
+       ], [
+         fhir:index 7;
+         fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-post-percentChange>;
+         fhir:Reference.reference [ fhir:value "Observation/FVC-post-percentChange" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Composition.section.title [ fhir:value "Slow Vital Capacity (Pre-Bronchodilator)" ];
+       fhir:Composition.section.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:81458-2;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "81458-2" ];
+           fhir:Coding.display [ fhir:value "Pulmonary function test panel" ]
+         ]
+       ];
+       fhir:Composition.section.text [
+         fhir:Narrative.status [ fhir:value "additional" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: VC - Gutierrez 2004; FEV1/VC - GLI 2012</div>"
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Composition.section.title [ fhir:value "Multi-Breath Nitrogen Washout (Post-Bronchodilator)" ];
+       fhir:Composition.section.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:81458-2;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "81458-2" ];
+           fhir:Coding.display [ fhir:value "Pulmonary function test panel" ]
+         ]
+       ];
+       fhir:Composition.section.text [
+         fhir:Narrative.status [ fhir:value "additional" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: Gutierrez 2004; Test quality: QA met</div>"
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Composition.section.title [ fhir:value "Plethysmography (Post-Bronchodilator)" ];
+       fhir:Composition.section.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://snomed.info/id" ];
+           fhir:Coding.code [ fhir:value "20552003" ];
+           fhir:Coding.display [ fhir:value "Plethysmography (procedure)" ]
+         ]
+       ];
+       fhir:Composition.section.text [
+         fhir:Narrative.status [ fhir:value "additional" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: Gutierrez 2004; Test quality: QA met</div>"
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Composition.section.title [ fhir:value "Diffusing Capacity (Post-Bronchodilator)" ];
+       fhir:Composition.section.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:81458-2;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "81458-2" ];
+           fhir:Coding.display [ fhir:value "Pulmonary function test panel" ]
+         ]
+       ];
+       fhir:Composition.section.text [
+         fhir:Narrative.status [ fhir:value "additional" ];
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: GLI 2017; Test quality: one grade A test; P_B: 721 mmHg</div>"
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Pulmonologist interpretation of PFT and diagnosis" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:59769-0;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "59769-0" ];
+         fhir:Coding.display [ fhir:value "Postprocedure diagnosis Narrative" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/DiagnosticReport/diagnostic-report>;
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/diagnostic-report" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/Composition/pft-composition.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

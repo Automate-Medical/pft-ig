@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-Zscore> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "FVC-POST-Zscore"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">FVC_POST z-score</span></p><p><b>value</b>: -0.09 Z-score</p><p><b>derivedFrom</b>: <a href=\"Observation-FVC-POST.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 19874-7}\">Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation</span>; 4.7 L</a></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.text [ fhir:value "FVC_POST z-score" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "-0.09"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "Z-score" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "{Zscore}" ]
+  ];
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST>;
+     fhir:Reference.reference [ fhir:value "Observation/FVC-POST" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-Zscore.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

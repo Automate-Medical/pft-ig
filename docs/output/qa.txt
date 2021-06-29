@@ -1,0 +1,299 @@
+﻿PulmonaryFunctionTestIG : Validation Results
+=========================================
+
+err = 89, warn = 56, info = 8
+IG Publisher Version: 1.1.76
+Generated Tue Jun 29 19:40:22 EDT 2021. FHIR version 4.0.1 for pft#0.1.0 (canonical = https://automatemedical.com/fhir/pulmonary-function-test)
+
+ Build Errors : 4 / 0 / 0
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/ImplementationGuide-pft : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/bundle-pft-bundle : 75 / 1 / 22
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/composition-pft-composition : 5 / 0 / 3
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/diagnosticreport-diagnostic-report : 5 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-POST : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-POST-Zscore : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-POST-mLChange : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-POST-percentPredicted : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-PRE : 4 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-PRE-Zscore : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-PRE-percentPredicted : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-PREREF-predicted : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-post-percentChange : 0 / 0 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-AlveolarVolume : 0 / 1 / 3
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-AlveolarVolume-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-AlveolarVolume-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCO : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAdjustedForHemoglobin : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAdjustedForHemoglobin-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAtStandardBarometricPressure : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAtStandardBarometricPressure-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAtStandardBarometricPressure-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-PostBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-PostBronchodilator-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-PreBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-PreBronchodilator-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryTime : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryTime-PostBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryTime-PreBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1Sec : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1Sec-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1Sec-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-mLChange : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacity : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacity-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacity-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator-PercentChange : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator-mLChange : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPreBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPreBronchodilator-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPreBronchodilator-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCO : 0 / 3 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCO-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCO-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPostBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPostBronchodilator-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPostBronchodilator-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPreBronchodilator : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPreBronchodilator-PercentOfPredicted : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPreBronchodilator-Zscore : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-PulmonaryFunctionTestDiagnosticReport : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-SPO2AtRest : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-TotalLungCapacityByHeliumSingleBreath : 0 / 1 / 1
+ /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-VI-over-VC : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: /Users/litpub/code/automate-medical/fhir-pft-profile/output/Bundle-pft-bundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 247, column 594: The link 'TODO_PLACEHOLDER' for "TODO_PLACEHOLDER" cannot be resolved
+ERROR: /Users/litpub/code/automate-medical/fhir-pft-profile/output/Composition-pft-composition.html#/html/body/div/div/div/div/div/div/p/a at Line 247, column 486: The link 'TODO_PLACEHOLDER' for "TODO_PLACEHOLDER" cannot be resolved
+ERROR: /Users/litpub/code/automate-medical/fhir-pft-profile/output/index.html#/html/body/div/div/div/div/div/ol/li/a at Line 230, column 8: The link '#introduction' for "Introduction" cannot be resolved (valid targets: [markdown-toc-authors, publish-box, usage, markdown-toc-usage, segment-post-footer, markdown-toc-limitations, scope, contact, stripe, segment-footer, markdown-toc-contact, segment-content, limitations, markdown-toc-scope, markdown-toc-contents, segment-header, bottom, gaps-in-coding, review-status, home, markdown-toc-background, ig-status, markdown-toc, contents, non-exhaustive, background, segment-navbar, segment-breadcrumb, authors])
+ERROR: /Users/litpub/code/automate-medical/fhir-pft-profile/output/index.html#/html/body/div/div/div/div/div/ol/li/a at Line 234, column 8: The link '#gaps-in-observation-coding' for "Gaps in coding" cannot be resolved (valid targets: [markdown-toc-authors, publish-box, usage, markdown-toc-usage, segment-post-footer, markdown-toc-limitations, scope, contact, stripe, segment-footer, markdown-toc-contact, segment-content, limitations, markdown-toc-scope, markdown-toc-contents, segment-header, bottom, gaps-in-coding, review-status, home, markdown-toc-background, ig-status, markdown-toc, contents, non-exhaustive, background, segment-navbar, segment-breadcrumb, authors])
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/ImplementationGuide-pft.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json ==
+INFORMATION: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).type: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://loinc.org#81458-2)
+ERROR: Bundle/pft-bundle: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).author[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).author[0]: Unable to resolve resource 'TODO_PLACEHOLDER'
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).custodian: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Unable to resolve resource 'SpO2_RESTING'
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[3]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[4]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[5]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[6]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[7]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[0].section[3].code.coding[0]: Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated
+ERROR: Bundle/pft-bundle: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[4].resource.ofType(Organization).type[0].coding[0]: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/organization-type')
+ERROR: Bundle/pft-bundle: Bundle.entry[4].resource.ofType(Organization).type[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/ValueSet/organization-type'
+WARNING: Bundle/pft-bundle: Bundle.entry[5].resource.ofType(Encounter).class: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/pft-bundle: Bundle.entry[6].resource.ofType(ServiceRequest).category[0].coding[0]: Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated
+INFORMATION: Bundle/pft-bundle: Bundle.entry[6].resource.ofType(ServiceRequest).code.coding[0]: Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated
+ERROR: Bundle/pft-bundle: Bundle.entry[6]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[6].resource.ofType(ServiceRequest).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[6].resource.ofType(ServiceRequest).requester: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[6].resource.ofType(ServiceRequest).requester: Unable to resolve resource 'Practitioner/practitioner-03'
+ERROR: Bundle/pft-bundle: Bundle.entry[7]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).performer[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).resultsInterpreter[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).result[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).result[3]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).result[4]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).result[5]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).result[6]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[7].resource.ofType(DiagnosticReport).result[7]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[9]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[9].resource.ofType(Observation).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[9].resource.ofType(Observation).encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[9].resource.ofType(Observation).performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[9].resource.ofType(Observation).performer[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[10]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[10].resource.ofType(Observation).derivedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[10].resource.ofType(Observation).derivedFrom[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[11]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[11].resource.ofType(Observation).derivedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[11].resource.ofType(Observation).derivedFrom[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[13]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[13].resource.ofType(Observation).derivedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[14]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[14].resource.ofType(Observation).derivedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[15]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[15].resource.ofType(Observation).derivedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[15].resource.ofType(Observation).derivedFrom[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[16]: Bundle entry missing fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[16].resource.ofType(Observation).derivedFrom[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[16].resource.ofType(Observation).derivedFrom[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/pft-bundle: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[6]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[7]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[8]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[9]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[10]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[11]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[12]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[13]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[14]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[15]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/pft-bundle: Bundle.entry[16]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json ==
+INFORMATION: Composition/pft-composition: Composition.type: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://loinc.org#81458-2)
+ERROR: Composition/pft-composition: Composition.subject: Unable to resolve resource 'Patient/patient-01'
+ERROR: Composition/pft-composition: Composition.encounter: Unable to resolve resource 'Encounter/encounter-01'
+ERROR: Composition/pft-composition: Composition.author[0]: Unable to resolve resource 'TODO_PLACEHOLDER'
+ERROR: Composition/pft-composition: Composition.custodian: Unable to resolve resource 'Organization/organization-01'
+ERROR: Composition/pft-composition: Composition.section[0].entry[0]: Unable to resolve resource 'SpO2_RESTING'
+INFORMATION: Composition/pft-composition: Composition.section[0].section[3].code.coding[0]: Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/DiagnosticReport-diagnostic-report.json ==
+ERROR: DiagnosticReport/diagnostic-report: DiagnosticReport.subject: Unable to resolve resource 'Patient/patient-01'
+ERROR: DiagnosticReport/diagnostic-report: DiagnosticReport.encounter: Unable to resolve resource 'Encounter/encounter-01'
+ERROR: DiagnosticReport/diagnostic-report: DiagnosticReport.performer[0]: Unable to resolve resource 'Practitioner/practitioner-02'
+ERROR: DiagnosticReport/diagnostic-report: DiagnosticReport.performer[1]: Unable to resolve resource 'Organization/organization-01'
+ERROR: DiagnosticReport/diagnostic-report: DiagnosticReport.resultsInterpreter[0]: Unable to resolve resource 'Practitioner/practitioner-01'
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-POST.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-POST-Zscore.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-POST-mLChange.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-POST-percentPredicted.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE.json ==
+ERROR: Observation/FVC-PRE: Observation.subject: Unable to resolve resource 'Patient/patient-01'
+ERROR: Observation/FVC-PRE: Observation.encounter: Unable to resolve resource 'Encounter/encounter-01'
+ERROR: Observation/FVC-PRE: Observation.performer[0]: Unable to resolve resource 'Practitioner/practitioner-02'
+ERROR: Observation/FVC-PRE: Observation.performer[1]: Unable to resolve resource 'Organization/organization-01'
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE-Zscore.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE-percentPredicted.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PREREF-predicted.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-post-percentChange.json ==
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-AlveolarVolume.json ==
+INFORMATION: StructureDefinition/AlveolarVolume: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/AlveolarVolume: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-AlveolarVolume-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-AlveolarVolume-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCO.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCO'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAdjustedForHemoglobin.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAdjustedForHemoglobin'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAdjustedForHemoglobin-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAdjustedForHemoglobin-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAtStandardBarometricPressure.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAtStandardBarometricPressure-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAtStandardBarometricPressure-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-PostBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PostBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-PostBronchodilator-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PostBronchodilator-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-PreBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PreBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-PreBronchodilator-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PreBronchodilator-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryTime.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryTime-PostBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime-PostBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryTime-PreBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime-PreBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1Sec.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1Sec-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1Sec-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-mLChange.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-mLChange'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacity.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacity-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacity-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator-PercentChange.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentChange'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator-mLChange.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-mLChange'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPreBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPreBronchodilator-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPreBronchodilator-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCO.json ==
+WARNING: StructureDefinition/KCO: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: value should not start or finish with whitespace
+WARNING: StructureDefinition/KCO: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: value should not start or finish with whitespace
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCO-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCO-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPostBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPostBronchodilator-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPostBronchodilator-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPreBronchodilator.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPreBronchodilator-PercentOfPredicted.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator-PercentOfPredicted'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPreBronchodilator-Zscore.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator-Zscore'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-PulmonaryFunctionTestDiagnosticReport.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/PulmonaryFunctionTestDiagnosticReport'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-SPO2AtRest.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/SPO2AtRest'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-TotalLungCapacityByHeliumSingleBreath.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/TotalLungCapacityByHeliumSingleBreath'): The Implementation Guide contains no examples for this profile
+== /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-VI-over-VC.json ==
+WARNING: StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/VI-over-VC'): The Implementation Guide contains no examples for this profile
