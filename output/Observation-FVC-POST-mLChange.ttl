@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-mLChange> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "FVC-POST-mLChange"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">FVC POST change (mL)</span></p><p><b>value</b>: 600 mL</p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-FVC-PRE.html\">Test quality: AGenerated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span>; <span title=\"Codes: {http://loinc.org 19876-2}\">Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation</span>; effective: Feb. 7, 2015, 1:28:17 p.m.; 3.9 L</a></li><li><a href=\"Observation-FVC-POST.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 19874-7}\">Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation</span>; 4.7 L</a></li></ul></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.text [ fhir:value "FVC POST change (mL)" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "600"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mL" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "mL" ]
+  ];
+  fhir:Observation.derivedFrom [
+     fhir:index 0;
+     fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-PRE>;
+     fhir:Reference.reference [ fhir:value "Observation/FVC-PRE" ]
+  ], [
+     fhir:index 1;
+     fhir:link <https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST>;
+     fhir:Reference.reference [ fhir:value "Observation/FVC-POST" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://automatemedical.com/fhir/pulmonary-function-test/Observation/FVC-POST-mLChange.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

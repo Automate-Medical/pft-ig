@@ -1,0 +1,742 @@
+{
+  "resourceType": "Bundle",
+  "id": "pft-bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Composition",
+        "id": "pft-composition",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: preliminary</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 81458-2}\">Pulmonary function test panel</span></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 27896-0}\">Pulmonary studies (set)</span></p><p><b>encounter</b>: <a href=\"#Encounter_encounter-01\">See above (Encounter/encounter-01)</a></p><p><b>date</b>: 2017-02-20</p><p><b>author</b>: <a href=\"TODO_PLACEHOLDER\">TODO_PLACEHOLDER</a></p><p><b>title</b>: PFT: test panel Observations and DiagnosticReport</p><p><b>custodian</b>: <a href=\"#Organization_organization-01\">See above (Organization/organization-01)</a></p></div>"
+        },
+        "status": "preliminary",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "81458-2",
+              "display": "Pulmonary function test panel"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "27896-0",
+                "display": "Pulmonary studies (set)"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/patient-01"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-01"
+        },
+        "date": "2017-02-20",
+        "author": [
+          {
+            "reference": "TODO_PLACEHOLDER"
+          }
+        ],
+        "title": "PFT: test panel Observations and DiagnosticReport",
+        "custodian": {
+          "reference": "Organization/organization-01"
+        },
+        "section": [
+          {
+            "title": "PFT Observations and Technician Comment",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "Relevant diagnostic tests/laboratory data Narrative"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">TECHNICIAN COMMMENTS: No medications in past 24 hr. 400 mcg albuterol given for reversibility testing.</div>"
+            },
+            "entry": [
+              {
+                "reference": "SpO2_RESTING"
+              }
+            ],
+            "section": [
+              {
+                "title": "Spirometry",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "81459-0",
+                      "display": "Spirometry panel"
+                    },
+                    {
+                      "system": "http://loinc.org",
+                      "code": "81458-2",
+                      "display": "Pulmonary function test panel"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: GLI 2012 Test quality: Pre: FEV1 - A, FVC - A; Post: FEV1 - A, FVC - B</div>"
+                },
+                "entry": [
+                  {
+                    "reference": "Observation/FVC-PRE"
+                  },
+                  {
+                    "reference": "Observation/FVC-PRE-Zscore"
+                  },
+                  {
+                    "reference": "Observation/FVC-PRE-percentPredicted"
+                  },
+                  {
+                    "reference": "Observation/FVC-POST"
+                  },
+                  {
+                    "reference": "Observation/FVC-POST-Zscore"
+                  },
+                  {
+                    "reference": "Observation/FVC-POST-percentPredicted"
+                  },
+                  {
+                    "reference": "Observation/FVC-POST-mLChange"
+                  },
+                  {
+                    "reference": "Observation/FVC-post-percentChange"
+                  }
+                ]
+              },
+              {
+                "title": "Slow Vital Capacity (Pre-Bronchodilator)",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "81458-2",
+                      "display": "Pulmonary function test panel"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: VC - Gutierrez 2004; FEV1/VC - GLI 2012</div>"
+                }
+              },
+              {
+                "title": "Multi-Breath Nitrogen Washout (Post-Bronchodilator)",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "81458-2",
+                      "display": "Pulmonary function test panel"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: Gutierrez 2004; Test quality: QA met</div>"
+                }
+              },
+              {
+                "title": "Plethysmography (Post-Bronchodilator)",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/id",
+                      "code": "20552003",
+                      "display": "Plethysmography (procedure)"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: Gutierrez 2004; Test quality: QA met</div>"
+                }
+              },
+              {
+                "title": "Diffusing Capacity (Post-Bronchodilator)",
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "81458-2",
+                      "display": "Pulmonary function test panel"
+                    }
+                  ]
+                },
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: GLI 2017; Test quality: one grade A test; P_B: 721 mmHg</div>"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Pulmonologist interpretation of PFT and diagnosis",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "59769-0",
+                  "display": "Postprocedure diagnosis Narrative"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "DiagnosticReport/diagnostic-report"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-01",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "practitioner-01",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
+        },
+        "name": [
+          {
+            "text": "Dr. P. Pulmonologist",
+            "family": "Pulmonologist",
+            "given": [
+              "P."
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "practitioner-02",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "organization-01",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/organization-type",
+                "version": "4.0.1",
+                "code": "prov",
+                "display": "Healthcare Provider"
+              }
+            ]
+          }
+        ],
+        "name": "Sample Pulmonary Function Laboratory",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "p555-345-6789",
+            "use": "work"
+          },
+          {
+            "system": "email",
+            "value": "pftests@lunglab.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "type": "both",
+            "text": "Anytown, Anywhere",
+            "city": "Anytown",
+            "state": "Anywhere"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-01",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
+        },
+        "status": "finished",
+        "class": {
+          "code": "outpatient"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "serviceRequest-01",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
+        },
+        "status": "completed",
+        "intent": "order",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/id",
+                "code": "108252007",
+                "display": "Laboratory procedure"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/id",
+              "code": "23426006",
+              "display": "Measurement of respiratory function (procedure)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-01"
+        },
+        "requester": {
+          "reference": "Practitioner/practitioner-03"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "diagnostic-report",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 PF}\">Pulmonary Function</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 81458-2}\">Pulmonary function test panel</span></p><p><b>subject</b>: <a href=\"#Patient_patient-01\">See above (Patient/patient-01)</a></p><p><b>encounter</b>: <a href=\"#Encounter_encounter-01\">See above (Encounter/encounter-01)</a></p><p><b>effective</b>: 2017-02-24</p><p><b>performer</b>: </p><ul><li><a href=\"#Practitioner_practitioner-02\">See above (Practitioner/practitioner-02)</a></li><li><a href=\"#Organization_organization-01\">See above (Organization/organization-01)</a></li></ul><p><b>resultsInterpreter</b>: <a href=\"#Practitioner_practitioner-01\">See above (Practitioner/practitioner-01)</a></p><p><b>result</b>: </p><ul><li><a href=\"#Observation_FVC-PRE\">See above (Observation/FVC-PRE)</a></li><li><a href=\"#Observation_FVC-PRE-Zscore\">See above (Observation/FVC-PRE-Zscore)</a></li><li><a href=\"#Observation_FVC-PRE-percentPredicted\">See above (Observation/FVC-PRE-percentPredicted)</a></li><li><a href=\"#Observation_FVC-POST\">See above (Observation/FVC-POST)</a></li><li><a href=\"#Observation_FVC-POST-Zscore\">See above (Observation/FVC-POST-Zscore)</a></li><li><a href=\"#Observation_FVC-POST-percentPredicted\">See above (Observation/FVC-POST-percentPredicted)</a></li><li><a href=\"#Observation_FVC-POST-mLChange\">See above (Observation/FVC-POST-mLChange)</a></li><li><a href=\"#Observation_FVC-post-percentChange\">See above (Observation/FVC-post-percentChange)</a></li></ul><p><b>conclusion</b>: Moderately severe, partially reversible airflow obstruction.</p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "PF",
+                "display": "Pulmonary Function"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "81458-2",
+              "display": "Pulmonary function test panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-01"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-01"
+        },
+        "effectiveDateTime": "2017-02-24",
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-02"
+          },
+          {
+            "reference": "Organization/organization-01"
+          }
+        ],
+        "resultsInterpreter": [
+          {
+            "reference": "Practitioner/practitioner-01"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/FVC-PRE"
+          },
+          {
+            "reference": "Observation/FVC-PRE-Zscore"
+          },
+          {
+            "reference": "Observation/FVC-PRE-percentPredicted"
+          },
+          {
+            "reference": "Observation/FVC-POST"
+          },
+          {
+            "reference": "Observation/FVC-POST-Zscore"
+          },
+          {
+            "reference": "Observation/FVC-POST-percentPredicted"
+          },
+          {
+            "reference": "Observation/FVC-POST-mLChange"
+          },
+          {
+            "reference": "Observation/FVC-post-percentChange"
+          }
+        ],
+        "conclusion": "Moderately severe, partially reversible airflow obstruction.",
+        "presentedForm": [
+          {
+            "contentType": "application/pdf",
+            "language": "en-US",
+            "url": "https://www.atsjournals.org/doi/10.1164/rccm.201710-1981ST",
+            "title": "Sample Pulmonary Function Test"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "SPO2-RESTING",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 59417-6}\">Oxygen saturation in Arterial blood by Pulse oximetry --resting</span></p><p><b>value</b>: 99 %</p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59417-6",
+              "display": "Oxygen saturation in Arterial blood by Pulse oximetry --resting"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 99,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FVC-PRE",
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Test quality: A</div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "version": "4.0.1",
+                "code": "procedure",
+                "display": "Procedure"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19876-2",
+              "display": "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-01"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-01"
+        },
+        "effectiveDateTime": "2015-02-07T13:28:17-05:00",
+        "performer": [
+          {
+            "reference": "Practitioner/practitioner-02"
+          },
+          {
+            "reference": "Organization/organization-01"
+          }
+        ],
+        "valueQuantity": {
+          "value": 3.9,
+          "unit": "L",
+          "system": "http://unitsofmeasure.org",
+          "code": "L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.7,
+              "unit": "L",
+              "system": "http://unitsofmeasure.org",
+              "code": "L"
+            },
+            "type": {
+              "text": "FVC normal bounds"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FVC-PRE-Zscore",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">FVC_PRE Z-score</span></p><p><b>value</b>: -1.34 Z-score</p><p><b>derivedFrom</b>: </p><ul><li><a href=\"#Observation_FVC-PRE\">See above (Observation/FVC-PRE)</a></li><li><a href=\"Observation-FVC-PREREF-predicted.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 19869-7}\">Forced vital capacity [Volume] Respiratory system Predicted</span>; Reference value, taken from GLI 2012. Depends on the patient's demographic info. (By Created for PFT example @2021-06-10)</a></li></ul></div>"
+        },
+        "status": "final",
+        "code": {
+          "text": "FVC_PRE Z-score"
+        },
+        "valueQuantity": {
+          "value": -1.34,
+          "unit": "Z-score",
+          "system": "http://unitsofmeasure.org",
+          "code": "{Zscore}"
+        },
+        "derivedFrom": [
+          {
+            "reference": "Observation/FVC-PRE"
+          },
+          {
+            "reference": "Observation/FVC-PREREF-predicted"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FVC-PRE-percentPredicted",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 19871-3}\">FVC pre bronchodilation measured/predicted</span></p><p><b>value</b>: 82 %</p><p><b>derivedFrom</b>: </p><ul><li><a href=\"#Observation_FVC-PRE\">See above (Observation/FVC-PRE)</a></li><li><a href=\"Observation-FVC-PREREF-predicted.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 19869-7}\">Forced vital capacity [Volume] Respiratory system Predicted</span>; Reference value, taken from GLI 2012. Depends on the patient's demographic info. (By Created for PFT example @2021-06-10)</a></li></ul></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19871-3",
+              "display": "FVC pre bronchodilation measured/predicted"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 82,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "derivedFrom": [
+          {
+            "reference": "Observation/FVC-PRE"
+          },
+          {
+            "reference": "Observation/FVC-PREREF-predicted"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FVC-POST",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 19874-7}\">Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation</span></p><p><b>value</b>: 4.7 L</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>3.7 L</td><td><span title=\"Codes: \">FVC normal bounds</span></td></tr></table></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19874-7",
+              "display": "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 4.7,
+          "unit": "L",
+          "system": "http://unitsofmeasure.org",
+          "code": "L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 3.7,
+              "unit": "L",
+              "system": "http://unitsofmeasure.org",
+              "code": "L"
+            },
+            "type": {
+              "text": "FVC normal bounds"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FVC-POST-Zscore",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">FVC_POST z-score</span></p><p><b>value</b>: -0.09 Z-score</p><p><b>derivedFrom</b>: <a href=\"#Observation_FVC-POST\">See above (Observation/FVC-POST)</a></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "text": "FVC_POST z-score"
+        },
+        "valueQuantity": {
+          "value": -0.09,
+          "unit": "Z-score",
+          "system": "http://unitsofmeasure.org",
+          "code": "{Zscore}"
+        },
+        "derivedFrom": [
+          {
+            "reference": "Observation/FVC-POST"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FVC-POST-percentPredicted",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 19873-9}\">FVC post bronchodilation measured/predicted</span></p><p><b>value</b>: 99 %</p><p><b>derivedFrom</b>: <a href=\"#Observation_FVC-POST\">See above (Observation/FVC-POST)</a></p></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19873-9",
+              "display": "FVC post bronchodilation measured/predicted"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 99,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "derivedFrom": [
+          {
+            "reference": "Observation/FVC-POST"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FVC-POST-mLChange",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">FVC POST change (mL)</span></p><p><b>value</b>: 600 mL</p><p><b>derivedFrom</b>: </p><ul><li><a href=\"#Observation_FVC-PRE\">See above (Observation/FVC-PRE)</a></li><li><a href=\"#Observation_FVC-POST\">See above (Observation/FVC-POST)</a></li></ul></div>"
+        },
+        "status": "final",
+        "code": {
+          "text": "FVC POST change (mL)"
+        },
+        "valueQuantity": {
+          "value": 600,
+          "unit": "mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL"
+        },
+        "derivedFrom": [
+          {
+            "reference": "Observation/FVC-PRE"
+          },
+          {
+            "reference": "Observation/FVC-POST"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FVC-post-percentChange",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 69982-7}\">FVC percent change Respiratory system</span></p><p><b>value</b>: 20 %</p><p><b>derivedFrom</b>: </p><ul><li><a href=\"#Observation_FVC-PRE\">See above (Observation/FVC-PRE)</a></li><li><a href=\"#Observation_FVC-POST\">See above (Observation/FVC-POST)</a></li></ul></div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69982-7",
+              "display": "FVC percent change Respiratory system"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 20,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "derivedFrom": [
+          {
+            "reference": "Observation/FVC-PRE"
+          },
+          {
+            "reference": "Observation/FVC-POST"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="FVC-PRE-percentPredicted"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 19871-3}">FVC pre bronchodilation measured/predicted</span></p><p><b>value</b>: 82 %</p><p><b>derivedFrom</b>: </p><ul><li><a href="Observation-FVC-PRE.html">Test quality: AGenerated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span>; <span title="Codes: {http://loinc.org 19876-2}">Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation</span>; effective: Feb. 7, 2015, 1:28:17 p.m.; 3.9 L</a></li><li><a href="Observation-FVC-PREREF-predicted.html">Generated Summary: <span title="Codes: {http://loinc.org 19869-7}">Forced vital capacity [Volume] Respiratory system Predicted</span>; Reference value, taken from GLI 2012. Depends on the patient's demographic info. (By Created for PFT example @2021-06-10)</a></li></ul></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="19871-3"/>
+      <display value="FVC pre bronchodilation measured/predicted"/>
+    </coding>
+  </code>
+  <valueQuantity>
+    <value value="82"/>
+    <unit value="%"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <derivedFrom>
+    <reference value="Observation/FVC-PRE"/>
+  </derivedFrom>
+  <derivedFrom>
+    <reference value="Observation/FVC-PREREF-predicted"/>
+  </derivedFrom>
+</Observation>

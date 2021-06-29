@@ -1,0 +1,1737 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 4, errors = 89, warn = 56, info = 8 -->
+<head>
+  <title>PulmonaryFunctionTestIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for PulmonaryFunctionTestIG</h1>
+ <p>Generated Tue Jun 29 16:26:03 EDT 2021, FHIR version 4.0.1 for pft#0.1.0 (canonical = <a href="https://automatemedical.com/fhir/pulmonary-function-test">https://automatemedical.com/fhir/pulmonary-function-test</a> (<a href="https://automatemedical.com/fhir/pulmonary-function-test/history.html">history</a>)). See <a href="/users/litpub/code/automate-medical/fhir-pft-profile/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.76</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = pft, Canonical = https://automatemedical.com/fhir/pulmonary-function-test</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/litpub/code/automate-medical/fhir-pft-profile/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> pft</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://automatemedical.com/fhir/pulmonary-function-test</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: automatemedical.pft-ig-template#0.1.0 -&gt; fhir.base.template#current</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://automatemedical.com/fhir/pulmonary-function-test (Problem #1 with package-list.json at https://automatemedical.com/fhir/pulmonary-function-test: Server returned HTTP response code: 403 for URL: https://automatemedical.com/fhir/pulmonary-function-test/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 4, errors = 89, warn = 56, info = 8</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_ImplementationGuide-pft"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/ImplementationGuide-pft</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_bundle-pft-bundle"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/bundle-pft-bundle</b></a></td><td><b>75</b></td><td><b>1</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_composition-pft-composition"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/composition-pft-composition</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_diagnosticreport-diagnostic-report"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/diagnosticreport-diagnostic-report</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-POST"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-POST</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-POST-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-POST-Zscore</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-POST-mLChange"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-POST-mLChange</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-POST-percentPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-POST-percentPredicted</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-PRE"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-PRE</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-PRE-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-PRE-Zscore</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-PRE-percentPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-PRE-percentPredicted</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-PREREF-predicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-PREREF-predicted</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-post-percentChange"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/observation-FVC-post-percentChange</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-AlveolarVolume"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-AlveolarVolume</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-AlveolarVolume-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-AlveolarVolume-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-AlveolarVolume-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-AlveolarVolume-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCO"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCO</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAdjustedForHemoglobin"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAdjustedForHemoglobin</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAdjustedForHemoglobin-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAdjustedForHemoglobin-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAtStandardBarometricPressure"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAtStandardBarometricPressure</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAtStandardBarometricPressure-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAtStandardBarometricPressure-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAtStandardBarometricPressure-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-DLCOAtStandardBarometricPressure-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-PostBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-PostBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-PostBronchodilator-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-PostBronchodilator-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-PreBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-PreBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-PreBronchodilator-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-PreBronchodilator-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-FEV1-over-FVC-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryTime"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryTime</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryTime-PostBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryTime-PostBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryTime-PreBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryTime-PreBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1Sec"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1Sec</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1Sec-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1Sec-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1Sec-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1Sec-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-mLChange"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-mLChange</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacity"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacity</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacity-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacity-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacity-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacity-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator-PercentChange"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator-PercentChange</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator-mLChange"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPostBronchodilator-mLChange</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPreBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPreBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPreBronchodilator-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPreBronchodilator-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPreBronchodilator-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-ForcedVitalCapacityPreBronchodilator-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCO"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCO</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCO-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCO-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCO-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCO-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPostBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPostBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPostBronchodilator-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPostBronchodilator-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPostBronchodilator-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPostBronchodilator-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPreBronchodilator"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPreBronchodilator</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPreBronchodilator-PercentOfPredicted"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPreBronchodilator-PercentOfPredicted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPreBronchodilator-Zscore"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-KCOPreBronchodilator-Zscore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-PulmonaryFunctionTestDiagnosticReport"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-PulmonaryFunctionTestDiagnosticReport</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-SPO2AtRest"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-SPO2AtRest</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-TotalLungCapacityByHeliumSingleBreath"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-TotalLungCapacityByHeliumSingleBreath</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-VI-over-VC"><b>/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/structuredefinition-VI-over-VC</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-pft-bundle.html#0fd2c3e2-f336-4efd-97af-31e9d39a446a">Bundle-pft-bundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 247, column 594</a></b></td><td><b>error</b></td><td><b>The link 'TODO_PLACEHOLDER' for &quot;TODO_PLACEHOLDER&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-pft-composition.html#e11d95c1-eb3d-4bcc-aa4e-c5725c241f17">Composition-pft-composition.html#/html/body/div/div/div/div/div/div/p/a at Line 247, column 486</a></b></td><td><b>error</b></td><td><b>The link 'TODO_PLACEHOLDER' for &quot;TODO_PLACEHOLDER&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#b04d16fd-d46a-4bd6-b327-c7ac40dfefc7">index.html#/html/body/div/div/div/div/div/ol/li/a at Line 230, column 8</a></b></td><td><b>error</b></td><td><b>The link '#introduction' for &quot;Introduction&quot; cannot be resolved (valid targets: [markdown-toc-authors, publish-box, usage, markdown-toc-usage, segment-post-footer, markdown-toc-limitations, scope, contact, stripe, segment-footer, markdown-toc-contact, segment-content, limitations, markdown-toc-scope, markdown-toc-contents, segment-header, bottom, gaps-in-coding, review-status, home, markdown-toc-background, ig-status, markdown-toc, contents, non-exhaustive, background, segment-navbar, segment-breadcrumb, authors])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#243a0f87-b260-4ed2-9ae6-7bafa297ece8">index.html#/html/body/div/div/div/div/div/ol/li/a at Line 234, column 8</a></b></td><td><b>error</b></td><td><b>The link '#gaps-in-observation-coding' for &quot;Gaps in coding&quot; cannot be resolved (valid targets: [markdown-toc-authors, publish-box, usage, markdown-toc-usage, segment-post-footer, markdown-toc-limitations, scope, contact, stripe, segment-footer, markdown-toc-contact, segment-content, limitations, markdown-toc-scope, markdown-toc-contents, segment-header, bottom, gaps-in-coding, review-status, home, markdown-toc-background, ig-status, markdown-toc, contents, non-exhaustive, background, segment-navbar, segment-breadcrumb, authors])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_ImplementationGuide-pft"> </a>
+<h2><a href="ImplementationGuide-pft.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/ImplementationGuide-pft.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_bundle-pft-bundle"> </a>
+<h2><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></h2>
+ <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></li><li>Bundle.entry[4].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></li><li>Bundle.entry[6].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></li><li>Bundle.entry[7].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></li><li>Bundle.entry[8].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[9].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[10].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[11].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[12].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[13].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[14].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[15].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li><li>Bundle.entry[16].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).type (l12/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://loinc.org#81458-2)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l6/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).subject</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).encounter</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).author[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).author[0] (l39/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'TODO_PLACEHOLDER'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).custodian</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].entry[0] (l64/c16)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'SpO2_RESTING'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[2]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[3]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[4]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[5]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[6]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[0].entry[7]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].section[3].code.coding[0] (l152/c22)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4].resource.ofType(Organization).type[0].coding[0] (l255/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_ValueSet2"><b>The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/organization-type')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4].resource.ofType(Organization).type[0].coding[0] (l255/c16)</b></td><td><b>error</b></td><td title="Terminology_TX_System_Unknown"><b>Unknown Code System 'http://hl7.org/fhir/ValueSet/organization-type'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[5].resource.ofType(Encounter).class (l299/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(ServiceRequest).category[0].coding[0] (l315/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle.entry[6].resource.ofType(ServiceRequest).code.coding[0] (l325/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6] (l302/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6].resource.ofType(ServiceRequest).subject</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6].resource.ofType(ServiceRequest).requester</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6].resource.ofType(ServiceRequest).requester (l337/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/practitioner-03'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7] (l340/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).subject</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).encounter</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).performer[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).performer[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).resultsInterpreter[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).result[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).result[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).result[2]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).result[3]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).result[4]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).result[5]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).result[6]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7].resource.ofType(DiagnosticReport).result[7]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[9] (l444/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[9].resource.ofType(Observation).subject</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[9].resource.ofType(Observation).encounter</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[9].resource.ofType(Observation).performer[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[9].resource.ofType(Observation).performer[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[10] (l510/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[10].resource.ofType(Observation).derivedFrom[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[10].resource.ofType(Observation).derivedFrom[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[11] (l534/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[11].resource.ofType(Observation).derivedFrom[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[11].resource.ofType(Observation).derivedFrom[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[13] (l599/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[13].resource.ofType(Observation).derivedFrom[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[14] (l620/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[14].resource.ofType(Observation).derivedFrom[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[15] (l647/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[15].resource.ofType(Observation).derivedFrom[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[15].resource.ofType(Observation).derivedFrom[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[16] (l671/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[16].resource.ofType(Observation).derivedFrom[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[16].resource.ofType(Observation).derivedFrom[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l6/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1] (l202/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[2] (l212/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3] (l234/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4] (l244/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[5] (l288/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[6] (l302/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[7] (l340/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[8] (l422/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[9] (l444/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[10] (l510/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[11] (l534/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[12] (l564/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[13] (l599/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[14] (l620/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[15] (l647/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[16] (l671/c6)</b></td><td><b>error</b></td><td title="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_composition-pft-composition"> </a>
+<h2><a href="Composition-pft-composition.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json</a></h2>
+ <ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Composition.type (l6/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://loinc.org#81458-2)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition.subject (l27/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition.encounter (l30/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Encounter/encounter-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition.author[0] (l33/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'TODO_PLACEHOLDER'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition.custodian (l40/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Organization/organization-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition.section[0].entry[0] (l58/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'SpO2_RESTING'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Composition.section[0].section[3].code.coding[0] (l146/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_diagnosticreport-diagnostic-report"> </a>
+<h2><a href="DiagnosticReport-diagnostic-report.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/DiagnosticReport-diagnostic-report.json</a></h2>
+ <ul style="font-size: 7px"><li>DiagnosticReport: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DiagnosticReport.subject (l27/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DiagnosticReport.encounter (l30/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Encounter/encounter-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DiagnosticReport.performer[0] (l32/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/practitioner-02'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DiagnosticReport.performer[1] (l35/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Organization/organization-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>DiagnosticReport.resultsInterpreter[0] (l40/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/practitioner-01'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-POST"> </a>
+<h2><a href="Observation-FVC-POST.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-POST.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-POST-Zscore"> </a>
+<h2><a href="Observation-FVC-POST-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-POST-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-POST-mLChange"> </a>
+<h2><a href="Observation-FVC-POST-mLChange.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-POST-mLChange.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-POST-percentPredicted"> </a>
+<h2><a href="Observation-FVC-POST-percentPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-POST-percentPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-PRE"> </a>
+<h2><a href="Observation-FVC-PRE.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.subject (l32/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Patient/patient-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.encounter (l35/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Encounter/encounter-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[0] (l37/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Practitioner/practitioner-02'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[1] (l40/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Organization/organization-01'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-PRE-Zscore"> </a>
+<h2><a href="Observation-FVC-PRE-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-PRE-percentPredicted"> </a>
+<h2><a href="Observation-FVC-PRE-percentPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE-percentPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-PREREF-predicted"> </a>
+<h2><a href="Observation-FVC-PREREF-predicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PREREF-predicted.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_observation-FVC-post-percentChange"> </a>
+<h2><a href="Observation-FVC-post-percentChange.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-post-percentChange.json</a></h2>
+ <ul style="font-size: 7px"><li>Observation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/observation.html">Observation</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-AlveolarVolume"> </a>
+<h2><a href="StructureDefinition-AlveolarVolume.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-AlveolarVolume.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-AlveolarVolume-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-AlveolarVolume-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-AlveolarVolume-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-AlveolarVolume-Zscore"> </a>
+<h2><a href="StructureDefinition-AlveolarVolume-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-AlveolarVolume-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/AlveolarVolume-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCO"> </a>
+<h2><a href="StructureDefinition-DLCO.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCO.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCO')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAdjustedForHemoglobin"> </a>
+<h2><a href="StructureDefinition-DLCOAdjustedForHemoglobin.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAdjustedForHemoglobin.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAdjustedForHemoglobin')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAdjustedForHemoglobin-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-DLCOAdjustedForHemoglobin-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAdjustedForHemoglobin-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAdjustedForHemoglobin-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAtStandardBarometricPressure"> </a>
+<h2><a href="StructureDefinition-DLCOAtStandardBarometricPressure.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAtStandardBarometricPressure.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAtStandardBarometricPressure-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-DLCOAtStandardBarometricPressure-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAtStandardBarometricPressure-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-DLCOAtStandardBarometricPressure-Zscore"> </a>
+<h2><a href="StructureDefinition-DLCOAtStandardBarometricPressure-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-DLCOAtStandardBarometricPressure-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/DLCOAtStandardBarometricPressure-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC"> </a>
+<h2><a href="StructureDefinition-FEV1-over-FVC.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-PostBronchodilator"> </a>
+<h2><a href="StructureDefinition-FEV1-over-FVC-PostBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-PostBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PostBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-PostBronchodilator-Zscore"> </a>
+<h2><a href="StructureDefinition-FEV1-over-FVC-PostBronchodilator-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-PostBronchodilator-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PostBronchodilator-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-PreBronchodilator"> </a>
+<h2><a href="StructureDefinition-FEV1-over-FVC-PreBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-PreBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PreBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-PreBronchodilator-Zscore"> </a>
+<h2><a href="StructureDefinition-FEV1-over-FVC-PreBronchodilator-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-PreBronchodilator-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-PreBronchodilator-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-FEV1-over-FVC-Zscore"> </a>
+<h2><a href="StructureDefinition-FEV1-over-FVC-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-FEV1-over-FVC-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/FEV1-over-FVC-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryTime"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryTime.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryTime.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryTime-PostBronchodilator"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryTime-PostBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryTime-PostBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime-PostBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryTime-PreBronchodilator"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryTime-PreBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryTime-PreBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryTime-PreBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1Sec"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1Sec.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1Sec.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1Sec-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1Sec-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1Sec-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1Sec-Zscore"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1Sec-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1Sec-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1Sec-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-Zscore"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPostbronchodilator-mLChange"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-mLChange.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPostbronchodilator-mLChange.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPostbronchodilator-mLChange')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedExpiratoryVolume1SecPreBronchodilator-Zscore"> </a>
+<h2><a href="StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedExpiratoryVolume1SecPreBronchodilator-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedExpiratoryVolume1SecPreBronchodilator-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacity"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacity.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacity.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacity-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacity-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacity-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacity-Zscore"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacity-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacity-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacity-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacityPostBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator-PercentChange"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacityPostBronchodilator-PercentChange.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator-PercentChange.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentChange')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacityPostBronchodilator-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator-Zscore"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacityPostBronchodilator-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPostBronchodilator-mLChange"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacityPostBronchodilator-mLChange.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPostBronchodilator-mLChange.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPostBronchodilator-mLChange')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPreBronchodilator"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacityPreBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPreBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPreBronchodilator-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacityPreBronchodilator-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPreBronchodilator-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-ForcedVitalCapacityPreBronchodilator-Zscore"> </a>
+<h2><a href="StructureDefinition-ForcedVitalCapacityPreBronchodilator-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-ForcedVitalCapacityPreBronchodilator-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/ForcedVitalCapacityPreBronchodilator-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCO"> </a>
+<h2><a href="StructureDefinition-KCO.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCO.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCO-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-KCO-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCO-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCO-Zscore"> </a>
+<h2><a href="StructureDefinition-KCO-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCO-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCO-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPostBronchodilator"> </a>
+<h2><a href="StructureDefinition-KCOPostBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPostBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPostBronchodilator-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-KCOPostBronchodilator-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPostBronchodilator-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPostBronchodilator-Zscore"> </a>
+<h2><a href="StructureDefinition-KCOPostBronchodilator-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPostBronchodilator-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPostBronchodilator-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPreBronchodilator"> </a>
+<h2><a href="StructureDefinition-KCOPreBronchodilator.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPreBronchodilator.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPreBronchodilator-PercentOfPredicted"> </a>
+<h2><a href="StructureDefinition-KCOPreBronchodilator-PercentOfPredicted.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPreBronchodilator-PercentOfPredicted.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator-PercentOfPredicted')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-KCOPreBronchodilator-Zscore"> </a>
+<h2><a href="StructureDefinition-KCOPreBronchodilator-Zscore.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCOPreBronchodilator-Zscore.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/KCOPreBronchodilator-Zscore')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-PulmonaryFunctionTestDiagnosticReport"> </a>
+<h2><a href="StructureDefinition-PulmonaryFunctionTestDiagnosticReport.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-PulmonaryFunctionTestDiagnosticReport.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/PulmonaryFunctionTestDiagnosticReport')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-SPO2AtRest"> </a>
+<h2><a href="StructureDefinition-SPO2AtRest.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-SPO2AtRest.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/SPO2AtRest')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-TotalLungCapacityByHeliumSingleBreath"> </a>
+<h2><a href="StructureDefinition-TotalLungCapacityByHeliumSingleBreath.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-TotalLungCapacityByHeliumSingleBreath.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/TotalLungCapacityByHeliumSingleBreath')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_litpub_code_automate-medical_fhir-pft-profile_fsh-generated_resources_structuredefinition-VI-over-VC"> </a>
+<h2><a href="StructureDefinition-VI-over-VC.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-VI-over-VC.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://automatemedical.com/fhir/pulmonary-function-test/StructureDefinition/VI-over-VC')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED"> </a>
+<h2>BUNDLE_BUNDLE_ENTRY_FULLURL_REQUIRED</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_Entry_NoFullUrl"> </a>
+<h2>Bundle_BUNDLE_Entry_NoFullUrl</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_FullUrl_Missing"> </a>
+<h2>Bundle_BUNDLE_FullUrl_Missing</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Unable to resolve resource 'TODO_PLACEHOLDER'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Unable to resolve resource 'SpO2_RESTING'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Unable to resolve resource 'Practitioner/practitioner-03'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-pft-composition.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json</a></td><td><b>Unable to resolve resource 'Patient/patient-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-pft-composition.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json</a></td><td><b>Unable to resolve resource 'Encounter/encounter-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-pft-composition.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json</a></td><td><b>Unable to resolve resource 'TODO_PLACEHOLDER'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-pft-composition.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json</a></td><td><b>Unable to resolve resource 'Organization/organization-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-pft-composition.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json</a></td><td><b>Unable to resolve resource 'SpO2_RESTING'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DiagnosticReport-diagnostic-report.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/DiagnosticReport-diagnostic-report.json</a></td><td><b>Unable to resolve resource 'Patient/patient-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DiagnosticReport-diagnostic-report.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/DiagnosticReport-diagnostic-report.json</a></td><td><b>Unable to resolve resource 'Encounter/encounter-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DiagnosticReport-diagnostic-report.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/DiagnosticReport-diagnostic-report.json</a></td><td><b>Unable to resolve resource 'Practitioner/practitioner-02'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DiagnosticReport-diagnostic-report.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/DiagnosticReport-diagnostic-report.json</a></td><td><b>Unable to resolve resource 'Organization/organization-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="DiagnosticReport-diagnostic-report.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/DiagnosticReport-diagnostic-report.json</a></td><td><b>Unable to resolve resource 'Practitioner/practitioner-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-FVC-PRE.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE.json</a></td><td><b>Unable to resolve resource 'Patient/patient-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-FVC-PRE.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE.json</a></td><td><b>Unable to resolve resource 'Encounter/encounter-01'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-FVC-PRE.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE.json</a></td><td><b>Unable to resolve resource 'Practitioner/practitioner-02'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-FVC-PRE.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Observation-FVC-PRE.json</a></td><td><b>Unable to resolve resource 'Organization/organization-01'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_3_CC"> </a>
+<h2>Terminology_TX_NoValid_3_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://loinc.org#81458-2)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Composition-pft-composition.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://loinc.org#81458-2)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Composition-pft-composition.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Composition-pft-composition.json</a></td><td><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-AlveolarVolume.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-AlveolarVolume.json</a></td><td><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-AlveolarVolume.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-AlveolarVolume.json</a></td><td><b>Code System URI 'http://snomed.info/id' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_Unknown"> </a>
+<h2>Terminology_TX_System_Unknown</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>Unknown Code System 'http://hl7.org/fhir/ValueSet/organization-type'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_ValueSet2"> </a>
+<h2>Terminology_TX_System_ValueSet2</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-pft-bundle.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/Bundle-pft-bundle.json</a></td><td><b>The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/organization-type')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-KCO.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCO.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-KCO.html">/Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/StructureDefinition-KCO.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+</body>
+</html>

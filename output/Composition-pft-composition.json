@@ -1,0 +1,198 @@
+{
+  "resourceType": "Composition",
+  "id": "pft-composition",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: preliminary</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 81458-2}\">Pulmonary function test panel</span></p><p><b>category</b>: <span title=\"Codes: {http://loinc.org 27896-0}\">Pulmonary studies (set)</span></p><p><b>encounter</b>: <a href=\"Bundle-pft-bundle.html#Encounter_encounter-01\">Generated Summary: type: collection</a></p><p><b>date</b>: 2017-02-20</p><p><b>author</b>: <a href=\"TODO_PLACEHOLDER\">TODO_PLACEHOLDER</a></p><p><b>title</b>: PFT: test panel Observations and DiagnosticReport</p><p><b>custodian</b>: <a href=\"Bundle-pft-bundle.html#Organization_organization-01\">Generated Summary: type: collection</a></p></div>"
+  },
+  "status": "preliminary",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "81458-2",
+        "display": "Pulmonary function test panel"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "27896-0",
+          "display": "Pulmonary studies (set)"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/patient-01"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-01"
+  },
+  "date": "2017-02-20",
+  "author": [
+    {
+      "reference": "TODO_PLACEHOLDER"
+    }
+  ],
+  "title": "PFT: test panel Observations and DiagnosticReport",
+  "custodian": {
+    "reference": "Organization/organization-01"
+  },
+  "section": [
+    {
+      "title": "PFT Observations and Technician Comment",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Relevant diagnostic tests/laboratory data Narrative"
+          }
+        ]
+      },
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">TECHNICIAN COMMMENTS: No medications in past 24 hr. 400 mcg albuterol given for reversibility testing.</div>"
+      },
+      "entry": [
+        {
+          "reference": "SpO2_RESTING"
+        }
+      ],
+      "section": [
+        {
+          "title": "Spirometry",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "81459-0",
+                "display": "Spirometry panel"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "81458-2",
+                "display": "Pulmonary function test panel"
+              }
+            ]
+          },
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: GLI 2012 Test quality: Pre: FEV1 - A, FVC - A; Post: FEV1 - A, FVC - B</div>"
+          },
+          "entry": [
+            {
+              "reference": "Observation/FVC-PRE"
+            },
+            {
+              "reference": "Observation/FVC-PRE-Zscore"
+            },
+            {
+              "reference": "Observation/FVC-PRE-percentPredicted"
+            },
+            {
+              "reference": "Observation/FVC-POST"
+            },
+            {
+              "reference": "Observation/FVC-POST-Zscore"
+            },
+            {
+              "reference": "Observation/FVC-POST-percentPredicted"
+            },
+            {
+              "reference": "Observation/FVC-POST-mLChange"
+            },
+            {
+              "reference": "Observation/FVC-post-percentChange"
+            }
+          ]
+        },
+        {
+          "title": "Slow Vital Capacity (Pre-Bronchodilator)",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "81458-2",
+                "display": "Pulmonary function test panel"
+              }
+            ]
+          },
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: VC - Gutierrez 2004; FEV1/VC - GLI 2012</div>"
+          }
+        },
+        {
+          "title": "Multi-Breath Nitrogen Washout (Post-Bronchodilator)",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "81458-2",
+                "display": "Pulmonary function test panel"
+              }
+            ]
+          },
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: Gutierrez 2004; Test quality: QA met</div>"
+          }
+        },
+        {
+          "title": "Plethysmography (Post-Bronchodilator)",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/id",
+                "code": "20552003",
+                "display": "Plethysmography (procedure)"
+              }
+            ]
+          },
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: Gutierrez 2004; Test quality: QA met</div>"
+          }
+        },
+        {
+          "title": "Diffusing Capacity (Post-Bronchodilator)",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "81458-2",
+                "display": "Pulmonary function test panel"
+              }
+            ]
+          },
+          "text": {
+            "status": "additional",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Reference values: GLI 2017; Test quality: one grade A test; P_B: 721 mmHg</div>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Pulmonologist interpretation of PFT and diagnosis",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "59769-0",
+            "display": "Postprocedure diagnosis Narrative"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "DiagnosticReport/diagnostic-report"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "Observation",
+  "id": "FVC-PRE-Zscore",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: \">FVC_PRE Z-score</span></p><p><b>value</b>: -1.34 Z-score</p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Observation-FVC-PRE.html\">Test quality: AGenerated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span>; <span title=\"Codes: {http://loinc.org 19876-2}\">Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation</span>; effective: Feb. 7, 2015, 1:28:17 p.m.; 3.9 L</a></li><li><a href=\"Observation-FVC-PREREF-predicted.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 19869-7}\">Forced vital capacity [Volume] Respiratory system Predicted</span>; Reference value, taken from GLI 2012. Depends on the patient's demographic info. (By Created for PFT example @2021-06-10)</a></li></ul></div>"
+  },
+  "status": "final",
+  "code": {
+    "text": "FVC_PRE Z-score"
+  },
+  "valueQuantity": {
+    "value": -1.34,
+    "unit": "Z-score",
+    "system": "http://unitsofmeasure.org",
+    "code": "{Zscore}"
+  },
+  "derivedFrom": [
+    {
+      "reference": "Observation/FVC-PRE"
+    },
+    {
+      "reference": "Observation/FVC-PREREF-predicted"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="FVC-post-percentChange"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 69982-7}">FVC percent change Respiratory system</span></p><p><b>value</b>: 20 %</p><p><b>derivedFrom</b>: </p><ul><li><a href="Observation-FVC-PRE.html">Test quality: AGenerated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span>; <span title="Codes: {http://loinc.org 19876-2}">Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation</span>; effective: Feb. 7, 2015, 1:28:17 p.m.; 3.9 L</a></li><li><a href="Observation-FVC-POST.html">Generated Summary: <span title="Codes: {http://loinc.org 19874-7}">Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation</span>; 4.7 L</a></li></ul></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="69982-7"/>
+      <display value="FVC percent change Respiratory system"/>
+    </coding>
+  </code>
+  <valueQuantity>
+    <value value="20"/>
+    <unit value="%"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <derivedFrom>
+    <reference value="Observation/FVC-PRE"/>
+  </derivedFrom>
+  <derivedFrom>
+    <reference value="Observation/FVC-POST"/>
+  </derivedFrom>
+</Observation>
