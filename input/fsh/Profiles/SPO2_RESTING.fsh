@@ -1,4 +1,4 @@
-Profile: SPO2_RESTING
+Profile: SPO2AtRest
 Parent: Observation
 Id: SPO2AtRest
 Title: "SpO2 at rest"

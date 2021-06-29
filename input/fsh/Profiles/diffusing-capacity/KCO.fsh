@@ -4,7 +4,7 @@
 /*
  * Pre- or post-bronchodilator not specified
  */
-Profile: CarbonMonoxideTransferCoefficient
+Profile: KCO
 Parent: Observation
 Id: KCO
 Title: "KCO"
@@ -18,7 +18,7 @@ Also referred to as KCO or DLCO/VA."""
   * system = $UCUM
   * code = #mL/min/mmHg
 
-Profile: CarbonMonoxideTransferCoefficient_Zscore
+Profile: KCO_Zscore
 Parent: Observation
 Id: KCO-Zscore
 Title: "KCO Zscore"
@@ -31,7 +31,7 @@ Description: "The z-score of a carbon monoxide transfer coefficient measurement,
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: CarbonMonoxideTransferCoefficient_percentPredicted
+Profile: KCO_PercentOfPredicted
 Parent: Observation
 Id: KCO-PercentOfPredicted
 Title: "KCO Percent Of Predicted"
@@ -48,7 +48,7 @@ Description: "A measurement of carbon monoxide transfer coefficient as the perce
 /*
  * Pre-bronchodilator
  */
-Profile: CarbonMonoxideTransferCoefficient_PreBronchodilator
+Profile: KCOPreBronchodilator
 Parent: Observation
 Id: KCOPreBronchodilator
 Title: "KCO Pre-bronchodilator"
@@ -62,7 +62,7 @@ Also referred to as KCO or DLCO/VA."""
   * system = $UCUM
   * code = #mL/min/mmHg
 
-Profile: CarbonMonoxideTransferCoefficient_PreBronchodilator_Zscore
+Profile: KCOPreBronchodilator_Zscore
 Parent: Observation
 Id: KCOPreBronchodilator-Zscore
 Title: "KCO Pre-bronchodilator Zscore"
@@ -75,7 +75,7 @@ Description: "Carbon monoxide transfer coefficient pre-bronchodilator z-score. N
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: CarbonMonoxideTransferCoefficient_PreBronchodilator_percentPredicted
+Profile: KCOPreBronchodilator_PercentOfPredicted
 Parent: Observation
 Id: KCOPreBronchodilator-PercentOfPredicted
 Title: "KCO Pre-bronchodilator Percent Of Predicted"
@@ -91,7 +91,7 @@ Description: "Carbon monoxide transfer coefficient (% predicted), pre-bronchodil
 /*
  * Post-bronchodilator
  */
-Profile: CarbonMonoxideTransferCoefficient_PostBronchodilator
+Profile: KCOPostBronchodilator
 Parent: Observation
 Id: KCOPostBronchodilator
 Title: "KCO Post-bronchodilator"
@@ -104,7 +104,7 @@ Description: "Carbon monoxide transfer coefficient, post-bronchodilator. Note: a
   * code = #mL/min/mmHg
 
 
-Profile: CarbonMonoxideTransferCoefficient_PostBronchodilator_Zscore
+Profile: KCOPostBronchodilator_Zscore
 Parent: Observation
 Id: KCOPostBronchodilator-Zscore
 Title: "KCO Post-bronchodilator Zscore"
@@ -117,7 +117,7 @@ Description: "Carbon monoxide transfer coefficient post-bronchodilator z-score. 
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: CarbonMonoxideTransferCoefficient_PostBronchodilator_percentPredicted
+Profile: KCOPostBronchodilator_PercentOfPredicted
 Parent: Observation
 Id: KCOPostBronchodilator-PercentOfPredicted
 Title: "KCO Post-bronchodilator Percent Of Predicted"

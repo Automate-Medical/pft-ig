@@ -20,7 +20,7 @@ Description: "Diffusion capacity of lung for carbon monoxide."
 /*
  * DLCO at standard P_B (barometric pressure)
  */
-Profile: DLCO_atStandardPb
+Profile: DLCOAtStandardBarometricPressure
 Parent: Observation
 Id: DLCOAtStandardBarometricPressure
 Title: "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB)"
@@ -33,7 +33,7 @@ Description: "Diffusion capacity of lung for carbon monoxide at standard baromet
   * system = $UCUM
   * code = #mL/min/mmHg
 
-Profile: DLCO_atStandardPb_Zscore
+Profile: DLCOAtStandardBarometricPressure_Zscore
 Parent: Observation
 Id: DLCOAtStandardBarometricPressure-Zscore
 Title: "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB) Zscore"
@@ -46,7 +46,7 @@ Description: "Diffusion capacity of lung for carbon monoxide at standard baromet
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: DLCO_atStandardPb_percentPredicted
+Profile: DLCOAtStandardBarometricPressure_PercentOfPredicted
 Parent: Observation
 Id: DLCOAtStandardBarometricPressure-PercentOfPredicted
 Title: "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) At Standard Barometric Pressure (PB) Percent Of Predicted"
@@ -62,7 +62,7 @@ Description: "Diffusion capacity of lung for carbon monoxide at standard baromet
 /*
  * DLCO adjusted for H_b (hemoglobin)
  */
-Profile: DLCO_predAdjHb
+Profile: DLCOAdjustedForHemoglobin
 Parent: Observation
 Id: DLCOAdjustedForHemoglobin
 Title: "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) Adjusted For Hemoglobin (Hb)"
@@ -74,7 +74,7 @@ Description: "Diffusion capacity of lung for carbon monoxide, adjusted for hemog
   * system = $UCUM
   * code = #mL/min/mmHg
 
-Profile: DLCO_predAdjHb_percentPredicted
+Profile: DLCOAdjustedForHemoglobin_PercentOfPredicted
 Parent: Observation
 Id: DLCOAdjustedForHemoglobin-PercentOfPredicted
 Title: "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) Adjusted For Hemoglobin (Hb) Percent Of Predicted"

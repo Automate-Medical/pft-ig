@@ -4,7 +4,7 @@
 /*
  * Pre/post bronchodilator not specified
  */
-Profile: ForcedExpiratoryVolume_1s
+Profile: ForcedExpiratoryVolume1Sec
 Parent: Observation
 Id: ForcedExpiratoryVolume1Sec
 Title: "Forced Expiratory Volume In 1 Second (FEV1)"
@@ -16,7 +16,7 @@ Description: "Forced expiratory volume in 1 second"
   * system = $UCUM
   * code = #L
 
-Profile: ForcedExpiratoryVolume_1s_Zscore
+Profile: ForcedExpiratoryVolume1Sec_Zscore
 Parent: Observation
 Id: ForcedExpiratoryVolume1Sec-Zscore
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Zscore"
@@ -29,7 +29,7 @@ Description: "Forced expiratory volume in 1 second (z-score)"
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: ForcedExpiratoryVolume_1s_percentPredicted
+Profile: ForcedExpiratoryVolume1Sec_PercentOfPredicted
 Parent: Observation
 Id: ForcedExpiratoryVolume1Sec-PercentOfPredicted
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Percent Of Predicted"
@@ -44,7 +44,7 @@ Description: "Forced expiratory volume in 1 second (% pred)"
 /*
  * Pre-bronchodilator
  */
-Profile: ForcedExpiratoryVolume_1s_PreBronchodilator
+Profile: ForcedExpiratoryVolume1SecPreBronchodilator
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPreBronchodilator
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator"
@@ -56,7 +56,7 @@ Description: "Forced expiratory volume in 1 second pre-bronchodilator"
   * system = $UCUM
   * code = #L
 
-Profile: ForcedExpiratoryVolume_1s_PreBronchodilator_Zscore
+Profile: ForcedExpiratoryVolume1SecPreBronchodilator_Zscore
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPreBronchodilator-Zscore
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Zscore"
@@ -69,7 +69,7 @@ Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: ForcedExpiratoryVolume_1s_PreBronchodilator_percentPredicted
+Profile: ForcedExpiratoryVolume1SecPreBronchodilator_PercentOfPredicted
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Percent Of Predicted"
@@ -86,7 +86,7 @@ Description: "Forced expiratory volume in 1 second (% pred) pre-bronchodilator"
 /*
  * Post-bronchodilator
  */
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPostbronchodilator
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator"
@@ -98,7 +98,7 @@ Description: "Forced expiratory volume in 1 second (liters) post-bronchodilator"
   * system = $UCUM
   * code = #L
 
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_Zscore
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator_Zscore
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPostbronchodilator-Zscore
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Zscore"
@@ -111,7 +111,7 @@ Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_percentPredicted
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredicted
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Of Predicted"
@@ -124,7 +124,7 @@ Description: "Forced expiratory volume in 1 second (% pred) post-bronchodilator"
   * system = $UCUM
   * code = #%
 
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_mLChange
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator_mLChange
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPostbronchodilator-mLChange
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator mL Change"
@@ -137,7 +137,7 @@ Description: "Forced expiratory volume in one second, mL change from pre-broncho
   * system = $UCUM
   * code = #mL
 
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_percentChange
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Change"

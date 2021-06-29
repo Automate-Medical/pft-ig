@@ -20,7 +20,7 @@ Description: "Forced expiratory time (seconds)"
 /*
  * Pre-bronchodilator
  */
-Profile: ForcedExpiratoryTime_PreBronchodilator
+Profile: ForcedExpiratoryTimePreBronchodilator
 Parent: Observation
 Id: ForcedExpiratoryTime-PreBronchodilator
 Title: "Forced Expiratory Time (FET) Pre-bronchodilator"
@@ -37,7 +37,7 @@ Description: "Forced expiratory time (seconds) pre-bronchodilator"
 /*
  * Post-bronchodilator
  */
-Profile: ForcedExpiratoryTime_PostBronchodilator
+Profile: ForcedExpiratoryTimePostBronchodilator
 Parent: Observation
 Id: ForcedExpiratoryTime-PostBronchodilator
 Title: "Forced Expiratory Time (FET) Post-bronchodilator"

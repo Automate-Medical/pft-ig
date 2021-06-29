@@ -26,7 +26,7 @@ Description: "The z-score of an alveolar volume measurement, calculated from som
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: AlveolarVolume_percentPredicted
+Profile: AlveolarVolume_PercentOfPredicted
 Parent: Observation
 Id: AlveolarVolume-PercentOfPredicted
 Title: "Alveolar Volume (VA) Percent Of Predicted"
