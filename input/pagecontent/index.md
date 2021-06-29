@@ -22,7 +22,7 @@ This IG currently profiles a DiagnosticReport with a minimal set of the most cli
 
 ### Background
 
-Professional clinical societies and patient advocates mutually agree that interoperability of pulmonary function test data and the standardization of the reporting of results are critically important. Pulmonary function is a significant, trackable biomarker with benchmark value. Function measurements can be paricularly useful in monitoring the progression of disease states such as cystic fibrosis and COPD. Spirometry is particularly well established and dates from the 1840s.
+Professional clinical societies and patient advocates mutually agree that interoperability of pulmonary function test data and the standardization of the reporting of results are critically important. Pulmonary function is a significant, trackable biomarker with benchmark value. Function measurements can be particularly useful in monitoring the progression of disease states such as cystic fibrosis and COPD. Spirometry is particularly well established and dates from the 1840s.
 
 Interoperability efforts and standards development have proceeded in a three key areas:
 
