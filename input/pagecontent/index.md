@@ -48,7 +48,7 @@ This IG is a response to this articulation.
 
 A `DiagnosticReport` profile with an identifier of `PulmonaryFunctionTestDiagnosticReport` is introduced.
 
-This implementation guide can be used by device manufacturers, pulmonary function labratories, and electronic health record vendors to model pulmonary function test data.
+This implementation guide can be used by device manufacturers, pulmonary function laboratories, and electronic health record vendors to model pulmonary function test data.
 The `PulmonaryFunctionTestDiagnosticReport` defines a set of reference `Observation` Profiles that map to the 2017 [Recommendations for a Standardized Pulmonary Function Report](https://www.thoracic.org/statements/resources/pft/standardized-pulmonary-function-report.pdf). As a design principle, this implementation guide makes use of `derivedFrom` associations for `Observation` Profiles of measures such as the Zscore of a patient's performance against a reference value equation. Where possible, this implementation guide.
 
 Implementers should consider referencing the examples included as artifacts and in particular [DiagnosticReport-diagnostic-report](./DiagnosticReport-diagnostic-report.html) and its associated Observations.
