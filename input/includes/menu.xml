@@ -1,0 +1,50 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+	<li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spirometry<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-ForcedVitalCapacity.html">FVC</a>
+      </li>
+			<li>
+        <a href="StructureDefinition-ForcedExpiratoryVolume1Sec.html">FEV1</a>
+      </li>
+			<li>
+        <a href="StructureDefinition-FEV1-over-FVC.html">FEV1/FVC</a>
+      </li>
+			<li>
+				<a href="StructureDefinition-ForcedExpiratoryTime.html">FET</a>
+			</li>
+		</ul>
+	</li>
+		<li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Diffusion Capacity<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="StructureDefinition-DLCOAtStandardBarometricPressure.html">DLCO (at standard P_B)</a>
+      </li>
+			<li>
+        <a href="StructureDefinition-DLCOAdjustedForHemoglobin.html">DLCO (pred adj Hb 13.8 g/dL)</a>
+      </li>
+			<li>
+        <a href="StructureDefinition-AlveolarVolume.html">VA</a>
+      </li>
+			<li>
+        <a href="StructureDefinition-VI-over-VC.html">VI/VC</a>
+      </li>
+			<li>
+        <a href="StructureDefinition-KCO.html">KCO</a>
+      </li>
+		</ul>
+	</li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+	<li><a href="https://github.com/automate-medical/pft-ig/releases">Version History</a></li>
+  <li><a href="https://github.com/dvci/vaccine-credential-ig">GitHub</a></li>
+</ul>
