@@ -1,7 +1,7 @@
 /* "SpO2 at rest" is measured at the top of the example PFT.
  * Included because it may be relevant to diagnosis. */
 Instance: SPO2_RESTING
-InstanceOf: Observation
+InstanceOf: SPO2AtRest
 Title: "SpO2 at rest"
 Usage: #inline
 * id = "SPO2-RESTING"

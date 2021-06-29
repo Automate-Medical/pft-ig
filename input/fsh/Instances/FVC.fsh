@@ -7,7 +7,7 @@
  * FVC_PRE
  */
 Instance: FVC_PRE
-InstanceOf: Observation
+InstanceOf: ForcedVitalCapacityPreBronchodilator
 Title: "FVC (L) pre-bronchodilator"
 Description: "An example Observation resource for forced vital capacity volume, pre-bronchodilator."
 Usage: #example
@@ -33,15 +33,15 @@ Usage: #example
  * FVC_PRE_zScore
  */
 Instance: FVC_PRE_zScore
-InstanceOf: Observation
+InstanceOf: ForcedVitalCapacityPreBronchodilator_Zscore
 Title: "FVC z-score pre-bronchodilator"
 Description: "An example Observation resource for forced vital capacity z-score, pre-bronchodilator."
 Usage: #example
 * id = "FVC-PRE-Zscore"
 * status = #final
 * code
-  * text = "FVC_PRE Z-score"
-* valueQuantity = -1.34 '{Zscore}' "Z-score"
+  * text = "Forced vital capacity (z-score) pre-bronchodilator"
+* valueQuantity = -1.34 '{Zscore}' "Zscore"
 * derivedFrom[+] = Reference(FVC_PRE)
 * derivedFrom[+] = Reference(FVC_PREREF_predicted)
 
@@ -49,7 +49,7 @@ Usage: #example
  * FVC PRE measured/predicted
  */
 Instance: FVC_PRE_percentPredicted
-InstanceOf: Observation
+InstanceOf: ForcedVitalCapacityPreBronchodilator_PercentOfPredicted
 Title: "FVC pre-bronchodilator, % of predicted value"
 Description: "An example Observation resource for forced vital capacity measured/predicted, pre-bronchodilator."
 Usage: #example
@@ -61,13 +61,13 @@ Usage: #example
 * derivedFrom[+] = Reference(FVC_PREREF_predicted)
 
 
-/* FVC POST Observations. Probably move these into separate file. */
+/* FVC POST Observations. */
 
 /*
  * FVC_POST
  */
 Instance: FVC_POST
-InstanceOf: Observation
+InstanceOf: ForcedVitalCapacityPostBronchodilator
 Title: "FVC (L) post-bronchodilator"
 Description: "An example Observation resource for forced vital capacity volume, post-bronchodilator."
 Usage: #example
@@ -84,15 +84,15 @@ Usage: #example
  * FVC_POST_zScore
  */
 Instance: FVC_POST_zScore
-InstanceOf: Observation
+InstanceOf: ForcedVitalCapacityPostBronchodilator_Zscore
 Title: "FVC z-score post-bronchodilator"
 Description: "An example Observation resource for forced vital capacity z-score, post-bronchodilator."
 Usage: #example
 * id = "FVC-POST-Zscore"
 * status = #final
 * code
-  * text = "FVC_POST z-score"
-* valueQuantity = -0.09 '{Zscore}' "Z-score"
+  * text = "Forced vital capacity (z-score) post-bronchodilator"
+* valueQuantity = -0.09 '{Zscore}' "Zscore"
 * derivedFrom[+] = Reference(FVC_POST)
 // TODO: Do FVC_POST measurements use the same reference values as FVC_PRE?
 // * derivedFrom[+] = Reference(FVC_PREREF_predicted)
@@ -101,7 +101,7 @@ Usage: #example
  * FVC POST measured/predicted
  */
 Instance: FVC_POST_percentPredicted
-InstanceOf: Observation
+InstanceOf: ForcedVitalCapacityPostBronchodilator_PercentOfPredicted
 Title: "FVC post-bronchodilator, % of predicted value"
 Description: "An example Observation resource for forced vital capacity measured/predicted, post-bronchodilator."
 Usage: #example
@@ -113,20 +113,20 @@ Usage: #example
 // * derivedFrom[+] = Reference(FVC_PREREF_predicted)
 
 Instance: FVC_POST_mLChange
-InstanceOf: Observation
+InstanceOf: ForcedVitalCapacityPostBronchodilator_mLChange
 Title: "FVC post-bronchodilator, change from pre-bronchodilator (mL)"
 Description: "An example Observation resource for the volume change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."
 Usage: #example
 * id = "FVC-POST-mLChange"
 * status = #final
 * code
-  * text = "FVC POST change (mL)"
+  * text = "Forced vital capacity, post-bronchodilator change from pre-bronchodilator (mL)"
 * valueQuantity = 600 'mL' "mL"
 * derivedFrom[+] = Reference(FVC_PRE)
 * derivedFrom[+] = Reference(FVC_POST)
 
 Instance: FVC_POST_percentChange
-InstanceOf: Observation
+InstanceOf: ForcedVitalCapacityPostBronchodilator_PercentChange
 Title: "FVC post-bronchodilator, change from pre-bronchodilator (%)"
 Description: "An example Observation resource for the percent change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."
 Usage: #example

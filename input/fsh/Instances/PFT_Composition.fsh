@@ -25,7 +25,7 @@ Usage: #example
     * status = #additional
     * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">TECHNICIAN COMMMENTS: No medications in past 24 hr. 400 mcg albuterol given for reversibility testing.</div>"
 
-  * entry[+] = Reference(SpO2_RESTING) // TODO: Don't know where else to put this.
+  * entry[+] = Reference(SPO2_RESTING) // TODO: Don't know where else to put this.
 
   /* PFT panel: Spirometry */
   * section[+]
