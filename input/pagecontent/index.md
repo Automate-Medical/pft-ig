@@ -36,7 +36,7 @@ As the working group in McCormack et al wrote in [Electronic Health Records and 
 
 > The ability to access PFT data within and between healthcare systems holds great promise for improving our understanding of lung diseases and the respiratory health of patients and the population. This would not only allow monitoring of trends in forced expiratory volume in 1 second in the same way one can typically monitor trends in other clinical laboratory values (e.g., white-blood-cell count or hemoglobin A1c) within the EHR but would also allow visualization of flow-volume loops and indicators of testing quality (e.g., acceptable and reproducible spirometric effort).
 
-Additionally, they note a number of singificant organizational challenges to overcome in driving interoperability for PFTs: "PFT data [has not been] prioritized for standardization by organizational bodies (FHIR)", "lack of consensus on which discrete variables should be sent to the EHR", and "lack of common data model and interoperability standard by societies".
+Additionally, they note a number of significant organizational challenges to overcome in driving interoperability for PFTs: "PFT data [has not been] prioritized for standardization by organizational bodies (FHIR)", "lack of consensus on which discrete variables should be sent to the EHR", and "lack of common data model and interoperability standard by societies".
 
 Finally, they point towards the benefit of a standardized data vocabulary for PFTs:
 
