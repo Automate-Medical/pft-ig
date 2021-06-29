@@ -10,7 +10,7 @@
 
 ### Scope
 
-This [FHIR Implementation Guide](https://www.hl7.org/fhir/implementationguide.html) (IG) describes how to structure pulmonary function test data in an ineroperable format.
+This [FHIR Implementation Guide](https://www.hl7.org/fhir/implementationguide.html) (IG) describes how to structure pulmonary function test data in an interoperable format.
 
 A pulmonary function test evaluates lung function and impairment. Several unique, individual tests typically compose a complete pulmonary function test. [Spirometry](https://en.wikipedia.org/wiki/Spirometry) is the most common method of measurement and includes tests of pulmonary mechanics. Measuring pulmonary mechanics assesses the ability of the lungs to move huge volumes of air quickly through the airways to identify airway obstruction.
 
