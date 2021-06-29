@@ -1,102 +1,88 @@
-# PulmonaryFunctionTestIG
+<span class="label label-danger">NOTE</span> This implementation guide is under **active development** on [GitHub](https://github.com/automate-medical/pft-ig/issues), and **may change without notice**. Please comment on or [create](https://github.com/automate-medical/pft-ig/issues/new) an issue on GitHub if you have questions, comments, or suggestions. Contributions are welcome! Development has been sponsored by [Automate Medical](https://www.automatemedical.com/).
 
-This implementation guide defines FHIR profiles for pulmonary function tests and provides examples of their usage.
-
-## Contents
-1. [Scope](#scope)
+### Contents
+1. [Introduction](#introduction)
 2. [Background](#background)
-3. [Motivation](#motivation)
-4. [Usage](#usage)
-5. [Issues](#issues)
-    1. [Gaps in coding](#gaps-in-observation-coding)
+3. [Usage](#usage)
+4. [Limitations](#limitations)
+  1. [Gaps in coding](#gaps-in-observation-coding)
+5. [Authors](#authors)
 
-## Scope
+### Scope
 
-TODO: I think this section should explain what a PFT does, what this implementation guide has to do with PFTs, and explain the terminology used - audience is programmers not doctors
+This [FHIR Implementation Guide](https://www.hl7.org/fhir/implementationguide.html) (IG) describes how to structure pulmonary function test data in an ineroperable format.
 
-A [pulmonary function test](https://en.wikipedia.org/wiki/Pulmonary_function_testing) (also referred to as PFT) measures the function of the respiratory system with respect to several parameters.
+A pulmonary function test evaluates lung function and impairment. Several unique, individual tests typically compose a complete pulmonary function test. [Spirometry](https://en.wikipedia.org/wiki/Spirometry) is the most common method of measurement and includes tests of pulmonary mechanics. Measuring pulmonary mechanics assesses the ability of the lungs to move huge volumes of air quickly through the airways to identify airway obstruction.
 
-This implementation guide provides profiles for spirometry (pre and post bronchodilation) and diffusing capacity Observations.
+Multiple practioners are involved in the workflow of administering and evaluating pulmonary function tests. Patients who present with observations such as dyspnea in encounters are frequently referred for pulmonary testing. Pulmonary testing can be significantly confounded by patient effort, and evaluation criteria are used to guage test validity. Respiratory therapists are trained to monitor patient effort during testing.
 
-### Spirometry
+Pulmonary function tests have interpretative guidelines established by professional clinical societies such as the [American Thoracic Society](https://www.thoracic.org/) and the [European Respiratory Society](https://www.ersnet.org/). Standardization and and uniformity in performance of tests is critical both because interpretative strategies in part depend upon relative performance in comparison to normative reference values.
 
-[Spirometry](https://en.wikipedia.org/wiki/Spirometry) measure the volume and flow of air that the lungs can inhale or exhale. This includes:
-- Forced vital capacity (FVC) - the total volume of air which can be exhaled after taking as deep a breath as possible
-- Forced expiratory volume (FEV) - the volume of air which can be forcibly exhaled over some number of seconds
-- FEV1/FVC - the ratio of forced expiratory volume over 1 second to forced vital capacity
-- Forced expiratory time (FET) - the amount of time it takes to fully exhale after taking as deep a breath as possible
+This IG currently profiles a DiagnosticReport with a minimal set of the most clinically significant discrete observations obtained from [Spirometry](https://en.wikipedia.org/wiki/Spirometry) or [Diffusion Capacity](https://en.wikipedia.org/wiki/Diffusing_capacity). It is intentionally designed to provide guidance in conformance with reporting standardization efforts such as [Recommendations for a Standardized Pulmonary Function Report](https://www.thoracic.org/statements/resources/pft/standardized-pulmonary-function-report.pdf) by Culver et al.
 
-### Diffusing Capacity
-[Diffusing capacity](https://en.wikipedia.org/wiki/Diffusing_capacity) measures the ability of the lungs to transfer gas from air to the blood vessels in the lungs.
-This includes:
-- TODO
+### Background
 
-Spirometry is by far the most common test panel included in pulmonary function tests, followed by diffusing capacity.
+Professional clinical societies and patient advocates mutually agree that interoperability of pulmonary function test data and the standardization of the reporting of results are critically important. Pulmonary function is a significant, trackable biomarker with benchmark value. Function measurements can be paricularly useful in monitoring the progression of disease states such as cystic fibrosis and COPD. Spirometry is particularly well established and dates from the 1840s.
 
-## Background
+Interoperability efforts and standards development have proceeded in a three key areas:
 
-TODO
+* [Standardization of reference values through efforts such as Global Lung Function Initiative](https://www.ers-education.org/lrmedia/2012/pdf/266696.pdf)
+* Standardization of quality assurance measurements to guide uniformity of test performance
+* [Standardization of clinically reported content](https://www.thoracic.org/statements/resources/pft/standardized-pulmonary-function-report.pdf))
 
-## Motivation
+This IG concerns a fourth kind of standardization of pulmonary function tests: standardization of a PFT inside of an electronic health record. It contains FHIR Profiles, or structural definitions, for the most important measurements. The PFT, to-date, has not benefited from the advancement of interoperability standards.
 
-TODO
+As the working group in McCormack et al wrote in [Electronic Health Records and Pulmonary Function Data: Developing an Interoperability Roadmap. An Official American Thoracic Society Workshop Report](https://www.atsjournals.org/doi/full/10.1513/AnnalsATS.202010-1318ST):
 
-(Maybe this can be combined with background.)
+> The ability to access PFT data within and between healthcare systems holds great promise for improving our understanding of lung diseases and the respiratory health of patients and the population. This would not only allow monitoring of trends in forced expiratory volume in 1 second in the same way one can typically monitor trends in other clinical laboratory values (e.g., white-blood-cell count or hemoglobin A1c) within the EHR but would also allow visualization of flow-volume loops and indicators of testing quality (e.g., acceptable and reproducible spirometric effort).
 
-The objective of this implementation guide is to enable interoperability of pulmonary function test data, allowing health care providers to
+Additionally, they note a number of singificant organizational challenges to overcome in driving interoperability for PFTs: "PFT data [has not been] prioritized for standardization by organizational bodies (FHIR)", "lack of consensus on which discrete variables should be sent to the EHR", and "lack of common data model and interoperability standard by societies".
 
+Finally, they point towards the benefit of a standardized data vocabulary for PFTs:
 
-Motivations/problems solved discussed here are good to include: https://docs.automatemedical.com/docs/pft-extractor-features
+> Availability of a standardized data vocabulary that labels and defines PFT elements would benefit both manufacturers of PFT equipment that generates pulmonary function data and developers of EHR software that receives the data and manages it. Moving from proprietary solutions to standardized information models and approaches to data exchange between PFT equipment and EHRs would have many benefits. It would promote interoperability, enabling data generated by pulmonary function equipment from a wide range of manufacturers to be recognized by a wide range of EHR systems and to be shared between different brands of EHR systems.
 
-## Usage
+This IG is a response to this articulation.
 
-TODO
+### Usage
 
-## Issues
+A `DiagnosticReport` profile with an identifier of `PulmonaryFunctionTestDiagnosticReport` is introduced.
 
-### Gaps in coding:
+This implementation guide can be used by device manufacturers, pulmonary function labratories, and electronic health record vendors to model pulmonary function test data.
+The `PulmonaryFunctionTestDiagnosticReport` defines a set of reference `Observation` Profiles that map to the 2017 [Recommendations for a Standardized Pulmonary Function Report](https://www.thoracic.org/statements/resources/pft/standardized-pulmonary-function-report.pdf). As a design principle, this implementation guide makes use of `derivedFrom` associations for `Observation` Profiles of measures such as the Zscore of a patient's performance against a reference value equation. Where possible, this implementation guide.
 
-For Observations where an appropriate LOINC or SNOMED code can not be found, we specify a name for the Observation in `code.text`.
+Implementers should consider referencing the examples included as artifacts and in particular [DiagnosticReport-diagnostic-report](./DiagnosticReport-diagnostic-report.html) and its associated Observations.
 
-Missing, ambiguous, or inconsistent LOINC codes/names encountered during modeling. This list is non-exhaustive; an observation's omission does not imply there exists a specific code for it.
+Practical use cases include:
 
-The primary issues for most observations are that "measured/predicted" and "z-score" are missing. Some observations also have ambiguous codes, where there they cannot be specified as pre or post bronchodilation.
+* Defining a target export for the data consolidation process of large research studies on normative pulmonary function
+* Completing digital transformation of paper or portable document format (PDF) versions of pulmonary function test reports to fully electronic health records
+* Connecting and promoting interoperable pulmonary function test records as part of public health research
+* Integrating novel self-surveillance data formats such as mobile at-home spirometry back into a provider's health information system
 
+### Limitations
 
-| Observation                                                 | URI                              | Issue      | Note        |
-|-------------------------------------------------------------|:--------------------------------:|:----------:|:-----------:|
-|                                                             |                                  |            |             |
-| **Spirometry**                                              |                                  |            |             |
-| FVC z-score                                                 | -                                | Missing    |             |
-| FVC mL change                                               | -                                | Missing    |             |
-| FEV1 z-score                                                | -                                | Missing    |             |
-| FEV1 measured/predicted                                     | https://loinc.org/20152-5/       | Ambiguous  | No pre/post |
-| FEV1/FVC                                                    | https://loinc.org/19926-5/       | Ambiguous  | No pre/post |
-| FEV1/FVC z-score                                            | -                                | Missing    |             |
-| Forced expiratory time                                      | https://loinc.org/65819-5/       | Ambiguous  | No pre/post |
-|                                                             |                                  |            |             |
-| **Diffusing capacity**                                      |                                  |            |             |
-| Diffusion capacity.carbon monoxide                          | https://loinc.org/19911-7        | Ambiguous  | No pre/post |
-| DLCO (at standard P_B)                                      | -                                | Missing    |             |
-| DLCO (at standard P_B) z-score                              | -                                | Missing    |             |
-| DLCO (at standard P_B )measured/predicted                   | -                                | Missing    |             |
-| DLCO (pred adj Hb 13.8 g/dL)                                | -                                | Missing    |             |
-| DLCO (pred adj Hb 13.8 g/dL) z-score                        | -                                | Missing    |             |
-| DLCO (pred adj Hb 13.8 g/dL) measured/predicted             | -                                | Missing    |             |
-| Alveolar Volume (V_A)                                       | http://snomed.info/id/251953007  | Missing    | Has SNOMED  |
-| Alveolar Volume (V_A) z-score                               | -                                | Missing    |             |
-| Alveolar Volume (V_A) measured/predicted                    | -                                | Missing    |             |
-| Total lung capacity by Helium single breath                 | https://loinc.org/19858-0        | Ambiguous  | No pre/post |
-| Inspired volume/vital capacity (V_I/V_C)                    | -                                | Missing    |             |
-| Diffusion capacity/Alveolar volume z-score                  | -                                | Missing    |             |
-| Diffusion capacity/Alveolar volume measured/predicted       | -                                | Missing    |             |
+#### Gaps in coding
 
-Note: "Diffusion capacity/Alveolar volume" is alternatively written as "DLCO/VA", or "KCO"
+For Observations where an appropriate LOINC or SNOMED code can not be found, we specify a human readable name for the Observation in `code.text`. Missing, ambiguous, or inconsistent LOINC codes/names were encountered during modeling. This problem is known in the existing clinical literature. Successfully progressing this Implementation Guide from its draft state will require co-ordination on recommendations to LOINC or SNOMED to guide resolving gaps in codeable concepts.
 
-**Inconsistent**: These codes are accurate, but the LOINC long names aren't consistent.
-- "Percent change" LOINC names differ:
-  - `ForcedVitalCapacity_PostBronchodilator_percentChange` has LOINC name "FVC percent change Respiratory system" (https://loinc.org/69982-7).
-  - `FEV1_POST_change_percent` has LOINC name "FEV1 percent change" (https://loinc.org/69983-5/).
+A non-exhaustive list of our documentation for these gaps is available in [Coding Gaps](./coding-gaps.html).
 
-### SNOMED
-Some observations which lack LOINC codes may have SNOMED codes. The SNOMED concept "[Respiratory measure (observable entity)](http://snomed.info/id/251880004)" has children corresponding to various pulmonary function test measures.
+#### Non-exhaustive
+
+We only include Spirometry and Diffusion Capacity in the current draft state. A published state should probably include other measures.
+
+Significantly, we do not describe a profile for series data, such as flow-volume results. Standardization efforts for device manufacturers, such as the [IEEE SA efforts on spirometry](https://standards.ieee.org/project/11073-10429.html) may produce efforts worth modelling in a published IG.
+
+#### Review status
+
+This FHIR IG needs clinical collaborators, device manufacturers, and electronic health record systems to review its current recommendations. Their input must inform published status.
+
+### Contact
+
+This FHIR Implementation Guide was sponsored and developed by [Automate Medical](https://www.automatemedical.com/). Questions and comments may be submitted to [josh@automatemedical.com](mailto:josh@automatemedical.com)
+
+### Authors
+
+* Joshua Kelly
+* Joseph Conroy
