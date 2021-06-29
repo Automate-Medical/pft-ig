@@ -4,10 +4,10 @@
 /*
  * Pre/post bronchodilator not specified
  */
-Profile: ForcedExpiratoryVolume_1s
+Profile: ForcedExpiratoryVolume1Sec
 Parent: Observation
-Id: FEV1
-Title: "Forced expiratory volume in 1 second"
+Id: ForcedExpiratoryVolume1Sec
+Title: "Forced Expiratory Volume In 1 Second (FEV1)"
 Description: "Forced expiratory volume in 1 second"
 * code = $LNC#20150-9 "FEV1"
 * value[x] only Quantity
@@ -16,10 +16,10 @@ Description: "Forced expiratory volume in 1 second"
   * system = $UCUM
   * code = #L
 
-Profile: ForcedExpiratoryVolume_1s_Zscore
+Profile: ForcedExpiratoryVolume1Sec_Zscore
 Parent: Observation
-Id: FEV1-Zscore
-Title: "Forced expiratory volume in 1 second (z-score)"
+Id: ForcedExpiratoryVolume1Sec-Zscore
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Zscore"
 Description: "Forced expiratory volume in 1 second (z-score)"
 * code
   * text = "FEV1 (z-score)"
@@ -29,10 +29,10 @@ Description: "Forced expiratory volume in 1 second (z-score)"
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: ForcedExpiratoryVolume_1s_percentPredicted
+Profile: ForcedExpiratoryVolume1Sec_PercentOfPredicted
 Parent: Observation
-Id: FEV1-percentPredicted
-Title: "Forced expiratory volume in 1 second (measured/predicted)"
+Id: ForcedExpiratoryVolume1Sec-PercentOfPredicted
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Percent Of Predicted"
 Description: "Forced expiratory volume in 1 second (% pred)"
 * code = $LNC#20152-5 "FEV1 measured/predicted"
 * value[x] only Quantity
@@ -44,10 +44,10 @@ Description: "Forced expiratory volume in 1 second (% pred)"
 /*
  * Pre-bronchodilator
  */
-Profile: ForcedExpiratoryVolume_1s_PreBronchodilator
+Profile: ForcedExpiratoryVolume1SecPreBronchodilator
 Parent: Observation
-Id: FEV1-PRE
-Title: "Forced expiratory volume in 1 second pre-bronchodilator"
+Id: ForcedExpiratoryVolume1SecPreBronchodilator
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator"
 Description: "Forced expiratory volume in 1 second pre-bronchodilator"
 * code = $LNC#20157-4 "FEV1 --pre bronchodilation"
 * value[x] only Quantity
@@ -56,10 +56,10 @@ Description: "Forced expiratory volume in 1 second pre-bronchodilator"
   * system = $UCUM
   * code = #L
 
-Profile: ForcedExpiratoryVolume_1s_PreBronchodilator_Zscore
+Profile: ForcedExpiratoryVolume1SecPreBronchodilator_Zscore
 Parent: Observation
-Id: FEV1-PRE-Zscore
-Title: "Forced expiratory volume in 1 second pre-bronchodilator (z-score) "
+Id: ForcedExpiratoryVolume1SecPreBronchodilator-Zscore
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Zscore"
 Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
 * code
   * text = "FEV1 (z-score) pre-bronchodilator"
@@ -69,10 +69,10 @@ Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: ForcedExpiratoryVolume_1s_PreBronchodilator_percentPredicted
+Profile: ForcedExpiratoryVolume1SecPreBronchodilator_PercentOfPredicted
 Parent: Observation
-Id: FEV1-PRE-percentPredicted
-Title: "Forced expiratory volume in 1 second pre-bronchodilator (measured/predicted)"
+Id: ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Percent Of Predicted"
 Description: "Forced expiratory volume in 1 second (% pred) pre-bronchodilator"
 * code
   * coding = $LNC#20152-5 "FEV1 measured/predicted"
@@ -86,10 +86,10 @@ Description: "Forced expiratory volume in 1 second (% pred) pre-bronchodilator"
 /*
  * Post-bronchodilator
  */
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator
 Parent: Observation
-Id: FEV1-POST
-Title: "Forced expiratory volume in 1 second post-bronchodilator"
+Id: ForcedExpiratoryVolume1SecPostbronchodilator
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator"
 Description: "Forced expiratory volume in 1 second (liters) post-bronchodilator"
 * code = $LNC#20155-8 "FEV1 --post bronchodilation"
 * value[x] only Quantity
@@ -98,10 +98,10 @@ Description: "Forced expiratory volume in 1 second (liters) post-bronchodilator"
   * system = $UCUM
   * code = #L
 
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_Zscore
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator_Zscore
 Parent: Observation
-Id: FEV1-POST-Zscore
-Title: "Forced expiratory volume in 1 second pre-bronchodilator (z-score)"
+Id: ForcedExpiratoryVolume1SecPostbronchodilator-Zscore
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Zscore"
 Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
 * code
   * text = "FEV1 (z-score) post-bronchodilator"
@@ -111,10 +111,10 @@ Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_percentPredicted
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredicted
 Parent: Observation
-Id: FEV1-POST-percentPredicted
-Title: "Forced expiratory volume in 1 second pre-bronchodilator (measured/predicted)"
+Id: ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Of Predicted"
 Description: "Forced expiratory volume in 1 second (% pred) post-bronchodilator"
 * code
   * coding = $LNC#20152-5 "FEV1 measured/predicted"
@@ -124,10 +124,10 @@ Description: "Forced expiratory volume in 1 second (% pred) post-bronchodilator"
   * system = $UCUM
   * code = #%
 
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_mLChange
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator_mLChange
 Parent: Observation
-Id: FEV1-POST-mLChange
-Title: "ForcedExpiratoryVolume_1s_PostBronchodilator_mLChange"
+Id: ForcedExpiratoryVolume1SecPostbronchodilator-mLChange
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator mL Change"
 Description: "Forced expiratory volume in one second, mL change from pre-bronchodilator to post-bronchodilator"
 * code
   * text = "FEV1 volume change"
@@ -137,10 +137,10 @@ Description: "Forced expiratory volume in one second, mL change from pre-broncho
   * system = $UCUM
   * code = #mL
 
-Profile: ForcedExpiratoryVolume_1s_PostBronchodilator_percentChange
+Profile: ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange
 Parent: Observation
-Id: FEV1-POST-percentChange
-Title: "ForcedExpiratoryVolume_1s_PostBronchodilator_percentChange"
+Id: ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Change"
 Description: "Forced expiratory volume in one second, percent change from pre-bronchodilator to post-bronchodilator"
 * code
   * text = "FEV1 percent change"

@@ -2,7 +2,7 @@
 Profile: VI_over_VC
 Parent: Observation
 Id: VI-over-VC
-Title: "VI_over_VC"
+Title: "VI/VC"
 Description: "Inspired volume (V_I) as a percentage of vital capacity (V_C)."
 * code
   * text = "VI/VC"

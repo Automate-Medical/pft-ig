@@ -6,8 +6,8 @@
  */
 Profile: ForcedExpiratoryTime
 Parent: Observation
-Id: FET
-Title: "FET"
+Id: ForcedExpiratoryTime
+Title: "Forced Expiratory Time (FET)"
 Description: "Forced expiratory time (seconds)"
 * code = $LNC#65819-5 "Forced expiratory time"
 * value[x] only Quantity
@@ -20,10 +20,10 @@ Description: "Forced expiratory time (seconds)"
 /*
  * Pre-bronchodilator
  */
-Profile: ForcedExpiratoryTime_PreBronchodilator
+Profile: ForcedExpiratoryTimePreBronchodilator
 Parent: Observation
-Id: FET-PRE
-Title: "FET_PRE"
+Id: ForcedExpiratoryTime-PreBronchodilator
+Title: "Forced Expiratory Time (FET) Pre-bronchodilator"
 Description: "Forced expiratory time (seconds) pre-bronchodilator"
 * code
   * coding = $LNC#65819-5 "Forced expiratory time"
@@ -37,10 +37,10 @@ Description: "Forced expiratory time (seconds) pre-bronchodilator"
 /*
  * Post-bronchodilator
  */
-Profile: ForcedExpiratoryTime_PostBronchodilator
+Profile: ForcedExpiratoryTimePostBronchodilator
 Parent: Observation
-Id: FET-POST
-Title: "FET_POST"
+Id: ForcedExpiratoryTime-PostBronchodilator
+Title: "Forced Expiratory Time (FET) Post-bronchodilator"
 Description: "Forced expiratory time (seconds) post-bronchodilator"
 * code
   * coding = $LNC#65819-5 "Forced expiratory time"

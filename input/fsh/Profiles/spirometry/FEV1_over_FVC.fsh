@@ -7,7 +7,7 @@
 Profile: FEV1_over_FVC
 Parent: Observation
 Id: FEV1-over-FVC
-Title: "FEV1_over_FVC"
+Title: "FEV1/FVC"
 Description: "FEV1/FVC"
 * code = $LNC#19926-5 "FEV1/FVC"
 * value[x] only Quantity
@@ -19,7 +19,7 @@ Description: "FEV1/FVC"
 Profile: FEV1_over_FVC_Zscore
 Parent: Observation
 Id: FEV1-over-FVC-Zscore
-Title: "FEV1_over_FVC_Zscore"
+Title: "FEV1/FVC Zscore"
 Description: "FEV1/FVC (z-score)"
 * code
   * text = "FEV1/FVC (z-score)"
@@ -35,8 +35,8 @@ Description: "FEV1/FVC (z-score)"
  */
 Profile: FEV1_over_FVC_PreBronchodilator
 Parent: Observation
-Id: FEV1-over-FVC-PRE
-Title: "FEV1_over_FVC_PRE"
+Id: FEV1-over-FVC-PreBronchodilator
+Title: "FEV1/FVC Pre-bronchodilator"
 Description: "FEV1/FVC pre-bronchodilator"
 * code
   * coding = $LNC#19926-5 "FEV1/FVC"
@@ -49,8 +49,8 @@ Description: "FEV1/FVC pre-bronchodilator"
 
 Profile: FEV1_over_FVC_PreBronchodilator_Zscore
 Parent: Observation
-Id: FEV1-over-FVC-PRE-Zscore
-Title: "FEV1_over_FVC_PRE_Zscore"
+Id: FEV1-over-FVC-PreBronchodilator-Zscore
+Title: "FEV1/FVC Pre-bronchodilator Zscore"
 Description: "FEV1/FVC (z-score) pre-bronchodilator"
 * code
   * text = "FEV1/FVC (z-score) pre-bronchodilator"
@@ -66,8 +66,8 @@ Description: "FEV1/FVC (z-score) pre-bronchodilator"
  */
 Profile: FEV1_over_FVC_PostBronchodilator
 Parent: Observation
-Id: FEV1-over-FVC-POST
-Title: "FEV1_over_FVC_POST"
+Id: FEV1-over-FVC-PostBronchodilator
+Title: "FEV1/FVC Post-bronchodilator"
 Description: "FEV1/FVC post-bronchodilator"
 * code
   * coding = $LNC#19926-5 "FEV1/FVC"
@@ -80,8 +80,8 @@ Description: "FEV1/FVC post-bronchodilator"
 
 Profile: FEV1_over_FVC_PostBronchodilator_Zscore
 Parent: Observation
-Id: FEV1-over-FVC-POST-Zscore
-Title: "FEV1_over_FVC_POST_Zscore"
+Id: FEV1-over-FVC-PostBronchodilator-Zscore
+Title: "FEV1/FVC Post-bronchodilator Zscore"
 Description: "FEV1/FVC (z-score) post-bronchodilator"
 * code
   * text = "FEV1/FVC (z-score) post-bronchodilator"
