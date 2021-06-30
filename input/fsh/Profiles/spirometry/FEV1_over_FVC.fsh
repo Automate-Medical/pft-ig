@@ -24,7 +24,7 @@ Profile: FEV1_over_FVC_Zscore
 Parent: Observation
 Id: FEV1-over-FVC-Zscore
 Title: "FEV1/FVC Zscore"
-Description: """The Zscore of the of forced expiratory volume in one second to forced vital capacity (FEV1/FVC).
+Description: """The Zscore of the ratio of forced expiratory volume in one second to forced vital capacity (FEV1/FVC).
 
 The ratio of forced expiratory volume in one second to forced vital capacity is useful because different respiratory conditions affect each term in the ratio in different ways.
 
@@ -65,7 +65,7 @@ Profile: FEV1_over_FVC_PreBronchodilator_Zscore
 Parent: Observation
 Id: FEV1-over-FVC-PreBronchodilator-Zscore
 Title: "FEV1/FVC Pre-bronchodilator Zscore"
-Description: """The Zscore of the of forced expiratory volume in one second to forced vital capacity (FEV1/FVC) performed pre-bronchodilator.
+Description: """The Zscore of the ratio of forced expiratory volume in one second to forced vital capacity (FEV1/FVC) performed pre-bronchodilator.
 
 The ratio of forced expiratory volume in one second to forced vital capacity is useful because different respiratory conditions affect each term in the ratio in different ways.
 
@@ -106,7 +106,7 @@ Profile: FEV1_over_FVC_PostBronchodilator_Zscore
 Parent: Observation
 Id: FEV1-over-FVC-PostBronchodilator-Zscore
 Title: "FEV1/FVC Post-bronchodilator Zscore"
-Description: """The Zscore of the of forced expiratory volume in one second to forced vital capacity (FEV1/FVC) performed post-bronchodilator.
+Description: """The Zscore of the ratio of forced expiratory volume in one second to forced vital capacity (FEV1/FVC) performed post-bronchodilator.
 
 The ratio of forced expiratory volume in one second to forced vital capacity is useful because different respiratory conditions affect each term in the ratio in different ways.
 
