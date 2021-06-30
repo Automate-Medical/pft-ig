@@ -12,8 +12,7 @@ Description: """A measurement of forced vital capacity (FVC).
 
 Forced vital capacity is the total volume of air (in liters) that can be forcibly exhaled after taking as deep a breath as possible.
 
-This profile is for a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code = $LNC#19870-5 "Forced vital capacity [Volume] Respiratory system"
 * value[x] only Quantity
 * valueQuantity
@@ -31,8 +30,7 @@ Forced vital capacity is the total volume of air (in liters) that can be forcibl
 
 The Zscore of a measured value is determined by comparing the measured value to some reference distribution based on the patient's demographic information. The Zscore is useful as an indicator of how abnormal the measured value is.
 
-This profile is for the Zscore of a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for the Zscore of a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code
   * text = "Forced vital capacity (z-score)"
 * value[x] only Quantity
@@ -51,8 +49,7 @@ Forced vital capacity is the total volume of air (in liters) that can be forcibl
 
 The predicted value (also referred to as the \"reference value\") is determined by the patient's demographic information. The ratio of the measured value to the predicted value is useful as an indicator of how abnormal the measured value is.
 
-This profile is for the measured/predicted ratio of a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for the measured/predicted ratio of a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code = $LNC#19872-1 "FVC measured/predicted"
 * value[x] only Quantity
   * unit = "%"
@@ -71,8 +68,7 @@ Description: """A measurement of forced vital capacity (FVC) performed pre-bronc
 
 Forced vital capacity is the total volume of air (in liters) that can be forcibly exhaled after taking as deep a breath as possible.
 
-This profile is for a forced vital capacity observation which was performed pre-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for a forced vital capacity observation which was performed pre-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code = $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
 * value[x] only Quantity
 * valueQuantity
@@ -90,8 +86,7 @@ Forced vital capacity is the total volume of air (in liters) that can be forcibl
 
 The Zscore of a measured value is determined by comparing the measured value to some reference distribution based on the patient's demographic information. The Zscore is useful as an indicator of how abnormal the measured value is.
 
-This profile is for the Zscore of a forced vital capacity observation which was performed pre-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for the Zscore of a forced vital capacity observation which was performed pre-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code
   * text = "Forced vital capacity (z-score) pre-bronchodilator"
 * value[x] only Quantity
@@ -110,8 +105,7 @@ Forced vital capacity is the total volume of air (in liters) that can be forcibl
 
 The predicted value (also referred to as the \"reference value\") is determined by the patient's demographic information. The ratio of the measured value to the predicted value is useful as an indicator of how abnormal the measured value is.
 
-This profile is for the measured/predicted ratio of a forced vital capacity observation which was performed pre-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for the measured/predicted ratio of a forced vital capacity observation which was performed pre-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code = $LNC#19871-3 "FVC pre bronchodilation measured/predicted"
 * value[x] only Quantity
   * unit = "%"
@@ -130,8 +124,7 @@ Description: """A measurement of forced vital capacity (FVC) performed post-bron
 
 Forced vital capacity is the total volume of air (in liters) that can be forcibly exhaled after taking as deep a breath as possible.
 
-This profile is for a forced vital capacity observation which was performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for a forced vital capacity observation which was performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code =  $LNC#19874-7 "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
 * value[x] only Quantity
 * valueQuantity
@@ -149,8 +142,7 @@ Forced vital capacity is the total volume of air (in liters) that can be forcibl
 
 The Zscore of a measured value is determined by comparing the measured value to some reference distribution based on the patient's demographic information. The Zscore is useful as an indicator of how abnormal the measured value is.
 
-This profile is for the Zscore of a forced vital capacity observation which was performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for the Zscore of a forced vital capacity observation which was performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code
   * text = "Forced vital capacity (z-score) post-bronchodilator"
 * value[x] only Quantity
@@ -169,8 +161,7 @@ Forced vital capacity is the total volume of air (in liters) that can be forcibl
 
 The predicted value (also referred to as the \"reference value\") is determined by the patient's demographic information. The ratio of the measured value to the predicted value is useful as an indicator of how abnormal the measured value is.
 
-This profile is for the measured/predicted ratio of a forced vital capacity observation which was performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for the measured/predicted ratio of a forced vital capacity observation which was performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code = $LNC#19873-9 "FVC post bronchodilation measured/predicted"
 * value[x] only Quantity
 * valueQuantity
@@ -186,8 +177,7 @@ Description: """The volume (mL) change in forced vital capacity (FVC) between a 
 
 Forced vital capacity is the total volume of air (in liters) that can be forcibly exhaled after taking as deep a breath as possible.
 
-This profile is for the difference in volume between two forced vital capacity measurements: one performed pre-bronchodilator, and the other performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for the difference in volume between two forced vital capacity measurements: one performed pre-bronchodilator, and the other performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code
   * text = "Forced vital capacity, post-bronchodilator change from pre-bronchodilator (mL)"
 * value[x] only Quantity
@@ -204,8 +194,7 @@ Description: """The percent change in forced vital capacity (FVC) between a meas
 
 Forced vital capacity is the total volume of air (in liters) that can be forcibly exhaled after taking as deep a breath as possible.
 
-This profile is for the percent change between two forced vital capacity measurements: one performed pre-bronchodilator, and the other performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions.
-"""
+This profile is for the percent change between two forced vital capacity measurements: one performed pre-bronchodilator, and the other performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code = $LNC#69982-7 "FVC percent change Respiratory system"
 * value[x] only Quantity
 * valueQuantity
