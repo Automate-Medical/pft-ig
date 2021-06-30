@@ -8,7 +8,10 @@ Profile: DLCO
 Parent: Observation
 Id: DLCO
 Title: "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO)"
-Description: "Diffusion capacity of lung for carbon monoxide."
+// TODO: Expand description to explain why carbon monoxide is used, why the unit is mL/min/mmHg, etc.
+Description: """A measurement of diffusion capacity of the lung for carbon monoxide (DLCO). Also referred to as transfer capacity of the lung for carbon monoxide (TLCO).
+
+DLCO is a test of the lungs' ability to transfer inhaled gas to the bloodstream."""
 * code = $LNC#19911-7 "Diffusion capacity.carbon monoxide"
 * value[x] only Quantity
 * valueQuantity
