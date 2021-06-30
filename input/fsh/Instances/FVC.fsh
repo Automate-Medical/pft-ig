@@ -9,7 +9,7 @@
 Instance: FVC_PRE
 InstanceOf: ForcedVitalCapacityPreBronchodilator
 Title: "FVC (L) pre-bronchodilator"
-Description: "An example Observation resource for forced vital capacity volume, pre-bronchodilator."
+Description: """An example ForcedVitalCapacityPreBronchodilator resource for forced vital capacity volume, pre-bronchodilator."
 Usage: #example
 * text // `text` element inherited from `Observation` ancestor `DomainResource`
   * status = #additional
@@ -35,7 +35,7 @@ Usage: #example
 Instance: FVC_PRE_zScore
 InstanceOf: ForcedVitalCapacityPreBronchodilator_Zscore
 Title: "FVC z-score pre-bronchodilator"
-Description: "An example Observation resource for forced vital capacity z-score, pre-bronchodilator."
+Description: """An example ForcedVitalCapacityPreBronchodilator_Zscore resource for forced vital capacity z-score, pre-bronchodilator."
 Usage: #example
 * id = "FVC-PRE-Zscore"
 * status = #final
@@ -51,7 +51,7 @@ Usage: #example
 Instance: FVC_PRE_percentPredicted
 InstanceOf: ForcedVitalCapacityPreBronchodilator_PercentOfPredicted
 Title: "FVC pre-bronchodilator, % of predicted value"
-Description: "An example Observation resource for forced vital capacity measured/predicted, pre-bronchodilator."
+Description: "An example ForcedVitalCapacityPreBronchodilator_PercentOfPredicted resource for forced vital capacity measured/predicted, pre-bronchodilator."
 Usage: #example
 * id = "FVC-PRE-percentPredicted"
 * status = #final
@@ -69,7 +69,7 @@ Usage: #example
 Instance: FVC_POST
 InstanceOf: ForcedVitalCapacityPostBronchodilator
 Title: "FVC (L) post-bronchodilator"
-Description: "An example Observation resource for forced vital capacity volume, post-bronchodilator."
+Description: "An example ForcedVitalCapacityPostBronchodilator resource for forced vital capacity volume, post-bronchodilator."
 Usage: #example
 * id = "FVC-POST"
 * status = #final
@@ -86,7 +86,7 @@ Usage: #example
 Instance: FVC_POST_zScore
 InstanceOf: ForcedVitalCapacityPostBronchodilator_Zscore
 Title: "FVC z-score post-bronchodilator"
-Description: "An example Observation resource for forced vital capacity z-score, post-bronchodilator."
+Description: "An example ForcedVitalCapacityPostBronchodilator_Zscore resource for forced vital capacity z-score, post-bronchodilator."
 Usage: #example
 * id = "FVC-POST-Zscore"
 * status = #final
@@ -103,7 +103,7 @@ Usage: #example
 Instance: FVC_POST_percentPredicted
 InstanceOf: ForcedVitalCapacityPostBronchodilator_PercentOfPredicted
 Title: "FVC post-bronchodilator, % of predicted value"
-Description: "An example Observation resource for forced vital capacity measured/predicted, post-bronchodilator."
+Description: "An example ForcedVitalCapacityPostBronchodilator_PercentOfPredicted resource for forced vital capacity measured/predicted, post-bronchodilator."
 Usage: #example
 * id = "FVC-POST-percentPredicted"
 * status = #final
@@ -115,7 +115,7 @@ Usage: #example
 Instance: FVC_POST_mLChange
 InstanceOf: ForcedVitalCapacityPostBronchodilator_mLChange
 Title: "FVC post-bronchodilator, change from pre-bronchodilator (mL)"
-Description: "An example Observation resource for the volume change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."
+Description: "An example ForcedVitalCapacityPostBronchodilator_mLChange resource for the volume change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."
 Usage: #example
 * id = "FVC-POST-mLChange"
 * status = #final
@@ -128,7 +128,7 @@ Usage: #example
 Instance: FVC_POST_percentChange
 InstanceOf: ForcedVitalCapacityPostBronchodilator_PercentChange
 Title: "FVC post-bronchodilator, change from pre-bronchodilator (%)"
-Description: "An example Observation resource for the percent change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."
+Description: "An example ForcedVitalCapacityPostBronchodilator_PercentChange resource for the percent change in forced vital capacity volume, from pre-bronchodilator to post-bronchodilator."
 Usage: #example
 * id = "FVC-post-percentChange"
 * status = #final

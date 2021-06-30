@@ -3,6 +3,7 @@
 Instance: SPO2_RESTING
 InstanceOf: SPO2AtRest
 Title: "SpO2 at rest"
+Description: """An example SPO2AtRest resource for oxygen saturation by pulse oximetry at rest."""
 Usage: #inline
 * id = "SPO2-RESTING"
 * status = #final
