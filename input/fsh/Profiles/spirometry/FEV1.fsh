@@ -198,7 +198,7 @@ Description: """The percent change in forced expiratory volume in one second (FE
 
 Forced expiratory volume in one second is the total volume of air, in liters, that can be forcibly exhaled in one second.
 
-This profile is for the percent change between two forced expiratory volume in one secondmeasurements: one performed pre-bronchodilator, and the other performed post-bronchodilator. Measurements of forced expiratory volume (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
+This profile is for the percent change between two forced expiratory volume in one second measurements: one performed pre-bronchodilator, and the other performed post-bronchodilator. Measurements of forced expiratory volume (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code
   * text = "FEV1 percent change"
 * value[x] only Quantity
