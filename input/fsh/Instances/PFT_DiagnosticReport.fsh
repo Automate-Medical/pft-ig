@@ -2,7 +2,7 @@
  * PFT DiagnosticReport
  */
 Instance: PFT_DiagnosticReport
-InstanceOf: DiagnosticReport
+InstanceOf: PulmonaryFunctionTestDiagnosticReport
 Title: "PFT DiagnosticReport"
 Description: "An example of how a DiagnosticReport for a PFT may be constructed."
 Usage: #example

@@ -1,6 +1,6 @@
 /* Profile for a PFT DiagnosticReport with referenced Observations. */
 
-Profile:     PFT_DiagnosticReport
+Profile:     PulmonaryFunctionTestDiagnosticReport
 Parent:      DiagnosticReport
 Id:          PulmonaryFunctionTestDiagnosticReport
 Title:       "Pulmonary Function Test (PFT) Diagnostic Report"

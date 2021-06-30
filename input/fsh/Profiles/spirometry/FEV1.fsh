@@ -102,7 +102,7 @@ Profile: ForcedExpiratoryVolume1SecPostbronchodilator_Zscore
 Parent: Observation
 Id: ForcedExpiratoryVolume1SecPostbronchodilator-Zscore
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Zscore"
-Description: "Forced expiratory volume in 1 second (z-score) pre-bronchodilator"
+Description: "Forced expiratory volume in 1 second (z-score) post-bronchodilator"
 * code
   * text = "FEV1 (z-score) post-bronchodilator"
 * value[x] only Quantity
