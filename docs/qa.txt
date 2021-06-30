@@ -3,7 +3,7 @@
 
 err = 89, warn = 56, info = 8
 IG Publisher Version: 1.1.76
-Generated Tue Jun 29 16:26:03 EDT 2021. FHIR version 4.0.1 for pft#0.1.0 (canonical = https://automatemedical.com/fhir/pulmonary-function-test)
+Generated Tue Jun 29 20:02:44 EDT 2021. FHIR version 4.0.1 for pft#0.1.0 (canonical = https://automatemedical.com/fhir/pulmonary-function-test)
 
  Build Errors : 4 / 0 / 0
  /Users/litpub/code/automate-medical/fhir-pft-profile/fsh-generated/resources/ImplementationGuide-pft : 0 / 0 / 1

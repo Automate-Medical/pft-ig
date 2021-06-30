@@ -221,29 +221,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="contents">Contents</h3>
 <ol>
-  <li><a name="b04d16fd-d46a-4bd6-b327-c7ac40dfefc7">​</a><a href="#introduction">Introduction</a></li>
+  <li><a name="5e5dd8eb-0155-4f15-9bd2-c27a37229f1a">​</a><a href="#introduction">Introduction</a></li>
   <li><a href="#background">Background</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#limitations">Limitations</a></li>
-  <li><a name="243a0f87-b260-4ed2-9ae6-7bafa297ece8">​</a><a href="#gaps-in-observation-coding">Gaps in coding</a></li>
+  <li><a name="3b3e0c2a-37de-4116-b358-a8821466c155">​</a><a href="#gaps-in-observation-coding">Gaps in coding</a></li>
   <li><a href="#authors">Authors</a></li>
 </ol>
 
 <h3 id="scope">Scope</h3>
 
-<p>This <a href="https://www.hl7.org/fhir/implementationguide.html">FHIR Implementation Guide</a> (IG) describes how to structure pulmonary function test data in an ineroperable format.</p>
+<p>This <a href="https://www.hl7.org/fhir/implementationguide.html">FHIR Implementation Guide</a> (IG) describes how to structure pulmonary function test data in an interoperable format.</p>
 
 <p>A pulmonary function test evaluates lung function and impairment. Several unique, individual tests typically compose a complete pulmonary function test. <a href="https://en.wikipedia.org/wiki/Spirometry">Spirometry</a> is the most common method of measurement and includes tests of pulmonary mechanics. Measuring pulmonary mechanics assesses the ability of the lungs to move huge volumes of air quickly through the airways to identify airway obstruction.</p>
 
-<p>Multiple practioners are involved in the workflow of administering and evaluating pulmonary function tests. Patients who present with observations such as dyspnea in encounters are frequently referred for pulmonary testing. Pulmonary testing can be significantly confounded by patient effort, and evaluation criteria are used to guage test validity. Respiratory therapists are trained to monitor patient effort during testing.</p>
+<p>Multiple practitioners are involved in the workflow of administering and evaluating pulmonary function tests. Patients who present with observations such as dyspnea in encounters are frequently referred for pulmonary testing. Pulmonary testing can be significantly confounded by patient effort, and evaluation criteria are used to gauge test validity. Respiratory therapists are trained to monitor patient effort during testing.</p>
 
-<p>Pulmonary function tests have interpretative guidelines established by professional clinical societies such as the <a href="https://www.thoracic.org/">American Thoracic Society</a> and the <a href="https://www.ersnet.org/">European Respiratory Society</a>. Standardization and and uniformity in performance of tests is critical both because interpretative strategies in part depend upon relative performance in comparison to normative reference values.</p>
+<p>Pulmonary function tests have interpretative guidelines established by professional clinical societies such as the <a href="https://www.thoracic.org/">American Thoracic Society</a> and the <a href="https://www.ersnet.org/">European Respiratory Society</a>. Standardization and uniformity in performance of tests is critical both because interpretative strategies in part depend upon relative performance in comparison to normative reference values.</p>
 
 <p>This IG currently profiles a DiagnosticReport with a minimal set of the most clinically significant discrete observations obtained from <a href="https://en.wikipedia.org/wiki/Spirometry">Spirometry</a> or <a href="https://en.wikipedia.org/wiki/Diffusing_capacity">Diffusion Capacity</a>. It is intentionally designed to provide guidance in conformance with reporting standardization efforts such as <a href="https://www.thoracic.org/statements/resources/pft/standardized-pulmonary-function-report.pdf">Recommendations for a Standardized Pulmonary Function Report</a> by Culver et al.</p>
 
 <h3 id="background">Background</h3>
 
-<p>Professional clinical societies and patient advocates mutually agree that interoperability of pulmonary function test data and the standardization of the reporting of results are critically important. Pulmonary function is a significant, trackable biomarker with benchmark value. Function measurements can be paricularly useful in monitoring the progression of disease states such as cystic fibrosis and COPD. Spirometry is particularly well established and dates from the 1840s.</p>
+<p>Professional clinical societies and patient advocates mutually agree that interoperability of pulmonary function test data and the standardization of the reporting of results are critically important. Pulmonary function is a significant, trackable biomarker with benchmark value. Function measurements can be particularly useful in monitoring the progression of disease states such as cystic fibrosis and COPD. Spirometry is particularly well established and dates from the 1840s.</p>
 
 <p>Interoperability efforts and standards development have proceeded in a three key areas:</p>
 
@@ -261,7 +261,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <p>The ability to access PFT data within and between healthcare systems holds great promise for improving our understanding of lung diseases and the respiratory health of patients and the population. This would not only allow monitoring of trends in forced expiratory volume in 1 second in the same way one can typically monitor trends in other clinical laboratory values (e.g., white-blood-cell count or hemoglobin A1c) within the EHR but would also allow visualization of flow-volume loops and indicators of testing quality (e.g., acceptable and reproducible spirometric effort).</p>
 </blockquote>
 
-<p>Additionally, they note a number of singificant organizational challenges to overcome in driving interoperability for PFTs: “PFT data [has not been] prioritized for standardization by organizational bodies (FHIR)”, “lack of consensus on which discrete variables should be sent to the EHR”, and “lack of common data model and interoperability standard by societies”.</p>
+<p>Additionally, they note a number of significant organizational challenges to overcome in driving interoperability for PFTs: “PFT data [has not been] prioritized for standardization by organizational bodies (FHIR)”, “lack of consensus on which discrete variables should be sent to the EHR”, and “lack of common data model and interoperability standard by societies”.</p>
 
 <p>Finally, they point towards the benefit of a standardized data vocabulary for PFTs:</p>
 
@@ -275,7 +275,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>A <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> profile with an identifier of <code class="language-plaintext highlighter-rouge">PulmonaryFunctionTestDiagnosticReport</code> is introduced.</p>
 
-<p>This implementation guide can be used by device manufacturers, pulmonary function labratories, and electronic health record vendors to model pulmonary function test data.
+<p>This implementation guide can be used by device manufacturers, pulmonary function laboratories, and electronic health record vendors to model pulmonary function test data.
 The <code class="language-plaintext highlighter-rouge">PulmonaryFunctionTestDiagnosticReport</code> defines a set of reference <code class="language-plaintext highlighter-rouge">Observation</code> Profiles that map to the 2017 <a href="https://www.thoracic.org/statements/resources/pft/standardized-pulmonary-function-report.pdf">Recommendations for a Standardized Pulmonary Function Report</a>. As a design principle, this implementation guide makes use of <code class="language-plaintext highlighter-rouge">derivedFrom</code> associations for <code class="language-plaintext highlighter-rouge">Observation</code> Profiles of measures such as the Zscore of a patient’s performance against a reference value equation. Where possible, this implementation guide.</p>
 
 <p>Implementers should consider referencing the examples included as artifacts and in particular <a href="./DiagnosticReport-diagnostic-report.html">DiagnosticReport-diagnostic-report</a> and its associated Observations.</p>
@@ -295,7 +295,7 @@ The <code class="language-plaintext highlighter-rouge">PulmonaryFunctionTestDiag
 
 <p>For Observations where an appropriate LOINC or SNOMED code can not be found, we specify a human readable name for the Observation in <code class="language-plaintext highlighter-rouge">code.text</code>. Missing, ambiguous, or inconsistent LOINC codes/names were encountered during modeling. This problem is known in the existing clinical literature. Successfully progressing this Implementation Guide from its draft state will require co-ordination on recommendations to LOINC or SNOMED to guide resolving gaps in codeable concepts.</p>
 
-<p>A non-exhaustive list of our documentation for these gaps is available in <a href="./coding-gaps.html">Coding Gaps</a>.</p>
+<p>A list of our documentation for these gaps is available in <a href="./coding-gaps.html">Coding Gaps</a>.</p>
 
 <h4 id="non-exhaustive">Non-exhaustive</h4>
 
@@ -317,6 +317,7 @@ The <code class="language-plaintext highlighter-rouge">PulmonaryFunctionTestDiag
   <li>Joshua Kelly</li>
   <li>Joseph Conroy</li>
 </ul>
+
 
 
 
@@ -342,7 +343,7 @@ The <code class="language-plaintext highlighter-rouge">PulmonaryFunctionTestDiag
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.automatemedical.com/">Automate Medical</a>.  Package pft#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 29, 2021 16:24-0400">2021-06-29</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.automatemedical.com/">Automate Medical</a>.  Package pft#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 29, 2021 20:01-0400">2021-06-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
