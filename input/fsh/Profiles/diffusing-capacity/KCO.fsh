@@ -14,9 +14,9 @@ Also referred to as KCO or DLCO/VA."""
 * code = $LNC#19916-6	"Diffusion capacity/Alveolar volume	"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "mL/min/mmHg"
+  * unit = "mL/min/mmHg/L"
   * system = $UCUM
-  * code = #mL/min/mmHg
+  * code = #mL/min/mmHg/L
 
 Profile: KCO_Zscore
 Parent: Observation
@@ -58,9 +58,9 @@ Also referred to as KCO or DLCO/VA."""
 * code = $LNC#82619-8	"Diffusion capacity/Alveolar volume --pre bronchodilation"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "mL/min/mmHg"
+  * unit = "mL/min/mmHg/L"
   * system = $UCUM
-  * code = #mL/min/mmHg
+  * code = #mL/min/mmHg/L
 
 Profile: KCOPreBronchodilator_Zscore
 Parent: Observation
@@ -99,9 +99,9 @@ Description: "Carbon monoxide transfer coefficient, post-bronchodilator. Note: a
 * code = $LNC#82620-6	"Diffusion capacity/Alveolar volume --post bronchodilation"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "mL/min/mmHg"
+  * unit = "mL/min/mmHg/L"
   * system = $UCUM
-  * code = #mL/min/mmHg
+  * code = #mL/min/mmHg/L
 
 
 Profile: KCOPostBronchodilator_Zscore
