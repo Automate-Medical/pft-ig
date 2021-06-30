@@ -9,7 +9,7 @@
 Instance: FVC_PRE
 InstanceOf: ForcedVitalCapacityPreBronchodilator
 Title: "FVC (L) pre-bronchodilator"
-Description: """An example ForcedVitalCapacityPreBronchodilator resource for forced vital capacity volume, pre-bronchodilator."
+Description: "An example ForcedVitalCapacityPreBronchodilator resource for forced vital capacity volume, pre-bronchodilator."
 Usage: #example
 * text // `text` element inherited from `Observation` ancestor `DomainResource`
   * status = #additional
@@ -35,7 +35,7 @@ Usage: #example
 Instance: FVC_PRE_zScore
 InstanceOf: ForcedVitalCapacityPreBronchodilator_Zscore
 Title: "FVC z-score pre-bronchodilator"
-Description: """An example ForcedVitalCapacityPreBronchodilator_Zscore resource for forced vital capacity z-score, pre-bronchodilator."
+Description: "An example ForcedVitalCapacityPreBronchodilator_Zscore resource for forced vital capacity z-score, pre-bronchodilator."
 Usage: #example
 * id = "FVC-PRE-Zscore"
 * status = #final
