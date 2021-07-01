@@ -57,7 +57,7 @@ This profile is for the Zscore of a DLCO observation which was performed at stan
   * text = "Diffusion capacity of lung for carbon monoxide at standard barometric pressure (z-score)"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "Zcore"
+  * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
 

@@ -43,6 +43,32 @@ Usage: #example
 * entry[+].resource = FVC_POST_percentPredicted
 * entry[+].resource = FVC_POST_mLChange
 * entry[+].resource = FVC_POST_percentChange
+* entry[+].resource = FEV1_PRE
+* entry[+].resource = FEV1_PRE_Zscore
+* entry[+].resource = FEV1_PRE_percentPredicted
+* entry[+].resource = FEV1_POST
+* entry[+].resource = FEV1_POST_Zscore
+* entry[+].resource = FEV1_POST_percentPredicted
+* entry[+].resource = FEV1_POST_mLChange
+* entry[+].resource = FEV1_POST_percentChange
+* entry[+].resource = FEV1_over_FVC_PRE
+* entry[+].resource = FEV1_over_FVC_PRE_Zscore
+* entry[+].resource = FEV1_over_FVC_POST
+* entry[+].resource = FEV1_over_FVC_POST_Zscore
+* entry[+].resource = FET_PRE
+* entry[+].resource = FET_POST
+* entry[+].resource = DLCO
+* entry[+].resource = DLCO_atStandardPB
+* entry[+].resource = DLCO_atStandardPB_Zscore
+* entry[+].resource = DLCO_atStandardPB_percentPredicted
+* entry[+].resource = VA
+* entry[+].resource = VA_Zscore
+* entry[+].resource = VA_PercentOfPredicted
+* entry[+].resource = TLCsb
+* entry[+].resource = VI_over_VC
+* entry[+].resource = KCO_POST
+* entry[+].resource = KCO_POST_Zscore
+* entry[+].resource = KCO_POST_percentPredicted
 
 // TODO: Could have a script add entry Resources to this from a directory.
 //
