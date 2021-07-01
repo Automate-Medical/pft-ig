@@ -108,6 +108,6 @@ Description: "Diffusion capacity of lung for carbon monoxide, adjusted for hemog
   * text = "Diffusion capacity.carbon monoxide adjusted for hemoglobin measured/predicted"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "mL/min/mmHg"
+  * unit = "%"
   * system = $UCUM
-  * code = #mL/min/mmHg
+  * code = #%
