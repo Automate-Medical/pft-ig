@@ -16,6 +16,7 @@ Usage: #example
 * performer[+] = Reference(PFT_Organization)
 * resultsInterpreter = Reference(PFT_Pulmonologist)
 * effectiveDateTime = "2017-02-24"
+/* FVC */
 * result[+] = Reference(FVC_PRE)
 * result[+] = Reference(FVC_PRE_zScore)
 * result[+] = Reference(FVC_PRE_percentPredicted)
@@ -24,6 +25,40 @@ Usage: #example
 * result[+] = Reference(FVC_POST_percentPredicted)
 * result[+] = Reference(FVC_POST_mLChange)
 * result[+] = Reference(FVC_POST_percentChange)
+/* FEV1 */
+* result[+] = Reference(FEV1_PRE)
+* result[+] = Reference(FEV1_PRE_Zscore)
+* result[+] = Reference(FEV1_PRE_percentPredicted)
+* result[+] = Reference(FEV1_POST)
+* result[+] = Reference(FEV1_POST_Zscore)
+* result[+] = Reference(FEV1_POST_percentPredicted)
+* result[+] = Reference(FEV1_POST_mLChange)
+* result[+] = Reference(FEV1_POST_percentChange)
+/* FEV1/FVC */
+* result[+] = Reference(FEV1_over_FVC_PRE)
+* result[+] = Reference(FEV1_over_FVC_PRE_Zscore)
+* result[+] = Reference(FEV1_over_FVC_POST)
+* result[+] = Reference(FEV1_over_FVC_POST_Zscore)
+/* FET */
+* result[+] = Reference(FET_PRE)
+* result[+] = Reference(FET_POST)
+/* DLCO */
+* result[+] = Reference(DLCO)
+* result[+] = Reference(DLCO_atStandardPB)
+* result[+] = Reference(DLCO_atStandardPB_Zscore)
+* result[+] = Reference(DLCO_atStandardPB_percentPredicted)
+/* VA */
+* result[+] = Reference(VA)
+* result[+] = Reference(VA_Zscore)
+* result[+] = Reference(VA_PercentOfPredicted)
+/* TLCsb */
+* result[+] = Reference(TLCsb)
+/* VI/VC */
+* result[+] = Reference(VI_over_VC)
+/* KCO */
+* result[+] = Reference(KCO_POST)
+* result[+] = Reference(KCO_POST_Zscore)
+* result[+] = Reference(KCO_POST_percentPredicted)
 * conclusion = "Moderately severe, partially reversible airflow obstruction."
 * presentedForm
   * contentType = #application/pdf
