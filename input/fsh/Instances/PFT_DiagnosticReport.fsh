@@ -4,7 +4,11 @@
 Instance: PFT_DiagnosticReport
 InstanceOf: PulmonaryFunctionTestDiagnosticReport
 Title: "PFT DiagnosticReport"
-Description: "An example of how a DiagnosticReport for a PFT may be constructed."
+Description: """An example PulmonaryFunctionTestDiagnosticReport resource, demonstrating how a DiagnosticReport for a pulmonary function test (PFT) may be constructed.
+
+The DiagnosticReport contains references to all relevant observations made during the PFT.
+
+This specific resource is an example of a finalized DiagnosticReport, after interpretation by a pulmonologist and including that pulmonologist's conclusion."""
 Usage: #example
 * id = "diagnostic-report"
 * status = #final
