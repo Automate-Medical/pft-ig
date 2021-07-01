@@ -8,9 +8,9 @@ Description: """An example KCOPostBronchodilator resource."""
 * id = "KCO-POST"
 * status = #final
 * code = $LNC#82620-6	"Diffusion capacity/Alveolar volume --post bronchodilation"
-* valueQuantity = 2.23 'mL/min/mmHg/L' "mL/min/mmHg/L"
+* valueQuantity = 2.23 'mL/min/mm[Hg]/L' "mL/min/mm[Hg]/L"
 * referenceRange
-  * low = 3.25 'mL/min/mmHg/L' "mL/min/mmHg/L"
+  * low = 3.25 'mL/min/mm[Hg]/L' "mL/min/mm[Hg]/L"
   * type
     * text = "KCO normal bounds"
 * derivedFrom[+] = Reference(DLCO_atStandardPB)

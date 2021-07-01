@@ -12,9 +12,9 @@ Description: """A measurement of carbon monoxide transfer coefficient (KCO). KCO
 * code = $LNC#19916-6	"Diffusion capacity/Alveolar volume	"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "mL/min/mmHg/L"
+  * unit = "mL/min/mm[Hg]/L"
   * system = $UCUM
-  * code = #mL/min/mmHg/L
+  * code = #mL/min/mm[Hg]/L
 
 Profile: KCO_Zscore
 Parent: Observation
@@ -54,9 +54,9 @@ Description: """A measurement of carbon monoxide transfer coefficient (KCO) perf
 * code = $LNC#82619-8	"Diffusion capacity/Alveolar volume --pre bronchodilation"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "mL/min/mmHg/L"
+  * unit = "mL/min/mm[Hg]/L"
   * system = $UCUM
-  * code = #mL/min/mmHg/L
+  * code = #mL/min/mm[Hg]/L
 
 Profile: KCOPreBronchodilator_Zscore
 Parent: Observation
@@ -95,9 +95,9 @@ Description: """A measurement of carbon monoxide transfer coefficient (KCO) perf
 * code = $LNC#82620-6	"Diffusion capacity/Alveolar volume --post bronchodilation"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "mL/min/mmHg/L"
+  * unit = "mL/min/mm[Hg]/L"
   * system = $UCUM
-  * code = #mL/min/mmHg/L
+  * code = #mL/min/mm[Hg]/L
 
 
 Profile: KCOPostBronchodilator_Zscore

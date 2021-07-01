@@ -11,7 +11,7 @@ Description: """An example DLCO resource."""
 * id = "DLCO"
 * status = #final
 * code = $LNC#19911-7 "Diffusion capacity.carbon monoxide"
-* valueQuantity = 13.4 'mL/min/mmHg' "mL/min/mmHg"
+* valueQuantity = 13.4 'mL/min/mm[Hg]' "mL/min/mm[Hg]"
 
 /*
  * DLCO at standard barometric pressure
@@ -25,9 +25,9 @@ Description: """An example DLCOAtStandardBarometricPressure resource."""
 * status = #final
 * code
   * text = "Diffusion capacity of lung for carbon monoxide at standard barometric pressure"
-* valueQuantity = 13.0 'mL/min/mmHg' "mL/min/mmHg"
+* valueQuantity = 13.0 'mL/min/mm[Hg]' "mL/min/mm[Hg]"
 * referenceRange
-  * low = 23.4 'mL/min/mmHg' "mL/min/mmHg"
+  * low = 23.4 'mL/min/mm[Hg]' "mL/min/mm[Hg]"
   * type
     * text = "DLCO at standard PB normal bounds"
 
