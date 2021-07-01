@@ -42,7 +42,7 @@ Description: "Diffusion capacity of lung for carbon monoxide at standard baromet
   * text = "Diffusion capacity of lung for carbon monoxide at standard barometric pressure (z-score)"
 * value[x] only Quantity
 * valueQuantity
-  * unit = "Zcore"
+  * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
 
