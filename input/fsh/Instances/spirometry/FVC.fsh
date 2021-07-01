@@ -43,7 +43,6 @@ Usage: #example
   * text = "Forced vital capacity (z-score) pre-bronchodilator"
 * valueQuantity = -1.34 '{Zscore}' "Zscore"
 * derivedFrom[+] = Reference(FVC_PRE)
-* derivedFrom[+] = Reference(FVC_PREREF_predicted)
 
 /*
  * FVC PRE measured/predicted
@@ -58,7 +57,6 @@ Usage: #example
 * code = $LNC#19871-3 "FVC pre bronchodilation measured/predicted"
 * valueQuantity = 82 '%' "%"
 * derivedFrom[+] = Reference(FVC_PRE)
-* derivedFrom[+] = Reference(FVC_PREREF_predicted)
 
 
 /* FVC POST Observations. */
@@ -94,8 +92,6 @@ Usage: #example
   * text = "Forced vital capacity (z-score) post-bronchodilator"
 * valueQuantity = -0.09 '{Zscore}' "Zscore"
 * derivedFrom[+] = Reference(FVC_POST)
-// TODO: Do FVC_POST measurements use the same reference values as FVC_PRE?
-// * derivedFrom[+] = Reference(FVC_PREREF_predicted)
 
 /*
  * FVC POST measured/predicted
@@ -110,7 +106,6 @@ Usage: #example
 * code = $LNC#19873-9 "FVC post bronchodilation measured/predicted"
 * valueQuantity = 99 '%' "%"
 * derivedFrom[+] = Reference(FVC_POST)
-// * derivedFrom[+] = Reference(FVC_PREREF_predicted)
 
 Instance: FVC_POST_mLChange
 InstanceOf: ForcedVitalCapacityPostBronchodilator_mLChange
@@ -136,37 +131,3 @@ Usage: #example
 * valueQuantity = 20 '%' "%"
 * derivedFrom[+] = Reference(FVC_PRE)
 * derivedFrom[+] = Reference(FVC_POST)
-
-
-// Stub reference values for FVC measurements.
-//
-// These have no set `value` field, and in practice should be derived from the
-// patient's demographic info.
-
-/*
- * Reference value for FVC_PRE_percentPredicted. This should be a number of liters.
- *
- * TODO: I think this is the mean of the distribution?
- */
-Instance: FVC_PREREF_predicted
-InstanceOf: Observation
-Title: "FVC (L) pre-bronchodilator reference value"
-Description: "An example of using Observation to include a forced vital capacity reference value."
-Usage: #example
-* id = "FVC-PREREF-predicted"
-* status = #final
-* code = $LNC#19869-7 "Forced vital capacity [Volume] Respiratory system Predicted"
-* note = FVC_referenceValueAnnotation
-
-/*
- * Annotation for FVC reference values derived from GLI 2012.
- */
-Instance: FVC_referenceValueAnnotation
-InstanceOf: Annotation
-Title: "Reference values for FVC pre-bronchodilator"
-Description: "An example annotation for using Observation to include a forced vital capacity reference value."
-Usage: #inline
-* id = "FVC-referenceValueAnnotation"
-* authorString = "Created for PFT example"
-* time = "2021-06-10"
-* text = "Reference value, taken from GLI 2012. Depends on the patient's demographic info."
