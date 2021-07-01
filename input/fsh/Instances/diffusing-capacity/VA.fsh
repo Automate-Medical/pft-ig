@@ -26,6 +26,7 @@ Description: """An example AlveolarVolume_Zscore resource."""
 * code
   * text = "Alveolar volume (z-score)"
 * valueQuantity = -1.55 '{Zscore}' "Zscore"
+* derivedFrom[+] = Reference(VA)
 
 Instance: VA_PercentOfPredicted
 InstanceOf: AlveolarVolume_PercentOfPredicted
@@ -37,3 +38,4 @@ Description: """An example AlveolarVolume_PercentOfPredicted resource."""
 * code
   * text = "Alveolar volume measured/predicted"
 * valueQuantity = 82 '%' "%"
+* derivedFrom = Reference(VA)
