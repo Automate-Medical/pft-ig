@@ -13,7 +13,7 @@ Usage: #example
 * subject = Reference(PFT_Patient)
 * encounter = Reference(PFT_Encounter)
 * date = "2017-02-20"
-// * author = Reference(TODO_PLACEHOLDER) // TODO
+* author = Reference(TODO_PLACEHOLDER)
 * title = "PFT: test panel Observations and DiagnosticReport"
 * custodian = Reference(PFT_Organization)
 
