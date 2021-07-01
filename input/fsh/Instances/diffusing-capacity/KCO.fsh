@@ -13,6 +13,8 @@ Description: """An example KCOPostBronchodilator resource."""
   * low = 3.25 'mL/min/mmHg/L' "mL/min/mmHg/L"
   * type
     * text = "KCO normal bounds"
+* derivedFrom[+] = Reference(DLCO_atStandardPB)
+* derivedFrom[+] = Reference(VA)
 
 Instance: KCO_POST_Zscore
 InstanceOf: KCOPostBronchodilator_Zscore
