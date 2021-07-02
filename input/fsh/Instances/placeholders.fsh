@@ -83,7 +83,8 @@ Usage: #inline
   * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
 * id = "encounter-01"
 * status = #finished
-* class = #outpatient
+// In this value set, "ambulatory" means outpatient.
+* class = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|2.0.0#AMB "ambulatory"
 
 // Not sure if these are necessary to model,
 // but this is possibly-relevant data included in the PFT.
