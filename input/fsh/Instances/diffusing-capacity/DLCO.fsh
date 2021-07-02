@@ -58,6 +58,25 @@ Description: """An example DLCOAtStandardBarometricPressure_PercentOfPredicted r
 /*
  * DLCO pred adj Hb
  */
+// TODO: see issue #21 <https://github.com/Automate-Medical/pft-ig/issues/21>
+Instance: DLCO_predAdjHb
+InstanceOf: DLCOAdjustedForHemoglobin
+Usage: #example
+Title: "DLCO (pred adj Hb 13.8 g/dL)"
+Description: """An example DLCOAdjustedForHemoglobin resource."""
+* id = "DLCO-predAdjHb"
+* status = #final
+* code = $LNC#19913-3 "Diffusion capacity.carbon monoxide adjusted for hemoglobin"
+* valueQuantity = 13.0 'mL/min/mm[Hg]' "mL/min/mm[Hg]"
 
-// TODO: Do these after figuring out what exactly "DLCO (pred adj Hb 13.8 g/dL)" means.
-//       See issue #21: <https://github.com/Automate-Medical/pft-ig/issues/21>
+// TODO: see issue #21 <https://github.com/Automate-Medical/pft-ig/issues/21>
+Instance: DLCO_predAdjHb_percentPredicted
+InstanceOf: DLCOAdjustedForHemoglobin_PercentOfPredicted
+Usage: #example
+Title: "DLCO (pred adj Hb 13.8 g/dL) % pred"
+Description: """An example DLCOAdjustedForHemoglobin_PercentOfPredicted resource."""
+* id = "DLCO-predAdjHb-percentPredicted"
+* status = #final
+* code
+  * text = "Diffusion capacity.carbon monoxide adjusted for hemoglobin measured/predicted"
+* valueQuantity = 53 '%' "%"

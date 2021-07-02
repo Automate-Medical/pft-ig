@@ -24,12 +24,12 @@ Usage: #example
  * For a list of which Composition-associated Resources should be
  * included in the Bundle and which can be left to the author's
  * discretion, see: https://www.hl7.org/fhir/composition.html#bnr. */
-* entry[+].resource = PFT_Patient
+// * entry[+].resource = PFT_Patient
 * entry[+].resource = PFT_Pulmonologist
 * entry[+].resource = PFT_Technician
-* entry[+].resource = PFT_Organization
-* entry[+].resource = PFT_Encounter
-* entry[+].resource = PFT_ServiceRequest
+// * entry[+].resource = PFT_Organization
+// * entry[+].resource = PFT_Encounter
+// * entry[+].resource = PFT_ServiceRequest
 * entry[+].resource = PFT_DiagnosticReport
 
 /* Observations referenced by the Composition or DiagnosticReport */
