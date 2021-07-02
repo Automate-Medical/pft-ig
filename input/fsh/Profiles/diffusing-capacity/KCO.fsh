@@ -62,7 +62,7 @@ Profile: KCOPreBronchodilator_Zscore
 Parent: Observation
 Id: KCOPreBronchodilator-Zscore
 Title: "KCO Pre-bronchodilator Zscore"
-Description: """The Zscore of a carbon monoxide transfer coefficient (KCO) measurement performed pre-bronchodilator. KCO is also referred to as DLCO/VA"""
+Description: """The Zscore of a carbon monoxide transfer coefficient (KCO) measurement performed pre-bronchodilator. KCO is also referred to as DLCO/VA."""
 * code
   * text = "Diffusion capacity/Alveolar volume (z-score) pre-bronchodilator"
 * value[x] only Quantity
@@ -104,7 +104,7 @@ Profile: KCOPostBronchodilator_Zscore
 Parent: Observation
 Id: KCOPostBronchodilator-Zscore
 Title: "KCO Post-bronchodilator Zscore"
-Description: """The Zscore of a carbon monoxide transfer coefficient (KCO) measurement performed post-bronchodilator. KCO is also referred to as DLCO/VA"""
+Description: """The Zscore of a carbon monoxide transfer coefficient (KCO) measurement performed post-bronchodilator. KCO is also referred to as DLCO/VA."""
 * code
   * text = "Diffusion capacity/Alveolar volume (z-score) post-bronchodilator"
 * value[x] only Quantity
