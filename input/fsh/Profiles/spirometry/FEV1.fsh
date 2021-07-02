@@ -174,7 +174,7 @@ This profile is for the measured/predicted ratio of a forced expiratory volume i
 
 Profile: ForcedExpiratoryVolume1SecPostBronchodilator_mLChange
 Parent: Observation
-Id: ForcedExpiratoryVolume1SecPosBbronchodilator-mLChange
+Id: ForcedExpiratoryVolume1SecPostBronchodilator-mLChange
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator mL Change"
 Description: """The volume (mL) change in forced expiratory volume in one second (FEV1) between a measurement performed pre-bronchodilator and a measurement performed post-bronchodilator.
 
