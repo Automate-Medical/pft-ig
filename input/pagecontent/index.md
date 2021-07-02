@@ -1,12 +1,15 @@
 <span class="label label-danger">NOTE</span> This implementation guide is under **active development** on [GitHub](https://github.com/automate-medical/pft-ig/issues), and **may change without notice**. Please comment on or [create](https://github.com/automate-medical/pft-ig/issues/new) an issue on GitHub if you have questions, comments, or suggestions. Contributions are welcome! Development has been sponsored by [Automate Medical](https://www.automatemedical.com/).
 
 ### Contents
-1. [Introduction](#introduction)
+1. [Scope](#scope)
 2. [Background](#background)
 3. [Usage](#usage)
 4. [Limitations](#limitations)
-  1. [Gaps in coding](#gaps-in-observation-coding)
-5. [Authors](#authors)
+    1. [Gaps in coding](#gaps-in-coding)
+    2. [Non-exhaustive](#non-exhaustive)
+    3. [Review status](#review-status)
+6. [Contact](#contact)
+7. [Authors](#authors)
 
 ### Scope
 
