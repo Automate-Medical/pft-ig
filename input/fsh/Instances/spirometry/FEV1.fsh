@@ -1,6 +1,46 @@
 /* FEV1 Instances */
 
 /*
+ * Pre/post bronchodilator not specified
+ */
+Instance: FEV1
+InstanceOf: ForcedExpiratoryVolume1Sec
+Usage: #example
+Title: "FEV1 pre/post unspecified"
+Description: """An example ForcedExpiratoryVolume1SecPre resource."""
+* id = "FEV1"
+* status = #final
+* code = $LNC#20150-9 "FEV1"
+* valueQuantity = 2.02 'L' "L"
+* referenceRange
+  * low = 2.91 'L' "L"
+  * type
+    * text = "FEV1 normal bounds"
+
+Instance: FEV1_Zscore
+InstanceOf: ForcedExpiratoryVolume1Sec_Zscore
+Usage: #example
+Title: "FEV1 pre/post unspecified Zscore"
+Description: """An example ForcedExpiratoryVolume1Sec_Zscore resource."""
+* id = "FEV1-Zscore"
+* status = #final
+* code
+  * text = "FEV1 (z-score)"
+* valueQuantity = -3.78 '{Zscore}' "Zscore"
+* derivedFrom[+] = Reference(FEV1)
+
+Instance: FEV1_percentPredicted
+InstanceOf: ForcedExpiratoryVolume1Sec_PercentOfPredicted
+Usage: #example
+Title: "FEV1 pre/post unspecified % pred"
+Description: """An example ForcedExpiratoryVolume1Sec_PercentOfPredicted resource."""
+* id = "FEV1-percentPredicted"
+* status = #final
+* code = $LNC#20152-5 "FEV1 measured/predicted"
+* valueQuantity = 54 '%' "%"
+* derivedFrom[+] = Reference(FEV1)
+
+/*
  * Pre-bronchodilator
  */
 Instance: FEV1_PRE
