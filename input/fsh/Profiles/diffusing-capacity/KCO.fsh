@@ -119,7 +119,7 @@ Id: KCOPostBronchodilator-PercentOfPredicted
 Title: "KCO Post-bronchodilator Percent Of Predicted"
 Description: """The ratio of a carbon monoxide transfer coefficient (KCO) measurement performed post-bronchodilator to some predicted value, expressed as the percentage `measured/predicted`. This is also referred to as \"% predicted\" or \"% pred\"."""
 * code
-  * text = "Diffusion capacity/Alveolar volume (measured/predicted) pre-bronchodilator"
+  * text = "Diffusion capacity/Alveolar volume (measured/predicted) post-bronchodilator"
 * value[x] only Quantity
 * valueQuantity
   * unit = "%"

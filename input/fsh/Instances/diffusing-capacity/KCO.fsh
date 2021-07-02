@@ -36,6 +36,6 @@ Description: """An example KCOPostBronchodilator_PercentOfPredicted resource."""
 * id = "KCO-POST-percentPredicted"
 * status = #final
 * code
-  * text = "Diffusion capacity/Alveolar volume (measured/predicted) pre-bronchodilator"
+  * text = "Diffusion capacity/Alveolar volume (measured/predicted) post-bronchodilator"
 * valueQuantity = 52 '%' "%"
 * derivedFrom[+] = Reference(KCO_POST)
