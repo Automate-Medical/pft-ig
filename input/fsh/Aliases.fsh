@@ -13,3 +13,4 @@ Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/id
 Alias: $FHIR_ObservationCategory = http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 Alias: $UCUM =  http://unitsofmeasure.org
+Alias: $ReferenceRangeMeaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning|0.1.0

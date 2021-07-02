@@ -29,6 +29,7 @@ Description: """An example DLCOAtStandardBarometricPressure resource."""
 * referenceRange
   * low = 23.4 'mL/min/mm[Hg]' "mL/min/mm[Hg]"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "DLCO at standard PB normal bounds"
 
 Instance: DLCO_atStandardPB_Zscore

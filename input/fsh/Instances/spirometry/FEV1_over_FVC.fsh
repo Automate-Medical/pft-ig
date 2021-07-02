@@ -15,6 +15,7 @@ Description: """An example FEV1_over_FVC resource."""
 * referenceRange
   * low = 0.68 '{Number}' "Number"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FEV1/FVC normal bounds"
 * derivedFrom[+] = Reference(FEV1)
 * derivedFrom[+] = Reference(FVC)
@@ -49,6 +50,7 @@ Description: """An example FEV1_over_FVC_PreBronchodilator resource."""
 * referenceRange
   * low = 0.68 '{Number}' "Number"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FEV1/FVC normal bounds"
 * derivedFrom[+] = Reference(FEV1_PRE)
 * derivedFrom[+] = Reference(FVC_PRE)
@@ -82,6 +84,7 @@ Description: """An example FEV1_over_FVC_PostBronchodilator resource."""
 * referenceRange
   * low = 0.68 '{Number}' "Number"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FEV1/FVC normal bounds"
 * derivedFrom[+] = Reference(FEV1_POST)
 * derivedFrom[+] = Reference(FVC_POST)

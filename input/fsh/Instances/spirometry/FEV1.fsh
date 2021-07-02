@@ -15,6 +15,7 @@ Description: """An example ForcedExpiratoryVolume1SecPre resource."""
 * referenceRange
   * low = 2.91 'L' "L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FEV1 normal bounds"
 
 Instance: FEV1_Zscore
@@ -55,6 +56,7 @@ Description: """An example ForcedExpiratoryVolume1SecPreBronchodilator resource.
 * referenceRange
   * low = 2.91 'L' "L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FEV1 normal bounds"
 
 Instance: FEV1_PRE_Zscore
@@ -96,6 +98,7 @@ Description: """An example ForcedExpiratoryVolume1SecPostbronchodilator resource
 * referenceRange
   * low = 2.61 'L' "L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FEV1 normal bounds"
 
 Instance: FEV1_POST_Zscore

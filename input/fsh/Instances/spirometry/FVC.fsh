@@ -18,6 +18,7 @@ Usage: #example
 * referenceRange
   * low = 3.70 'L' "L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FVC normal bounds"
 
 Instance: FVC_ZScore
@@ -71,6 +72,7 @@ Usage: #example
 * referenceRange
   * low = 3.70 'L' "L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FVC normal bounds"
 
 Instance: FVC_PRE_zScore
@@ -112,6 +114,7 @@ Usage: #example
 * referenceRange
   * low = 3.70 'L' "L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "FVC normal bounds"
 
 Instance: FVC_POST_zScore

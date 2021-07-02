@@ -14,6 +14,7 @@ Description: """An example AlveolarVolume resource."""
 * referenceRange
   * low = 5.75 'L' "L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "VA normal bounds"
 
 Instance: VA_Zscore

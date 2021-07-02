@@ -15,6 +15,7 @@ Description: """An example KCO resource."""
 * referenceRange
   * low = 3.25 'mL/min/mm[Hg]/L' "mL/min/mm[Hg]/L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "KCO normal bounds"
 // TODO: Don't think we can use these because they were used specifically for KCO_POST and may not apply here.
 // * derivedFrom[+] = Reference(DLCO_atStandardPB)
@@ -58,6 +59,7 @@ Description: """An example KCOPreBronchodilator resource."""
 * referenceRange
   * low = 3.25 'mL/min/mm[Hg]/L' "mL/min/mm[Hg]/L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "KCO normal bounds"
 // TODO: Don't think we can use these because they were used specifically for KCO_POST and may not apply here.
 // * derivedFrom[+] = Reference(DLCO_atStandardPB)
@@ -102,6 +104,7 @@ Description: """An example KCOPostBronchodilator resource."""
 * referenceRange
   * low = 3.25 'mL/min/mm[Hg]/L' "mL/min/mm[Hg]/L"
   * type
+    * coding = $ReferenceRangeMeaning#normal "Normal Range"
     * text = "KCO normal bounds"
 * derivedFrom[+] = Reference(DLCO_atStandardPB)
 * derivedFrom[+] = Reference(VA)
