@@ -75,7 +75,7 @@ InstanceOf: DLCOAdjustedForHemoglobin_PercentOfPredicted
 Usage: #example
 Title: "DLCO (pred adj Hb 13.8 g/dL) % pred"
 Description: """An example DLCOAdjustedForHemoglobin_PercentOfPredicted resource."""
-* id = "DLCO-predAdjHb"
+* id = "DLCO-predAdjHb-percentPredicted"
 * status = #final
 * code
   * text = "Diffusion capacity.carbon monoxide adjusted for hemoglobin measured/predicted"
