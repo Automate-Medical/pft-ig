@@ -37,7 +37,7 @@ Title: "Alveolar Volume (VA) Percent Of Predicted"
 // TODO: Expand description to explain how alveolar volume is measured or calculated.
 Description: """The ratio of a forced vital capacity (FVC) measurement to some predicted value, expressed as the percentage `measured/predicted`. This is also referred to as \"% predicted\" or \"% pred\".
 
-The predicted value (also referred to as the \"reference value\") is determined by the patient's demographic information. The ratio of the measured value to the predicted value is useful as an indicator of how abnormal the measured value is. """
+The predicted value (also referred to as the \"reference value\") is determined by the patient's demographic information. The ratio of the measured value to the predicted value is useful as an indicator of how abnormal the measured value is."""
 * code
   * text = "Alveolar volume measured/predicted"
 * value[x] only Quantity
