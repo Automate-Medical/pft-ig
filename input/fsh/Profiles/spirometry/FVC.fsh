@@ -52,6 +52,7 @@ The predicted value (also referred to as the \"reference value\") is determined 
 This profile is for the measured/predicted ratio of a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
 * code = $LNC#19872-1 "FVC measured/predicted"
 * value[x] only Quantity
+* valueQuantity
   * unit = "%"
   * system = $UCUM
   * code = #%
