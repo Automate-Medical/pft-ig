@@ -9,7 +9,7 @@ Parent: Observation
 Id: KCO
 Title: "KCO"
 Description: """A measurement of carbon monoxide transfer coefficient (KCO). KCO is also referred to as DLCO/VA."""
-* code = $LNC#19916-6	"Diffusion capacity/Alveolar volume	"
+* code = $LNC#19916-6	"Diffusion capacity/Alveolar volume"
 * value[x] only Quantity
 * valueQuantity
   * unit = "mL/min/mm[Hg]/L"
