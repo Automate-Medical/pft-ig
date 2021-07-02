@@ -38,6 +38,12 @@ This profile is for the Zscore of a forced vital capacity observation which was 
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedVitalCapacity 0..1
+* derivedFrom[ForcedVitalCapacity] only Reference(ForcedVitalCapacity)
 
 Profile: ForcedVitalCapacity_PercentOfPredicted
 Parent: Observation
@@ -56,6 +62,12 @@ This profile is for the measured/predicted ratio of a forced vital capacity obse
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedVitalCapacity 0..1
+* derivedFrom[ForcedVitalCapacity] only Reference(ForcedVitalCapacity)
 
 
 /*
@@ -95,6 +107,12 @@ This profile is for the Zscore of a forced vital capacity observation which was 
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedVitalCapacityPreBronchodilator 0..1
+* derivedFrom[ForcedVitalCapacityPreBronchodilator] only Reference(ForcedVitalCapacityPreBronchodilator)
 
 Profile: ForcedVitalCapacityPreBronchodilator_PercentOfPredicted
 Parent: Observation
@@ -112,7 +130,12 @@ This profile is for the measured/predicted ratio of a forced vital capacity obse
   * unit = "%"
   * system = $UCUM
   * code = #%
-
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedVitalCapacityPreBronchodilator 0..1
+* derivedFrom[ForcedVitalCapacityPreBronchodilator] only Reference(ForcedVitalCapacityPreBronchodilator)
 
 /*
  * Post-bronchodilator
@@ -151,6 +174,12 @@ This profile is for the Zscore of a forced vital capacity observation which was 
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedVitalCapacityPostBronchodilator 0..1
+* derivedFrom[ForcedVitalCapacityPostBronchodilator] only Reference(ForcedVitalCapacityPostBronchodilator)
 
 Profile: ForcedVitalCapacityPostBronchodilator_PercentOfPredicted
 Parent: Observation
@@ -169,6 +198,12 @@ This profile is for the measured/predicted ratio of a forced vital capacity obse
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedVitalCapacityPostBronchodilator 0..1
+* derivedFrom[ForcedVitalCapacityPostBronchodilator] only Reference(ForcedVitalCapacityPostBronchodilator)
 
 Profile: ForcedVitalCapacityPostBronchodilator_mLChange
 Parent: Observation
@@ -186,6 +221,14 @@ This profile is for the difference in volume between two forced vital capacity m
   * unit = "mL"
   * system = $UCUM
   * code = #mL
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedVitalCapacityPreBronchodilator 0..1 and
+  ForcedVitalCapacityPostBronchodilator 0..1
+* derivedFrom[ForcedVitalCapacityPreBronchodilator] only Reference(ForcedVitalCapacityPreBronchodilator)
+* derivedFrom[ForcedVitalCapacityPostBronchodilator] only Reference(ForcedVitalCapacityPostBronchodilator)
 
 Profile: ForcedVitalCapacityPostBronchodilator_PercentChange
 Parent: Observation
@@ -202,3 +245,11 @@ This profile is for the percent change between two forced vital capacity measure
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedVitalCapacityPreBronchodilator 0..1 and
+  ForcedVitalCapacityPostBronchodilator 0..1
+* derivedFrom[ForcedVitalCapacityPreBronchodilator] only Reference(ForcedVitalCapacityPreBronchodilator)
+* derivedFrom[ForcedVitalCapacityPostBronchodilator] only Reference(ForcedVitalCapacityPostBronchodilator)

@@ -60,6 +60,12 @@ This profile is for the Zscore of a DLCO observation which was performed at stan
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  DLCOAtStandardBarometricPressure 0..1
+* derivedFrom[DLCOAtStandardBarometricPressure] only Reference(DLCOAtStandardBarometricPressure)
 
 Profile: DLCOAtStandardBarometricPressure_PercentOfPredicted
 Parent: Observation
@@ -78,6 +84,12 @@ This profile is for the measured/predicted ratio of a DLCO observation which was
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  DLCOAtStandardBarometricPressure 0..1
+* derivedFrom[DLCOAtStandardBarometricPressure] only Reference(DLCOAtStandardBarometricPressure)
 
 
 /*
@@ -111,3 +123,9 @@ Description: "Diffusion capacity of lung for carbon monoxide, adjusted for hemog
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  DLCOAdjustedForHemoglobin 0..1
+* derivedFrom[DLCOAdjustedForHemoglobin] only Reference(DLCOAdjustedForHemoglobin)

@@ -29,6 +29,12 @@ The Zscore of a measured value is determined by comparing the measured value to 
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  AlveolarVolume 0..1
+* derivedFrom[AlveolarVolume] only Reference(AlveolarVolume)
 
 Profile: AlveolarVolume_PercentOfPredicted
 Parent: Observation
@@ -45,3 +51,9 @@ The predicted value (also referred to as the \"reference value\") is determined 
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  AlveolarVolume 0..1
+* derivedFrom[AlveolarVolume] only Reference(AlveolarVolume)

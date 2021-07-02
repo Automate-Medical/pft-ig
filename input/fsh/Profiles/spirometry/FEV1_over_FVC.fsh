@@ -19,6 +19,14 @@ This profile is for a FEV1/FVC observation which was not specified as performed 
   * unit = "Number"
   * system = $UCUM
   * code = #{Number}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1Sec 0..1 and
+  ForcedVitalCapacity 0..1
+* derivedFrom[ForcedExpiratoryVolume1Sec] only Reference(ForcedExpiratoryVolume1Sec)
+* derivedFrom[ForcedVitalCapacity] only Reference(ForcedVitalCapacity)
 
 Profile: FEV1_over_FVC_Zscore
 Parent: Observation
@@ -38,6 +46,12 @@ This profile is for the Zscore of a FEV1/FVC observation which was not specified
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  FEV1_over_FVC 0..1
+* derivedFrom[FEV1_over_FVC] only Reference(FEV1_over_FVC)
 
 
 /*
@@ -60,6 +74,14 @@ This profile is for a FEV1/FVC observation which was performed pre-bronchodilato
   * unit = "Number"
   * system = $UCUM
   * code = #{Number}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1SecPreBronchodilator 0..1 and
+  ForcedVitalCapacityPreBronchodilator 0..1
+* derivedFrom[ForcedExpiratoryVolume1SecPreBronchodilator] only Reference(ForcedExpiratoryVolume1SecPreBronchodilator)
+* derivedFrom[ForcedVitalCapacityPreBronchodilator] only Reference(ForcedVitalCapacityPreBronchodilator)
 
 Profile: FEV1_over_FVC_PreBronchodilator_Zscore
 Parent: Observation
@@ -79,7 +101,12 @@ This profile is for the Zscore of a FEV1/FVC observation which was performed pre
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
-
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  FEV1_over_FVC_PreBronchodilator 0..1
+* derivedFrom[FEV1_over_FVC_PreBronchodilator] only Reference(FEV1_over_FVC_PreBronchodilator)
 
 /*
  * Post-bronchodilator
@@ -101,6 +128,14 @@ This profile is for a FEV1/FVC observation which was performed post-bronchodilat
   * unit = "Number"
   * system = $UCUM
   * code = #{Number}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1SecPostBronchodilator 0..1 and
+  ForcedVitalCapacityPostBronchodilator 0..1
+* derivedFrom[ForcedExpiratoryVolume1SecPostBronchodilator] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator)
+* derivedFrom[ForcedVitalCapacityPostBronchodilator] only Reference(ForcedVitalCapacityPostBronchodilator)
 
 Profile: FEV1_over_FVC_PostBronchodilator_Zscore
 Parent: Observation
@@ -120,3 +155,9 @@ This profile is for the Zscore of a FEV1/FVC observation which was performed pos
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  FEV1_over_FVC_PostBronchodilator 0..1
+* derivedFrom[FEV1_over_FVC_PostBronchodilator] only Reference(FEV1_over_FVC_PostBronchodilator)

@@ -28,6 +28,12 @@ Description: """The Zscore of a carbon monoxide transfer coefficient (KCO) measu
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  KCO 0..1
+* derivedFrom[KCO] only Reference(KCO)
 
 Profile: KCO_PercentOfPredicted
 Parent: Observation
@@ -41,6 +47,12 @@ Description: """The ratio of a carbon monoxide transfer coefficient (KCO) measur
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  KCO 0..1
+* derivedFrom[KCO] only Reference(KCO)
 
 
 /*
@@ -70,6 +82,12 @@ Description: """The Zscore of a carbon monoxide transfer coefficient (KCO) measu
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  KCOPreBronchodilator 0..1
+* derivedFrom[KCOPreBronchodilator] only Reference(KCOPreBronchodilator)
 
 Profile: KCOPreBronchodilator_PercentOfPredicted
 Parent: Observation
@@ -83,6 +101,12 @@ Description: """The ratio of a carbon monoxide transfer coefficient (KCO) measur
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  KCOPreBronchodilator 0..1
+* derivedFrom[KCOPreBronchodilator] only Reference(KCOPreBronchodilator)
 
 /*
  * Post-bronchodilator
@@ -112,6 +136,12 @@ Description: """The Zscore of a carbon monoxide transfer coefficient (KCO) measu
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  KCOPostBronchodilator 0..1
+* derivedFrom[KCOPostBronchodilator] only Reference(KCOPostBronchodilator)
 
 Profile: KCOPostBronchodilator_PercentOfPredicted
 Parent: Observation
@@ -125,3 +155,9 @@ Description: """The ratio of a carbon monoxide transfer coefficient (KCO) measur
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  KCOPostBronchodilator 0..1
+* derivedFrom[KCOPostBronchodilator] only Reference(KCOPostBronchodilator)

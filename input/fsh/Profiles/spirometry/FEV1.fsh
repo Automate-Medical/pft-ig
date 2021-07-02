@@ -38,6 +38,12 @@ This profile is for the Zscore of a forced expiratory volume in one second obser
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1Sec 0..1
+* derivedFrom[ForcedExpiratoryVolume1Sec] only Reference(ForcedExpiratoryVolume1Sec)
 
 Profile: ForcedExpiratoryVolume1Sec_PercentOfPredicted
 Parent: Observation
@@ -55,6 +61,12 @@ This profile is for the measured/predicted ratio of a forced expiratory volume i
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1Sec 0..1
+* derivedFrom[ForcedExpiratoryVolume1Sec] only Reference(ForcedExpiratoryVolume1Sec)
 
 
 /*
@@ -94,6 +106,12 @@ This profile is for the Zscore of a forced expiratory volume in one second obser
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1SecPreBronchodilator 0..1
+* derivedFrom[ForcedExpiratoryVolume1SecPreBronchodilator] only Reference(ForcedExpiratoryVolume1SecPreBronchodilator)
 
 Profile: ForcedExpiratoryVolume1SecPreBronchodilator_PercentOfPredicted
 Parent: Observation
@@ -113,6 +131,12 @@ This profile is for the measured/predicted ratio of a forced expiratory volume i
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1SecPreBronchodilator 0..1
+* derivedFrom[ForcedExpiratoryVolume1SecPreBronchodilator] only Reference(ForcedExpiratoryVolume1SecPreBronchodilator)
 
 
 /*
@@ -152,6 +176,12 @@ This profile is for the Zscore of a forced expiratory volume in one second obser
   * unit = "Zscore"
   * system = $UCUM
   * code = #{Zscore}
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1SecPostBronchodilator 0..1
+* derivedFrom[ForcedExpiratoryVolume1SecPostBronchodilator] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator)
 
 Profile: ForcedExpiratoryVolume1SecPostBronchodilator_PercentOfPredicted
 Parent: Observation
@@ -171,6 +201,12 @@ This profile is for the measured/predicted ratio of a forced expiratory volume i
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1SecPostBronchodilator 0..1
+* derivedFrom[ForcedExpiratoryVolume1SecPostBronchodilator] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator)
 
 Profile: ForcedExpiratoryVolume1SecPostBronchodilator_mLChange
 Parent: Observation
@@ -188,6 +224,14 @@ This profile is for the difference in volume between two forced expiratory volum
   * unit = "mL"
   * system = $UCUM
   * code = #mL
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1SecPreBronchodilator 0..1 and
+  ForcedExpiratoryVolume1SecPostBronchodilator 0..1
+* derivedFrom[ForcedExpiratoryVolume1SecPreBronchodilator] only Reference(ForcedExpiratoryVolume1SecPreBronchodilator)
+* derivedFrom[ForcedExpiratoryVolume1SecPostBronchodilator] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator)
 
 Profile: ForcedExpiratoryVolume1SecPostBronchodilator_PercentChange
 Parent: Observation
@@ -205,3 +249,11 @@ This profile is for the percent change between two forced expiratory volume in o
   * unit = "%"
   * system = $UCUM
   * code = #%
+* derivedFrom ^slicing.discriminator.type = #profile
+* derivedFrom ^slicing.discriminator.path = "reference"
+* derivedFrom ^slicing.rules = #open
+* derivedFrom contains
+  ForcedExpiratoryVolume1SecPreBronchodilator 0..1 and
+  ForcedExpiratoryVolume1SecPostBronchodilator 0..1
+* derivedFrom[ForcedExpiratoryVolume1SecPreBronchodilator] only Reference(ForcedExpiratoryVolume1SecPreBronchodilator)
+* derivedFrom[ForcedExpiratoryVolume1SecPostBronchodilator] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator)
