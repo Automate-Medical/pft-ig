@@ -18,7 +18,7 @@ Usage: #inline
 Instance: PFT_Pulmonologist
 InstanceOf: Practitioner
 Title: "Dr. P. Pulmonologist"
-Usage: #inline
+Usage: #example
 * text
   * status = #additional
   * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">This resource is a stub for use in examples.</div>"
