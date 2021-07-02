@@ -118,9 +118,9 @@ This profile is for the measured/predicted ratio of a forced expiratory volume i
 /*
  * Post-bronchodilator
  */
-Profile: ForcedExpiratoryVolume1SecPostbronchodilator
+Profile: ForcedExpiratoryVolume1SecPostBronchodilator
 Parent: Observation
-Id: ForcedExpiratoryVolume1SecPostbronchodilator
+Id: ForcedExpiratoryVolume1SecPostBronchodilator
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator"
 Description: """A measurement of forced expiratory volume in one second (FEV1) performed post-bronchodilator.
 
@@ -134,9 +134,9 @@ This profile is for a forced expiratory volume in one second observation which w
   * system = $UCUM
   * code = #L
 
-Profile: ForcedExpiratoryVolume1SecPostbronchodilator_Zscore
+Profile: ForcedExpiratoryVolume1SecPostBronchodilator_Zscore
 Parent: Observation
-Id: ForcedExpiratoryVolume1SecPostbronchodilator-Zscore
+Id: ForcedExpiratoryVolume1SecPostBronchodilator-Zscore
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Zscore"
 Description:  """The Zscore of a forced expiratory volume in one second (FEV1) measurement performed post-bronchodilator..
 
@@ -153,9 +153,9 @@ This profile is for the Zscore of a forced expiratory volume in one second obser
   * system = $UCUM
   * code = #{Zscore}
 
-Profile: ForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredicted
+Profile: ForcedExpiratoryVolume1SecPostBronchodilator_PercentOfPredicted
 Parent: Observation
-Id: ForcedExpiratoryVolume1SecPostbronchodilator-PercentOfPredicted
+Id: ForcedExpiratoryVolume1SecPostBronchodilator-PercentOfPredicted
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Of Predicted"
 Description: """The ratio of a forced expiratory volume in one second (FEV1) measurement performed post-bronchodilator to some predicted value, expressed as the percentage `measured/predicted`. This is also referred to as \"% predicted\" or \"% pred\".
 
@@ -172,9 +172,9 @@ This profile is for the measured/predicted ratio of a forced expiratory volume i
   * system = $UCUM
   * code = #%
 
-Profile: ForcedExpiratoryVolume1SecPostbronchodilator_mLChange
+Profile: ForcedExpiratoryVolume1SecPostBronchodilator_mLChange
 Parent: Observation
-Id: ForcedExpiratoryVolume1SecPostbronchodilator-mLChange
+Id: ForcedExpiratoryVolume1SecPosBbronchodilator-mLChange
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator mL Change"
 Description: """The volume (mL) change in forced expiratory volume in one second (FEV1) between a measurement performed pre-bronchodilator and a measurement performed post-bronchodilator.
 
@@ -189,9 +189,9 @@ This profile is for the difference in volume between two forced expiratory volum
   * system = $UCUM
   * code = #mL
 
-Profile: ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange
+Profile: ForcedExpiratoryVolume1SecPostBronchodilator_PercentChange
 Parent: Observation
-Id: ForcedExpiratoryVolume1SecPostbronchodilator-PercentChange
+Id: ForcedExpiratoryVolume1SecPostBronchodilator-PercentChange
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Change"
 Description: """The percent change in forced expiratory volume in one second (FEV1) between a measurement performed pre-bronchodilator and a measurement performed post-bronchodilator.
 
