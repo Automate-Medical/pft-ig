@@ -14,10 +14,28 @@ Usage: #example
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#PF "Pulmonary Function"
 * code = $LNC#81458-2 "Pulmonary function test panel"
-* subject = Reference(PFT_Patient)
-* encounter = Reference(PFT_Encounter)
-* performer[+] = Reference(PFT_Technician)
-* performer[+] = Reference(PFT_Organization)
+// Comment these out because they're not relevant for the example.
+// * subject = Reference(PFT_Patient)
+// * encounter = Reference(PFT_Encounter)
+
+/* `performer` stays because it seems important for the purpose of the example
+ * to demonstrate that the performer and resultsInterpreter are not necessarily
+ * the same practitioner. */
+// TODO: Although the technician performed the Observations, the element
+// `DiagnosticReport.performer` is different:
+//
+//   "This is not necessarily the source of the atomic data items or the entity
+//   that interpreted the results. It is the entity that takes responsibility
+//   for the clinical report."
+//
+// https://www.hl7.org/fhir/diagnosticreport-definitions.html#DiagnosticReport.performer
+
+// * performer[+] = Reference(PFT_Technician)
+// * performer[+] = Reference(PFT_Organization)
+
+/* `resultsInterpreter` stays because we already have the #example Instance,
+ * and because this DiagnosticReport is final and has pulmonologist conclusion,
+ * so the `resultsInterpreter` is relevant. */
 * resultsInterpreter = Reference(PFT_Pulmonologist)
 * effectiveDateTime = "2017-02-24"
 /* FVC */
