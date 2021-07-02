@@ -1,6 +1,19 @@
 /* FET Instances */
 
 /*
+ * Pre/post bronchodilator not specified
+ */
+Instance: FET
+InstanceOf: ForcedExpiratoryTime
+Usage: #example
+Title: "FET pre/post unspecified"
+Description: """An example ForcedExpiratoryTime resource."""
+* id = "FET"
+* status = #final
+* code = $LNC#65819-5 "Forced expiratory time"
+* valueQuantity = 10.3 's' "s"
+
+/*
  * Pre-bronchodilator
  */
 Instance: FET_PRE

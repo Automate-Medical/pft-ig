@@ -4,7 +4,47 @@
 //       Focus of example is on parts which differ from Instance to Instance.
 
 /*
- * FVC_PRE
+ * Pre/post bronchodilator not specified
+ */
+Instance: FVC
+InstanceOf: ForcedVitalCapacity
+Title: "FVC pre/post unspecified"
+Description: "An example ForcedVitalCapacity resource."
+Usage: #example
+* id = "FVC"
+* status = #final
+* code = $LNC#19870-5 "Forced vital capacity [Volume] Respiratory system"
+* valueQuantity = 3.90 'L' "L"
+* referenceRange
+  * low = 3.70 'L' "L"
+  * type
+    * text = "FVC normal bounds"
+
+Instance: FVC_ZScore
+InstanceOf: ForcedVitalCapacity_Zscore
+Title: "FVC pre/post unspecified Zscore"
+Description: "An example ForcedVitalCapacity_Zscore resource."
+Usage: #example
+* id = "FVC-Zscore"
+* status = #final
+* code
+  * text = "Forced vital capacity (z-score)"
+* valueQuantity = -1.34 '{Zscore}' "Zscore"
+* derivedFrom[+] = Reference(FVC)
+
+Instance: FVC_percentPredicted
+InstanceOf: ForcedVitalCapacity_PercentOfPredicted
+Title: "FVC pre/post unspecified % of predicted value"
+Description: "An example ForcedVitalCapacity_PercentOfPredicted resource."
+Usage: #example
+* id = "FVC-percentPredicted"
+* status = #final
+* code = $LNC#19872-1 "FVC measured/predicted"
+* valueQuantity = 82 '%' "%"
+* derivedFrom[+] = Reference(FVC)
+
+/*
+ * Pre-bronchodilator
  */
 Instance: FVC_PRE
 InstanceOf: ForcedVitalCapacityPreBronchodilator
@@ -29,9 +69,6 @@ Usage: #example
   * type
     * text = "FVC normal bounds"
 
-/*
- * FVC_PRE_zScore
- */
 Instance: FVC_PRE_zScore
 InstanceOf: ForcedVitalCapacityPreBronchodilator_Zscore
 Title: "FVC z-score pre-bronchodilator"
@@ -44,9 +81,6 @@ Usage: #example
 * valueQuantity = -1.34 '{Zscore}' "Zscore"
 * derivedFrom[+] = Reference(FVC_PRE)
 
-/*
- * FVC PRE measured/predicted
- */
 Instance: FVC_PRE_percentPredicted
 InstanceOf: ForcedVitalCapacityPreBronchodilator_PercentOfPredicted
 Title: "FVC pre-bronchodilator, % of predicted value"
@@ -59,10 +93,8 @@ Usage: #example
 * derivedFrom[+] = Reference(FVC_PRE)
 
 
-/* FVC POST Observations. */
-
 /*
- * FVC_POST
+ * Post-bronchodilator
  */
 Instance: FVC_POST
 InstanceOf: ForcedVitalCapacityPostBronchodilator
@@ -78,9 +110,6 @@ Usage: #example
   * type
     * text = "FVC normal bounds"
 
-/*
- * FVC_POST_zScore
- */
 Instance: FVC_POST_zScore
 InstanceOf: ForcedVitalCapacityPostBronchodilator_Zscore
 Title: "FVC z-score post-bronchodilator"
@@ -93,9 +122,6 @@ Usage: #example
 * valueQuantity = -0.09 '{Zscore}' "Zscore"
 * derivedFrom[+] = Reference(FVC_POST)
 
-/*
- * FVC POST measured/predicted
- */
 Instance: FVC_POST_percentPredicted
 InstanceOf: ForcedVitalCapacityPostBronchodilator_PercentOfPredicted
 Title: "FVC post-bronchodilator, % of predicted value"
