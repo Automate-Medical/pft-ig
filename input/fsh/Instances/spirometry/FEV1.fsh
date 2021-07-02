@@ -86,10 +86,10 @@ Description: """An example ForcedExpiratoryVolume1SecPreBronchodilator_PercentOf
  * Post-bronchodilator
  */
 Instance: FEV1_POST
-InstanceOf: ForcedExpiratoryVolume1SecPostbronchodilator
+InstanceOf: ForcedExpiratoryVolume1SecPostBronchodilator
 Usage: #example
 Title: "FEV1 POST"
-Description: """An example ForcedExpiratoryVolume1SecPostbronchodilator resource."""
+Description: """An example ForcedExpiratoryVolume1SecPostBronchodilator resource."""
 * id = "FEV1-POST"
 * status = #final
 * valueQuantity = 2.02 'L' "L"
@@ -99,10 +99,10 @@ Description: """An example ForcedExpiratoryVolume1SecPostbronchodilator resource
     * text = "FEV1 normal bounds"
 
 Instance: FEV1_POST_Zscore
-InstanceOf: ForcedExpiratoryVolume1SecPostbronchodilator_Zscore
+InstanceOf: ForcedExpiratoryVolume1SecPostBronchodilator_Zscore
 Usage: #example
 Title: "FEV1 POST Zscore"
-Description: """An example ForcedExpiratoryVolume1SecPostbronchodilator_Zscore resource."""
+Description: """An example ForcedExpiratoryVolume1SecPostBronchodilator_Zscore resource."""
 * id = "FEV1-POST-Zscore"
 * status = #final
 * code
@@ -111,10 +111,10 @@ Description: """An example ForcedExpiratoryVolume1SecPostbronchodilator_Zscore r
 * derivedFrom[+] = Reference(FEV1_POST)
 
 Instance: FEV1_POST_percentPredicted
-InstanceOf: ForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredicted
+InstanceOf: ForcedExpiratoryVolume1SecPostBronchodilator_PercentOfPredicted
 Usage: #example
 Title: "FEV1 POST % pred"
-Description: """An example ForcedExpForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredictediratoryVolume1SecPreBronchodilator_PercentOfPredicted resource."""
+Description: """An example ForcedExpForcedExpiratoryVolume1SecPostBronchodilator_PercentOfPredictediratoryVolume1SecPreBronchodilator_PercentOfPredicted resource."""
 * id = "FEV1-POST-percentPRedicted"
 * status = #final
 * code
@@ -124,10 +124,10 @@ Description: """An example ForcedExpForcedExpiratoryVolume1SecPostbronchodilator
 * derivedFrom[+] = Reference(FEV1_POST)
 
 Instance: FEV1_POST_mLChange
-InstanceOf: ForcedExpiratoryVolume1SecPostbronchodilator_mLChange
+InstanceOf: ForcedExpiratoryVolume1SecPostBronchodilator_mLChange
 Usage: #example
 Title: "FEV1 POST mLChange"
-Description: """An example ForcedExpiratoryVolume1SecPostbronchodilator_mLChange resource."""
+Description: """An example ForcedExpiratoryVolume1SecPostBronchodilator_mLChange resource."""
 * id = "FEV1-POST-mLChange"
 * status = #final
 * code
@@ -137,10 +137,10 @@ Description: """An example ForcedExpiratoryVolume1SecPostbronchodilator_mLChange
 * derivedFrom[+] = Reference(FEV1_POST)
 
 Instance: FEV1_POST_percentChange
-InstanceOf: ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange
+InstanceOf: ForcedExpiratoryVolume1SecPostBronchodilator_PercentChange
 Usage: #example
 Title: "FEV1 POST % change"
-Description: """An example ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange resource."""
+Description: """An example ForcedExpiratoryVolume1SecPostBronchodilator_PercentChange resource."""
 * id = "FEV1-POST-percentChange"
 * status = #final
 * code

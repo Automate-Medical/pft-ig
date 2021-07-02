@@ -29,11 +29,11 @@ Description: "Diagnostic report for a pulmonary function test."
   ForcedExpiratoryVolume1SecPreBronchodilator 0..1 and
   ForcedExpiratoryVolume1SecPreBronchodilator_Zscore 0..1 and
   ForcedExpiratoryVolume1SecPreBronchodilator_PercentOfPredicted 0..1 and
-  ForcedExpiratoryVolume1SecPostbronchodilator 0..1 and
-  ForcedExpiratoryVolume1SecPostbronchodilator_Zscore 0..1 and
-  ForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredicted 0..1 and
-  ForcedExpiratoryVolume1SecPostbronchodilator_mLChange 0..1 and
-  ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange 0..1 and
+  ForcedExpiratoryVolume1SecPostBronchodilator 0..1 and
+  ForcedExpiratoryVolume1SecPostBronchodilator_Zscore 0..1 and
+  ForcedExpiratoryVolume1SecPostBronchodilator_PercentOfPredicted 0..1 and
+  ForcedExpiratoryVolume1SecPostBronchodilator_mLChange 0..1 and
+  ForcedExpiratoryVolume1SecPostBronchodilator_PercentChange 0..1 and
   FEV1_over_FVC 0..1 and
   FEV1_over_FVC_Zscore 0..1 and
   FEV1_over_FVC_PreBronchodilator 0..1 and
@@ -81,11 +81,11 @@ Description: "Diagnostic report for a pulmonary function test."
 * result[ForcedExpiratoryVolume1SecPreBronchodilator] only Reference(ForcedExpiratoryVolume1SecPreBronchodilator)
 * result[ForcedExpiratoryVolume1SecPreBronchodilator_Zscore] only Reference(ForcedExpiratoryVolume1SecPreBronchodilator_Zscore)
 * result[ForcedExpiratoryVolume1SecPreBronchodilator_PercentOfPredicted] only Reference(ForcedExpiratoryVolume1SecPreBronchodilator_PercentOfPredicted)
-* result[ForcedExpiratoryVolume1SecPostbronchodilator] only Reference(ForcedExpiratoryVolume1SecPostbronchodilator)
-* result[ForcedExpiratoryVolume1SecPostbronchodilator_Zscore] only Reference(ForcedExpiratoryVolume1SecPostbronchodilator_Zscore)
-* result[ForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredicted] only Reference(ForcedExpiratoryVolume1SecPostbronchodilator_PercentOfPredicted)
-* result[ForcedExpiratoryVolume1SecPostbronchodilator_mLChange] only Reference(ForcedExpiratoryVolume1SecPostbronchodilator_mLChange)
-* result[ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange] only Reference(ForcedExpiratoryVolume1SecPostbronchodilator_PercentChange)
+* result[ForcedExpiratoryVolume1SecPostBronchodilator] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator)
+* result[ForcedExpiratoryVolume1SecPostBronchodilator_Zscore] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator_Zscore)
+* result[ForcedExpiratoryVolume1SecPostBronchodilator_PercentOfPredicted] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator_PercentOfPredicted)
+* result[ForcedExpiratoryVolume1SecPostBronchodilator_mLChange] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator_mLChange)
+* result[ForcedExpiratoryVolume1SecPostBronchodilator_PercentChange] only Reference(ForcedExpiratoryVolume1SecPostBronchodilator_PercentChange)
 * result[FEV1_over_FVC] only Reference(FEV1_over_FVC)
 * result[FEV1_over_FVC_Zscore] only Reference(FEV1_over_FVC_Zscore)
 * result[FEV1_over_FVC_PreBronchodilator] only Reference(FEV1_over_FVC_PreBronchodilator)
