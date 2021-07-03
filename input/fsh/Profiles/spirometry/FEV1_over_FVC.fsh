@@ -44,7 +44,7 @@ This profile is for the Zscore of a FEV1/FVC observation which was not specified
  * Pre-bronchodilator
  */
 Profile: FEV1_over_FVC_PreBronchodilator
-Parent: Observation
+Parent: FEV1_over_FVC
 Id: FEV1-over-FVC-PreBronchodilator
 Title: "FEV1/FVC Pre-bronchodilator"
 Description: """The ratio of forced expiratory volume in one second to forced vital capacity (FEV1/FVC) performed pre-bronchodilator.
@@ -85,7 +85,7 @@ This profile is for the Zscore of a FEV1/FVC observation which was performed pre
  * Post-bronchodilator
  */
 Profile: FEV1_over_FVC_PostBronchodilator
-Parent: Observation
+Parent: FEV1_over_FVC
 Id: FEV1-over-FVC-PostBronchodilator
 Title: "FEV1/FVC Post-bronchodilator"
 Description: """The ratio of forced expiratory volume in one second to forced vital capacity (FEV1/FVC) performed post-bronchodilator.

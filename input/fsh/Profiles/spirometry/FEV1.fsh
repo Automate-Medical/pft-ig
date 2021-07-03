@@ -1,12 +1,21 @@
-/* Profiles for FEV1 PRE and POST Observations, as well as pre/post unspecified. */
+/* Profiles and Value Sets for FEV1 Observations. */
 
-ValueSet: ForcedExpiratoryVolume1Sec_ValueSet
-Id: ForcedExpiratoryVolume1Sec-ValueSet
-Title: "Forced Expiratory Volume In 1 Second (FEV1)"
-Description: """LOINC codes for forced expiratory volume in one second (FEV1)."""
+/*
+ * Value Sets
+ */
+
+ValueSet: ForcedExpiratoryVolume1Sec_Codes
+Id: ForcedExpiratoryVolume1Sec-Codes
+Title: "Forced Expiratory Volume In 1 Second (FEV1) Codes"
+Description: """LOINC codes for forced expiratory volume in one second (FEV1) observations performed pre-bronchodilator, post-bronchodilator, and pre/post unspecified."""
 * include $LNC#20150-9 "FEV1"
 * include $LNC#20157-4 "FEV1 --pre bronchodilation"
 * include $LNC#20155-8 "FEV1 --post bronchodilation"
+
+
+/*
+ * Profiles
+ */
 
 /*
  * Pre/post bronchodilator not specified
@@ -20,7 +29,7 @@ Description: """A measurement of forced expiratory volume in one second (FEV1).
 Forced expiratory volume in one second is the total volume of air, in liters, that can be forcibly exhaled in one second.
 
 This profile is for a forced expiratory volume in one second observation which was not specified as performed pre or post-bronchodilator. Measurements of forced expiratory volume (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
-* code from ForcedExpiratoryVolume1Sec_ValueSet
+* code from ForcedExpiratoryVolume1Sec_Codes
 * value[x] only Quantity
 * valueQuantity
   * unit = "L"
@@ -103,7 +112,7 @@ This profile is for the Zscore of a forced expiratory volume in one second obser
   * code = #{Zscore}
 
 Profile: ForcedExpiratoryVolume1SecPreBronchodilator_PercentOfPredicted
-Parent: Observation
+Parent: ForcedExpiratoryVolume1Sec_PercentOfPredicted
 Id: ForcedExpiratoryVolume1SecPreBronchodilator-PercentOfPredicted
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator Percent Of Predicted"
 Description: """The ratio of a forced expiratory volume in one second (FEV1) measurement performed pre-bronchodilator to some predicted value, expressed as the percentage `measured/predicted`. This is also referred to as \"% predicted\" or \"% pred\".
@@ -161,7 +170,7 @@ This profile is for the Zscore of a forced expiratory volume in one second obser
   * code = #{Zscore}
 
 Profile: ForcedExpiratoryVolume1SecPostBronchodilator_PercentOfPredicted
-Parent: Observation
+Parent: ForcedExpiratoryVolume1Sec_PercentOfPredicted
 Id: ForcedExpiratoryVolume1SecPostBronchodilator-PercentOfPredicted
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator Percent Of Predicted"
 Description: """The ratio of a forced expiratory volume in one second (FEV1) measurement performed post-bronchodilator to some predicted value, expressed as the percentage `measured/predicted`. This is also referred to as \"% predicted\" or \"% pred\".

@@ -1,5 +1,12 @@
 /* Profiles for KCO (aka DLCO/VA) PRE and POST Observations, as well as pre/post unspecified. */
 
+ValueSet: KCO_Codes
+Id: KCO-Codes
+Title: "KCO Codes"
+Description: """LOINC codes for carbon monoxide transfer coefficient (KCO) observations performed pre-bronchodilator, post-bronchodilator, and pre/post unspecified."""
+* include $LNC#19916-6	"Diffusion capacity/Alveolar volume"
+* include $LNC#82619-8	"Diffusion capacity/Alveolar volume --pre bronchodilation"
+* include $LNC#82620-6	"Diffusion capacity/Alveolar volume --post bronchodilation"
 
 /*
  * Pre- or post-bronchodilator not specified
@@ -9,7 +16,7 @@ Parent: Observation
 Id: KCO
 Title: "KCO"
 Description: """A measurement of carbon monoxide transfer coefficient (KCO). KCO is also referred to as DLCO/VA."""
-* code = $LNC#19916-6	"Diffusion capacity/Alveolar volume"
+* code from KCO_Codes
 * value[x] only Quantity
 * valueQuantity
   * unit = "mL/min/mm[Hg]/L"
@@ -47,7 +54,7 @@ Description: """The ratio of a carbon monoxide transfer coefficient (KCO) measur
  * Pre-bronchodilator
  */
 Profile: KCOPreBronchodilator
-Parent: Observation
+Parent: KCO
 Id: KCOPreBronchodilator
 Title: "KCO Pre-bronchodilator"
 Description: """A measurement of carbon monoxide transfer coefficient (KCO) performed pre-bronchodilator. KCO is also referred to as DLCO/VA."""
@@ -88,7 +95,7 @@ Description: """The ratio of a carbon monoxide transfer coefficient (KCO) measur
  * Post-bronchodilator
  */
 Profile: KCOPostBronchodilator
-Parent: Observation
+Parent: KCO
 Id: KCOPostBronchodilator
 Title: "KCO Post-bronchodilator"
 Description: """A measurement of carbon monoxide transfer coefficient (KCO) performed post-bronchodilator. KCO is also referred to as DLCO/VA."""

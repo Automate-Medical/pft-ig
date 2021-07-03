@@ -25,7 +25,7 @@ This profile is for a forced expiratory time observation which was not specified
  * Pre-bronchodilator
  */
 Profile: ForcedExpiratoryTimePreBronchodilator
-Parent: Observation
+Parent: ForcedExpiratoryTime
 Id: ForcedExpiratoryTime-PreBronchodilator
 Title: "Forced Expiratory Time (FET) Pre-bronchodilator"
 Description: """A measurement of forced expiratory time (FET) performed pre-bronchodilator.
@@ -46,7 +46,7 @@ This profile is for a forced expiratory time observation which was performed pre
  * Post-bronchodilator
  */
 Profile: ForcedExpiratoryTimePostBronchodilator
-Parent: Observation
+Parent: ForcedExpiratoryTime
 Id: ForcedExpiratoryTime-PostBronchodilator
 Title: "Forced Expiratory Time (FET) Post-bronchodilator"
 Description: """A measurement of forced expiratory time (FET) performed post-bronchodilator.
