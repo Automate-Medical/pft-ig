@@ -1,5 +1,13 @@
 /* Profile for a PFT DiagnosticReport with referenced Observations. */
 
+Extension: TechnicianComment
+Id: TechnicianComment
+Title: "Technician Comment"
+Description: """Comments by the technician who performed the pulmonary function test observtions.
+
+This exists to include additional information not captured by our models, such as the medication used for bronchodilator reversibility testing."""
+* value[x] only Annotation
+
 Profile:     PulmonaryFunctionTestDiagnosticReport
 Parent:      DiagnosticReport
 Id:          PulmonaryFunctionTestDiagnosticReport
@@ -7,6 +15,10 @@ Title:       "Pulmonary Function Test (PFT) Diagnostic Report"
 Description: "Diagnostic report for a pulmonary function test."
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#PF "Pulmonary Function"
 * code = $LNC#81458-2 "Pulmonary function test panel"
+// Add Annotation extension to include technician comments.
+// TODO: Should we flag technicianComments with `MS` (Must Support)?
+// See: https://build.fhir.org/ig/HL7/fhir-shorthand/reference.html#flag-rules
+* extension contains TechnicianComment named technicianComment 0..1
 * result ^slicing.discriminator.type = #profile
 * result ^slicing.discriminator.path = "reference"
 * result ^slicing.rules = #open

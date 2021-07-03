@@ -14,6 +14,10 @@ Usage: #example
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/v2-0074#PF "Pulmonary Function"
 * code = $LNC#81458-2 "Pulmonary function test panel"
+* extension[technicianComment]
+  * valueAnnotation
+    * authorReference = Reference(PFT_Technician)
+    * text = "No medications in past 24 hr. 400 mcg albuterol given for reversibility testing."
 // Comment these out because they're not relevant for the example.
 // * subject = Reference(PFT_Patient)
 // * encounter = Reference(PFT_Encounter)
