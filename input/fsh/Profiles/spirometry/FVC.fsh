@@ -1,6 +1,22 @@
 /* Profiles for FVC PRE and POST Observations, as well as pre/post unspecified. */
 
 
+ValueSet: ForcedVitalCapacity_ValueSet
+Id: ForcedVitalCapacity-ValueSet
+Title: "Forced Vital Capacity (FVC) Value Set"
+Description: """LOINC codes for forced vital capacity (FVC)."""
+* include $LNC#19870-5 "Forced vital capacity [Volume] Respiratory system"
+* include $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
+* include $LNC#19874-7 "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
+
+ValueSet: ForcedVitalCapacity_PercentOfPredicted_Valueset
+Id: ForcedVitalCapacity-PercentOfPredicted-Valueset
+Title: "Forced Vital Capacity (FVC) Percent Of Predicted Value Set"
+Description: """LOINC codes for forced vital capacity (FVC) measured/predicted."""
+* include $LNC#19872-1 "FVC measured/predicted"
+* include $LNC#19871-3 "FVC pre bronchodilation measured/predicted"
+* include $LNC#19873-9 "FVC post bronchodilation measured/predicted"
+
 /*
  * Pre- or post-bronchodilator not specified
  */
@@ -13,7 +29,7 @@ Description: """A measurement of forced vital capacity (FVC).
 Forced vital capacity is the total volume of air, in liters, that can be forcibly exhaled after taking as deep a breath as possible.
 
 This profile is for a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
-* code = $LNC#19870-5 "Forced vital capacity [Volume] Respiratory system"
+* code from ForcedVitalCapacity_ValueSet
 * value[x] only Quantity
 * valueQuantity
   * unit = "L"
@@ -50,7 +66,7 @@ Forced vital capacity is the total volume of air, in liters, that can be forcibl
 The predicted value (also referred to as the \"reference value\") is determined by the patient's demographic information. The ratio of the measured value to the predicted value is useful as an indicator of how abnormal the measured value is.
 
 This profile is for the measured/predicted ratio of a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
-* code = $LNC#19872-1 "FVC measured/predicted"
+* code from ForcedVitalCapacity_PercentOfPredicted_Valueset
 * value[x] only Quantity
 * valueQuantity
   * unit = "%"
@@ -62,7 +78,7 @@ This profile is for the measured/predicted ratio of a forced vital capacity obse
  * Pre-bronchodilator
  */
 Profile: ForcedVitalCapacityPreBronchodilator
-Parent: Observation
+Parent: ForcedVitalCapacity
 Id: ForcedVitalCapacityPreBronchodilator
 Title: "Forced Vital Capacity (FVC) Pre-bronchodilator"
 Description: """A measurement of forced vital capacity (FVC) performed pre-bronchodilator.
@@ -97,7 +113,7 @@ This profile is for the Zscore of a forced vital capacity observation which was 
   * code = #{Zscore}
 
 Profile: ForcedVitalCapacityPreBronchodilator_PercentOfPredicted
-Parent: Observation
+Parent: ForcedVitalCapacity_PercentOfPredicted
 Id: ForcedVitalCapacityPreBronchodilator-PercentOfPredicted
 Title: "Forced Vital Capacity (FVC) Pre-bronchodilator Percent Of Predicted"
 Description: """The ratio of a forced vital capacity (FVC) measurement performed pre-bronchodilator to some predicted value, expressed as the percentage `measured/predicted`. This is also referred to as \"% predicted\" or \"% pred\".
@@ -118,7 +134,7 @@ This profile is for the measured/predicted ratio of a forced vital capacity obse
  * Post-bronchodilator
  */
 Profile: ForcedVitalCapacityPostBronchodilator
-Parent: Observation
+Parent: ForcedVitalCapacity
 Id: ForcedVitalCapacityPostBronchodilator
 Title: "Forced Vital Capacity (FVC) Post-bronchodilator"
 Description: """A measurement of forced vital capacity (FVC) performed post-bronchodilator.
@@ -153,7 +169,7 @@ This profile is for the Zscore of a forced vital capacity observation which was 
   * code = #{Zscore}
 
 Profile: ForcedVitalCapacityPostBronchodilator_PercentOfPredicted
-Parent: Observation
+Parent: ForcedVitalCapacity_PercentOfPredicted
 Id: ForcedVitalCapacityPostBronchodilator-PercentOfPredicted
 Title: "Forced Vital Capacity (FVC) Post-bronchodilator Percent Of Predicted"
 Description: """The ratio of a forced vital capacity (FVC) measurement performed post-bronchodilator to some predicted value, expressed as the percentage `measured/predicted`. This is also referred to as \"% predicted\" or \"% pred\".

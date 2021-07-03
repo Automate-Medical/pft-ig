@@ -1,5 +1,12 @@
 /* Profiles for FEV1 PRE and POST Observations, as well as pre/post unspecified. */
 
+ValueSet: ForcedExpiratoryVolume1Sec_ValueSet
+Id: ForcedExpiratoryVolume1Sec-ValueSet
+Title: "Forced Expiratory Volume In 1 Second (FEV1)"
+Description: """LOINC codes for forced expiratory volume in one second (FEV1)."""
+* include $LNC#20150-9 "FEV1"
+* include $LNC#20157-4 "FEV1 --pre bronchodilation"
+* include $LNC#20155-8 "FEV1 --post bronchodilation"
 
 /*
  * Pre/post bronchodilator not specified
@@ -13,7 +20,7 @@ Description: """A measurement of forced expiratory volume in one second (FEV1).
 Forced expiratory volume in one second is the total volume of air, in liters, that can be forcibly exhaled in one second.
 
 This profile is for a forced expiratory volume in one second observation which was not specified as performed pre or post-bronchodilator. Measurements of forced expiratory volume (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
-* code = $LNC#20150-9 "FEV1"
+* code from ForcedExpiratoryVolume1Sec_ValueSet
 * value[x] only Quantity
 * valueQuantity
   * unit = "L"
@@ -61,7 +68,7 @@ This profile is for the measured/predicted ratio of a forced expiratory volume i
  * Pre-bronchodilator
  */
 Profile: ForcedExpiratoryVolume1SecPreBronchodilator
-Parent: Observation
+Parent: ForcedExpiratoryVolume1Sec
 Id: ForcedExpiratoryVolume1SecPreBronchodilator
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Pre-bronchodilator"
 Description: """A measurement of forced expiratory volume in one second (FEV1) performed pre-bronchodilator.
@@ -119,7 +126,7 @@ This profile is for the measured/predicted ratio of a forced expiratory volume i
  * Post-bronchodilator
  */
 Profile: ForcedExpiratoryVolume1SecPostBronchodilator
-Parent: Observation
+Parent: ForcedExpiratoryVolume1Sec
 Id: ForcedExpiratoryVolume1SecPostBronchodilator
 Title: "Forced Expiratory Volume In 1 Second (FEV1) Post-bronchodilator"
 Description: """A measurement of forced expiratory volume in one second (FEV1) performed post-bronchodilator.
