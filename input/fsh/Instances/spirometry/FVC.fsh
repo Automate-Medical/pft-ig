@@ -68,6 +68,8 @@ Usage: #example
 // * performer[+] = Reference(PFT_Organization)
 * effectiveDateTime = "2015-02-07T13:28:17-05:00"
 * valueQuantity = 3.90 'L' "L"
+// * note[+].text = "Reference values: GLI 2012"
+// * note[+].text = "Test Quality: A" // "Test quality: Pre: FEV 1 - A, FVC - A; Post: FEV 1 - A, FVC - B"
 * referenceRange
   * low = 3.70 'L' "L"
   * type
@@ -109,6 +111,8 @@ Usage: #example
 * status = #final
 * code = $LNC#19874-7 "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
 * valueQuantity = 4.70 'L' "L"
+// * note[+].text = "Reference values: GLI 2012"
+* note[+].text = "Test Quality: B" // "Test quality: Pre: FEV 1 - A, FVC - A; Post: FEV 1 - A, FVC - B"
 * referenceRange
   * low = 3.70 'L' "L"
   * type
