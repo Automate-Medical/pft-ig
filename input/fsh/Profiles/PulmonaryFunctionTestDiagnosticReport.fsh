@@ -1,13 +1,5 @@
 /* Profile for a PFT DiagnosticReport with referenced Observations. */
 
-Extension: TechnicianComment
-Id: TechnicianComment
-Title: "Technician Comment"
-Description: """Comments by the technician who performed the pulmonary function test observtions.
-
-This exists to include additional information not captured by our models, such as the medication used for bronchodilator reversibility testing."""
-* value[x] only Annotation
-
 Profile:     PulmonaryFunctionTestDiagnosticReport
 Parent:      DiagnosticReport
 Id:          PulmonaryFunctionTestDiagnosticReport
