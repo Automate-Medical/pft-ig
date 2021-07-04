@@ -8,6 +8,7 @@ Title: "VA (L)"
 Description: """An example AlveolarVolume resource."""
 * id = "VA"
 * status = #final
+// TODO: Probably best to add the code anyway. We can demonstrate the below elsewhere.
 // Note we do not need to define code here.
 // SUSHI adds the specified CodeableConcept when compiling FSH to JSON.
 * valueQuantity = 5.83 'L' "L"
@@ -15,6 +16,7 @@ Description: """An example AlveolarVolume resource."""
   * low = 5.75 'L' "L"
   * type
     * text = "VA normal bounds"
+* extension[referenceValueSource].valueString = "GLI 2017"
 
 Instance: VA_Zscore
 InstanceOf: AlveolarVolume_Zscore

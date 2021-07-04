@@ -16,6 +16,8 @@ Description: """An example ForcedExpiratoryVolume1SecPre resource."""
   * low = 2.91 'L' "L"
   * type
     * text = "FEV1 normal bounds"
+* extension[testQuality].valueString = "A"
+* extension[referenceValueSource].valueString = "GLI 2012"
 
 Instance: FEV1_Zscore
 InstanceOf: ForcedExpiratoryVolume1Sec_Zscore
@@ -56,6 +58,8 @@ Description: """An example ForcedExpiratoryVolume1SecPreBronchodilator resource.
   * low = 2.91 'L' "L"
   * type
     * text = "FEV1 normal bounds"
+* extension[testQuality].valueString = "A"
+* extension[referenceValueSource].valueString = "GLI 2012"
 
 Instance: FEV1_PRE_Zscore
 InstanceOf: ForcedExpiratoryVolume1SecPreBronchodilator_Zscore
@@ -97,6 +101,8 @@ Description: """An example ForcedExpiratoryVolume1SecPostBronchodilator resource
   * low = 2.61 'L' "L"
   * type
     * text = "FEV1 normal bounds"
+* extension[testQuality].valueString = "A"
+* extension[referenceValueSource].valueString = "GLI 2012"
 
 Instance: FEV1_POST_Zscore
 InstanceOf: ForcedExpiratoryVolume1SecPostBronchodilator_Zscore

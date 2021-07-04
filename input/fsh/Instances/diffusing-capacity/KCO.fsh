@@ -16,6 +16,7 @@ Description: """An example KCO resource."""
   * low = 3.25 'mL/min/mm[Hg]/L' "mL/min/mm[Hg]/L"
   * type
     * text = "KCO normal bounds"
+* extension[referenceValueSource].valueString = "GLI 2017"
 // TODO: Don't think we can use these because they were used specifically for KCO_POST and may not apply here.
 // * derivedFrom[+] = Reference(DLCO_atStandardPB)
 // * derivedFrom[+] = Reference(VA)
@@ -59,6 +60,7 @@ Description: """An example KCOPreBronchodilator resource."""
   * low = 3.25 'mL/min/mm[Hg]/L' "mL/min/mm[Hg]/L"
   * type
     * text = "KCO normal bounds"
+* extension[referenceValueSource].valueString = "GLI 2017"
 // TODO: Don't think we can use these because they were used specifically for KCO_POST and may not apply here.
 // * derivedFrom[+] = Reference(DLCO_atStandardPB)
 // * derivedFrom[+] = Reference(VA)
@@ -103,6 +105,7 @@ Description: """An example KCOPostBronchodilator resource."""
   * low = 3.25 'mL/min/mm[Hg]/L' "mL/min/mm[Hg]/L"
   * type
     * text = "KCO normal bounds"
+* extension[referenceValueSource].valueString = "GLI 2017"
 * derivedFrom[+] = Reference(DLCO_atStandardPB)
 * derivedFrom[+] = Reference(VA)
 

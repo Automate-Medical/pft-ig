@@ -30,6 +30,7 @@ Description: """An example DLCOAtStandardBarometricPressure resource."""
   * low = 23.4 'mL/min/mm[Hg]' "mL/min/mm[Hg]"
   * type
     * text = "DLCO at standard PB normal bounds"
+* extension[referenceValueSource].valueString = "GLI 2017"
 
 Instance: DLCO_atStandardPB_Zscore
 InstanceOf: DLCOAtStandardBarometricPressure_Zscore
@@ -68,6 +69,7 @@ Description: """An example DLCOAdjustedForHemoglobin resource."""
 * status = #final
 * code = $LNC#19913-3 "Diffusion capacity.carbon monoxide adjusted for hemoglobin"
 * valueQuantity = 13.0 'mL/min/mm[Hg]' "mL/min/mm[Hg]"
+* extension[referenceValueSource].valueString = "GLI 2017"
 
 // TODO: see issue #21 <https://github.com/Automate-Medical/pft-ig/issues/21>
 Instance: DLCO_predAdjHb_percentPredicted
