@@ -9,7 +9,11 @@ This exists to include additional information not captured by our models, such a
 Extension: ReferenceValueSource
 Id: ReferenceValueSource
 Title: "Reference Value Source"
-Description: """A string providing the source of the reference value(s) used in a particular pulmonary function test observation.
+Description: """A string indicating the source of the reference value(s) used in a particular pulmonary function test observation.
+
+The lack of universally-recognized reference values for many pulmonary function test observation presents a difficulty for implementers, as we must rely on the author of the resource to provide an unambiguous identifier for the source of the values.
+
+The reference value on its own is unnecessary and does not need to be included. It is only relevant in relation to the measured value.
 
 We currently provide no constraints on how the source is described or formatted. This could be a DOI, a URL, or even the title and year of a publication.
 
@@ -19,7 +23,9 @@ We currently provide no way to indicate which reference value the source corresp
 Extension: TestQuality
 Id: TestQuality
 Title: "Test Quality"
-Description: """A letter A through F describing test quality."""
+Description: """A letter 'A' through 'F' describing test quality.
+
+**Note**: There is currently no constraint limiting the value to those six characters."""
 * value[x] only string
 // * valueString from TestQuality_ValueSet
 
