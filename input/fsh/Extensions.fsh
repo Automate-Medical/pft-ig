@@ -36,3 +36,22 @@ Description: """A letter 'A' through 'F' describing test quality.
 // Description: """Letters for describing test quality."""
 // * include "A"
 // * include "B"
+
+Extension: BarometricPressure
+Id: BarometricPressure
+Title: "Barometric Pressure"
+Description: """The barometric pressure an observation was performed at."""
+* value[x] only Quantity
+* valueQuantity from UnitsOfPressure
+
+// TODO: Is the necessary?
+// Maybe we don't want to constrain `BarometricPressure.valueQuantity` to only mmHg and kPa.
+// Or maybe we want to constrain it to only mmHg, since right now our DLCO profiles are only mmHg.
+ValueSet: UnitsOfPressure
+Id: UnitsOfPressure
+Title: "Units Of Pressure"
+Description: """Units used to measure pressure.
+
+Includes only millimeters of mercury (mmHg) and kilopascals (kPa) but this may be expanded."""
+* include $UCUM#mm[Hg] "mmHg"
+* include $UCUM#kPa "kPa"

@@ -20,6 +20,8 @@ This profile is for a DLCO observation which is not specified as adjusted for ba
   * unit = "mL/min/mm[Hg]"
   * system = $UCUM
   * code = #mL/min/mm[Hg]
+* extension contains
+  BarometricPressure named barometricPressure 0..1
 
 
 /*
@@ -44,6 +46,8 @@ This profile is for a DLCO observation which was performed at standard barometri
   * unit = "mL/min/mm[Hg]"
   * system = $UCUM
   * code = #mL/min/mm[Hg]
+* extension contains
+  BarometricPressure named barometricPressure 0..1
 
 Profile: DLCOAtStandardBarometricPressure_Zscore
 Parent: Observation
@@ -103,6 +107,8 @@ DLCO is a test of the lungs' ability to transfer inhaled gas to the bloodstream,
   * unit = "mL/min/mm[Hg]"
   * system = $UCUM
   * code = #mL/min/mm[Hg]
+* extension contains
+  BarometricPressure named barometricPressure 0..1
 
 Profile: DLCOAdjustedForHemoglobin_PercentOfPredicted
 Parent: Observation
