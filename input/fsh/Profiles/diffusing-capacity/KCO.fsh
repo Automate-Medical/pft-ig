@@ -9,6 +9,9 @@ Parent: Observation
 Id: KCO
 Title: "KCO"
 Description: """A measurement of carbon monoxide transfer coefficient (KCO). KCO is also referred to as DLCO/VA."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#19916-6	"Diffusion capacity/Alveolar volume"
 * value[x] only Quantity
 * valueQuantity
@@ -51,6 +54,9 @@ Parent: Observation
 Id: KCOPreBronchodilator
 Title: "KCO Pre-bronchodilator"
 Description: """A measurement of carbon monoxide transfer coefficient (KCO) performed pre-bronchodilator. KCO is also referred to as DLCO/VA."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#82619-8	"Diffusion capacity/Alveolar volume --pre bronchodilation"
 * value[x] only Quantity
 * valueQuantity
@@ -92,6 +98,9 @@ Parent: Observation
 Id: KCOPostBronchodilator
 Title: "KCO Post-bronchodilator"
 Description: """A measurement of carbon monoxide transfer coefficient (KCO) performed post-bronchodilator. KCO is also referred to as DLCO/VA."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#82620-6	"Diffusion capacity/Alveolar volume --post bronchodilation"
 * value[x] only Quantity
 * valueQuantity

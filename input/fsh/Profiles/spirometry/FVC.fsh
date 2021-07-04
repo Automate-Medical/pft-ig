@@ -13,6 +13,9 @@ Description: """A measurement of forced vital capacity (FVC).
 Forced vital capacity is the total volume of air, in liters, that can be forcibly exhaled after taking as deep a breath as possible.
 
 This profile is for a forced vital capacity observation which was not specified as performed pre or post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#19870-5 "Forced vital capacity [Volume] Respiratory system"
 * value[x] only Quantity
 * valueQuantity
@@ -70,6 +73,9 @@ Description: """A measurement of forced vital capacity (FVC) performed pre-bronc
 Forced vital capacity is the total volume of air, in liters, that can be forcibly exhaled after taking as deep a breath as possible.
 
 This profile is for a forced vital capacity observation which was performed pre-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#19876-2 "Forced vital capacity [Volume] Respiratory system by Spirometry --pre bronchodilation"
 * value[x] only Quantity
 * valueQuantity
@@ -126,6 +132,9 @@ Description: """A measurement of forced vital capacity (FVC) performed post-bron
 Forced vital capacity is the total volume of air, in liters, that can be forcibly exhaled after taking as deep a breath as possible.
 
 This profile is for a forced vital capacity observation which was performed post-bronchodilator. Measurements of forced vital capacity (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code =  $LNC#19874-7 "Forced vital capacity [Volume] Respiratory system by Spirometry --post bronchodilation"
 * value[x] only Quantity
 * valueQuantity

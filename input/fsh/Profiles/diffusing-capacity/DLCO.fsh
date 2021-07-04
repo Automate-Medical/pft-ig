@@ -34,6 +34,9 @@ Description: """A measurement of diffusion capacity of the lung for carbon monox
 DLCO is a test of the lungs' ability to transfer inhaled gas to the bloodstream, measured in milliliters of carbon monoxide per minute per millimeter of mercury (mL/min/mm[Hg]). Carbon monoxide (CO), measured in milliliters, is used because it follows a similar pathway as oxygen and has a high binding affinity for hemoglobin in the blood. Barometric pressure, measured in milliters of mercury, affects the absorption of gasses from the lungs and hence is relevant to the measurement of DLCO.
 
 This profile is for a DLCO observation which was performed at standard barometric pressure."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code
   * text = "Diffusion capacity of lung for carbon monoxide at standard barometric pressure"
 * value[x] only Quantity
@@ -91,6 +94,9 @@ Title: "Diffusion Capacity Of Lung For Carbon Monoxide (DLCO) Adjusted For Hemog
 Description: """A measurement of diffusion capacity of the lung for carbon monoxide (DLCO) adjusted for hemoglobin. Also referred to as transfer capacity of the lung for carbon monoxide (TLCO).
 
 DLCO is a test of the lungs' ability to transfer inhaled gas to the bloodstream, measured in milliliters of carbon monoxide per minute per millimeter of mercury (mL/min/mm[Hg]). Carbon monoxide (CO), measured in milliliters, is used because it follows a similar pathway as oxygen and has a high binding affinity for hemoglobin in the blood. Barometric pressure, measured in milliters of mercury, affects the absorption of gasses from the lungs and hence is relevant to the measurement of DLCO."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#19913-3 "Diffusion capacity.carbon monoxide adjusted for hemoglobin"
 * value[x] only Quantity
 * valueQuantity

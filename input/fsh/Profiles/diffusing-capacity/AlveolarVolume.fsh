@@ -7,6 +7,9 @@ Id: AlveolarVolume
 Title: "Alveolar Volume (VA)"
 // TODO: Expand description to explain how alveolar volume is measured or calculated.
 Description: """A measurement of alveolar volume (VA)."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $SCT#251953007 "Alveolar volume (observable entity)"
 * value[x] only Quantity
 * valueQuantity

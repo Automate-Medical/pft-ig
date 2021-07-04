@@ -13,6 +13,9 @@ Description: """A measurement of forced expiratory volume in one second (FEV1).
 Forced expiratory volume in one second is the total volume of air, in liters, that can be forcibly exhaled in one second.
 
 This profile is for a forced expiratory volume in one second observation which was not specified as performed pre or post-bronchodilator. Measurements of forced expiratory volume (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#20150-9 "FEV1"
 * value[x] only Quantity
 * valueQuantity
@@ -69,6 +72,9 @@ Description: """A measurement of forced expiratory volume in one second (FEV1) p
 Forced expiratory volume in one second is the total volume of air, in liters, that can be forcibly exhaled in one second.
 
 This profile is for a forced expiratory volume in one second observation which was performed pre-bronchodilator. Measurements of forced expiratory volume (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#20157-4 "FEV1 --pre bronchodilation"
 * value[x] only Quantity
 * valueQuantity
@@ -127,6 +133,9 @@ Description: """A measurement of forced expiratory volume in one second (FEV1) p
 Forced expiratory volume in one second is the total volume of air, in liters, that can be forcibly exhaled in one second.
 
 This profile is for a forced expiratory volume in one second observation which was performed post-bronchodilator. Measurements of forced expiratory volume (and spirometry tests in general) may be performed both before and after administering a bronchodilator to the patient, in order to study the bronchodilator's effectiveness for treating their respiratory conditions."""
+* extension contains
+  TestQuality named testQuality 0..1 and
+  ReferenceValueSource named referenceValueSource 0..1
 * code = $LNC#20155-8 "FEV1 --post bronchodilation"
 * value[x] only Quantity
 * valueQuantity
