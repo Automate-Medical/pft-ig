@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "PFT_DiagnosticReport"];
   fhir:StructureDefinition.title [ fhir:value "Pulmonary Function Test (PFT) Diagnostic Report"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-29T20:01:30-04:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-06T12:57:12-04:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Automate Medical"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
