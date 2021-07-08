@@ -10,12 +10,14 @@ Usage: #example
 * status = #preliminary
 * type = $LNC#81458-2 "Pulmonary function test panel" // TODO: Incorrect code for full document
 * category = $LNC#27896-0 "Pulmonary studies (set)"
-* subject = Reference(PFT_Patient)
-* encounter = Reference(PFT_Encounter)
+// subject, encounter, and custodian are commented out because they are beyond
+// our current scope and have cardinality 0..1.
+// * subject = Reference(PFT_Patient)
+// * encounter = Reference(PFT_Encounter)
 * date = "2017-02-20"
-* author = Reference(TODO_PLACEHOLDER)
+* author = Reference(PFT_Pulmonologist)
 * title = "PFT: test panel Observations and DiagnosticReport"
-* custodian = Reference(PFT_Organization)
+// * custodian = Reference(PFT_Organization)
 
 /* PFT results */
 * section[+]
